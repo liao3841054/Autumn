@@ -20,6 +20,8 @@
 		634DC3061B144E1E00CDB013 /* GCDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634DC3051B144E1E00CDB013 /* GCDManager.swift */; };
 		634DC3081B145A6800CDB013 /* NetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634DC3071B145A6800CDB013 /* NetManager.swift */; };
 		634DC30C1B145ABC00CDB013 /* demo.m in Sources */ = {isa = PBXBuildFile; fileRef = 634DC30B1B145ABC00CDB013 /* demo.m */; };
+		634DC3131B148E9D00CDB013 /* String+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634DC3121B148E9D00CDB013 /* String+Tools.swift */; };
+		634DC3151B148EC200CDB013 /* UIImageView+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634DC3141B148EC200CDB013 /* UIImageView+Tools.swift */; };
 		95798A6C8B1E5732F55555D9 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD470143EDD4313F3155499 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,8 @@
 		634DC3091B145ABB00CDB013 /* summer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "summer-Bridging-Header.h"; sourceTree = "<group>"; };
 		634DC30A1B145ABC00CDB013 /* demo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = demo.h; path = summer/demo.h; sourceTree = "<group>"; };
 		634DC30B1B145ABC00CDB013 /* demo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = demo.m; path = summer/demo.m; sourceTree = "<group>"; };
+		634DC3121B148E9D00CDB013 /* String+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Tools.swift"; path = "summer/String+Tools.swift"; sourceTree = "<group>"; };
+		634DC3141B148EC200CDB013 /* UIImageView+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImageView+Tools.swift"; path = "summer/UIImageView+Tools.swift"; sourceTree = "<group>"; };
 		7CD470143EDD4313F3155499 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		832947808C0F33D46BA11AC2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EAB421B99656A9536AA5994F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				632CF3E71B12EA3C0025F833 /* ShareData.swift */,
+				634DC3121B148E9D00CDB013 /* String+Tools.swift */,
+				634DC3141B148EC200CDB013 /* UIImageView+Tools.swift */,
 				634DC3051B144E1E00CDB013 /* GCDManager.swift */,
 				634DC3071B145A6800CDB013 /* NetManager.swift */,
 				634DC30A1B145ABC00CDB013 /* demo.h */,
@@ -312,11 +318,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				634DC3131B148E9D00CDB013 /* String+Tools.swift in Sources */,
 				634DC30C1B145ABC00CDB013 /* demo.m in Sources */,
 				634DC3061B144E1E00CDB013 /* GCDManager.swift in Sources */,
 				632CF3EC1B1316850025F833 /* BaseModel.swift in Sources */,
 				632CF3EA1B13151D0025F833 /* FontModel.swift in Sources */,
 				632CF3CA1B12E9130025F833 /* ViewController.swift in Sources */,
+				634DC3151B148EC200CDB013 /* UIImageView+Tools.swift in Sources */,
 				632CF3C81B12E9130025F833 /* summer.xcdatamodeld in Sources */,
 				634DC3081B145A6800CDB013 /* NetManager.swift in Sources */,
 				632CF3C51B12E9130025F833 /* AppDelegate.swift in Sources */,

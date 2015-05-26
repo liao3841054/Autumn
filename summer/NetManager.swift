@@ -10,20 +10,19 @@ import UIKit
 import AFNetworking
 
 class NetManager {
-	class func POST(url:String,parameter:AnyObject?, success:(AFHTTPRequestOperation, AnyObject) -> Void, fail:(AFHTTPRequestOperation, NSError) -> Void) {
+	typealias AFSuccess = (AFHTTPRequestOperation, AnyObject) -> Void
+	typealias AFFail = (AFHTTPRequestOperation, NSError) -> Void
+	
+	class func POST(url:String,parameter:AnyObject!, success:AFSuccess, fail:AFFail) {
 		let url = url.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
 		let manager = AFHTTPRequestOperationManager()
-		if let para: AnyObject = parameter {
-			manager.POST(url, parameters: para, success: { (request, data) -> Void in
-				success(request,data)
+		manager.POST(url, parameters: parameter, success: { (request, data) -> Void in
+			success(request,data)
 			}, failure: { (request, error) -> Void in
 				fail(request, error)
-			})
-		}else{
-
-		}
+		})
 	}
-	class func GET(url:String,parameter:AnyObject?, success:(AFHTTPRequestOperation, AnyObject) -> Void, fail:(AFHTTPRequestOperation, NSError) -> Void) {
+	class func GET(url:String,parameter:AnyObject?, success:AFSuccess, fail:AFFail) {
 		let url = url.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
 		let manager = AFHTTPRequestOperationManager()
 		manager.GET(url, parameters: nil, success: { (request, data) -> Void in
@@ -39,7 +38,7 @@ extension NetManager {
 	typealias Fail = (error:NSError) -> Void
 	
 	class func POST(url:String,parameter:[String:AnyObject],success:Success, fail:Fail) {
-		//TODO 转换parameter 为JSON
+		//TODO: 转换parameter 为JSON
 		self.POST(url, parameter: parameter, success: { (AFHTTPRequestOperation, AnyObject) -> Void in
 			success(data: AnyObject)
 			}) { (AFHTTPRequestOperation, NSError) -> Void in
