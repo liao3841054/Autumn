@@ -11,6 +11,7 @@ import Foundation
 class GCDManager: NSObject {
 	
 	typealias Task = (cancel : Bool) -> ()
+	
 	class func delay(time:NSTimeInterval, task:()->()) ->  Task? {
 		
 		func dispatch_later(block:()->()) {
