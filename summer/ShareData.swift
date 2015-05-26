@@ -18,20 +18,12 @@ class ShareData {
 		}
 		return Inner.instance!
 	}
-	
 	private struct Inner {
-		static var instance:ShareData?
+		static var instance:ShareData? = nil
 		static var token: dispatch_once_t = 0
 	}
 	
-	
-	init(){
+	init() {
 		index = 0
 	}
-	
-	
-	
-	
-	
-	
 }

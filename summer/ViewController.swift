@@ -14,6 +14,11 @@ class ViewController: UIViewController {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
 		println(ShareData.instance.index)
+		
+		var task = GCDManager.delay(2, task: { () -> () in
+			print("task start")
+		})
+		//GCDManager.cancel(task)
 	}
 
 	override func didReceiveMemoryWarning() {
