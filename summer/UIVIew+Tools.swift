@@ -16,4 +16,8 @@ extension UIView {
 		if let v = opacity { self.layer.shadowOpacity = v }
 		if let v = radius { self.layer.shadowRadius = v }
 	}
+	//MARK: 兼容Objective－C
+	func setShadow(color:CGColor, offset:CGSize, opacity:Float, radius:CGFloat) {
+		self.setShadow(color: color, offset: offset, opacity: opacity, radius: radius)
+	}
 }
