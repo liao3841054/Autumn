@@ -10,9 +10,9 @@ import UIKit
 
 class BaseModel: NSObject {
 	
+	//MARK: JSON转model
 	init(JSONString: String) {
 		super.init()
-		
 		var error : NSError?
 		let JSONData = JSONString.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)
 		let JSONDictionary = NSJSONSerialization.JSONObjectWithData(JSONData!, options: NSJSONReadingOptions.MutableContainers, error: &error) as! NSDictionary
@@ -26,11 +26,13 @@ class BaseModel: NSObject {
 		}
 	}
 	
+	//MARK: 字典转model
 	init(JSONDic : NSDictionary) {
 		super.init()
 		self.setValuesForKeysWithDictionary(JSONDic as [NSObject : AnyObject])
 	}
 	
+	//MARK: 字典转array
 	class func modelWithArray(dictArray:[NSDictionary]) -> NSArray {
 		var array: NSMutableArray = []
 		for dic in dictArray {

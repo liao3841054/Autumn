@@ -1,5 +1,5 @@
 //
-//  UIImage+Tools.swift
+//  UIImageView+Tools.swift
 //  
 //
 //  Created by Ding Soung on 15/5/26.
@@ -24,10 +24,10 @@ extension UIImageView {
 	}
 	
 	//MARK: 设置调整大小后的image
-	func SetImageScaled(imageUrl: String!, ratio: CGFloat) {
+	func setImageScaled(imageUrl: String!, ratio: CGFloat) {
 		self.image = UIImageView.imageScale(UIImage(named: imageUrl), ratio: ratio)
 	}
-	func SetImageScaled(imageUrl: String!, size: CGSize) {
+	func setImageScaled(imageUrl: String!, size: CGSize) {
 		self.image = UIImageView.imageScale(UIImage(named: imageUrl), size: size)
 	}
 }

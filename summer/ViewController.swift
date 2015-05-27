@@ -19,6 +19,13 @@ class ViewController: UIViewController {
 			print("task start")
 		})
 		//GCDManager.cancel(task)
+		
+		
+		var view = UIButton(frame: CGRectMake(40, 40, 50, 50))
+		view.backgroundColor = UIColor.greenColor()
+		view.setShadow(color: UIColor.yellowColor().CGColor, offset: CGSizeMake(5, 5), opacity: 0.5, radius: 10)
+		self.view.addSubview(view)
+		
 	}
 
 	override func didReceiveMemoryWarning() {
