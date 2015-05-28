@@ -20,7 +20,7 @@
 	
 	UIView * view = [[UIView alloc] initWithFrame:CGRectMake(40, 40, 50, 50)];
 	view.backgroundColor = [UIColor yellowColor];
-	[view setShadow:UIColor.whiteColor.CGColor offset:CGSizeMake(2, 3) opacity:0.5f radius:3];
+	[view setShadow:[UIColor yellowColor].CGColor offset:CGSizeMake(2, 3) opacity:0.5 radius:3];
 	[self.view addSubview:view];
 	
 }
