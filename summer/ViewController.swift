@@ -38,6 +38,11 @@ class ViewController: UIViewController {
 		self.sigInService = SignInService()
 		self.name.addTarget(self, action: "nameChanged:", forControlEvents: UIControlEvents.EditingChanged)
 		self.pwssword.addTarget(self, action: "passwdChanged:", forControlEvents: UIControlEvents.EditingChanged)
+		self.name.rac_textSignal().filter { (dat) -> Bool in
+			return (dat as! NSString).length > 3
+		}.subscribeNext { (dat) -> Void in
+			println(dat)
+		}
 	}
 
 	override func didReceiveMemoryWarning() {
