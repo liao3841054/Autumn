@@ -3,3 +3,4 @@ use_frameworks!
 
 pod 'FMDB'
 pod 'AFNetworking'
+pod 'ReactiveCocoa'

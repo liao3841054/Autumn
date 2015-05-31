@@ -23,6 +23,7 @@
 		634DC3151B148EC200CDB013 /* UIImageView+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634DC3141B148EC200CDB013 /* UIImageView+Tools.swift */; };
 		634DC3171B15AB6300CDB013 /* UIVIew+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634DC3161B15AB6300CDB013 /* UIVIew+Tools.swift */; };
 		634DC3261B15C18000CDB013 /* demoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 634DC3251B15C18000CDB013 /* demoVC.m */; };
+		63EEE51E1B1AD7EB00AF00D2 /* SignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EEE51D1B1AD7EB00AF00D2 /* SignInService.swift */; };
 		95798A6C8B1E5732F55555D9 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD470143EDD4313F3155499 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		634DC3161B15AB6300CDB013 /* UIVIew+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIVIew+Tools.swift"; path = "summer/UIVIew+Tools.swift"; sourceTree = "<group>"; };
 		634DC3241B15C18000CDB013 /* demoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = demoVC.h; path = summer/demoVC.h; sourceTree = "<group>"; };
 		634DC3251B15C18000CDB013 /* demoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = demoVC.m; path = summer/demoVC.m; sourceTree = "<group>"; };
+		63EEE51D1B1AD7EB00AF00D2 /* SignInService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInService.swift; sourceTree = "<group>"; };
 		7CD470143EDD4313F3155499 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		832947808C0F33D46BA11AC2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EAB421B99656A9536AA5994F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				632CF3C41B12E9130025F833 /* AppDelegate.swift */,
 				632CF3C91B12E9130025F833 /* ViewController.swift */,
 				632CF3CB1B12E9130025F833 /* Main.storyboard */,
+				63EEE51D1B1AD7EB00AF00D2 /* SignInService.swift */,
 				632CF3CE1B12E9130025F833 /* Images.xcassets */,
 				632CF3D01B12E9130025F833 /* LaunchScreen.xib */,
 				632CF3C61B12E9130025F833 /* summer.xcdatamodeld */,
@@ -222,6 +225,7 @@
 				TargetAttributes = {
 					632CF3BE1B12E9130025F833 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 74H7DHDVF5;
 					};
 					632CF3D61B12E9130025F833 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -330,6 +334,7 @@
 				634DC3171B15AB6300CDB013 /* UIVIew+Tools.swift in Sources */,
 				634DC3151B148EC200CDB013 /* UIImageView+Tools.swift in Sources */,
 				632CF3C81B12E9130025F833 /* summer.xcdatamodeld in Sources */,
+				63EEE51E1B1AD7EB00AF00D2 /* SignInService.swift in Sources */,
 				634DC3081B145A6800CDB013 /* NetManager.swift in Sources */,
 				632CF3C51B12E9130025F833 /* AppDelegate.swift in Sources */,
 				632CF3E81B12EA3C0025F833 /* ShareData.swift in Sources */,
@@ -463,6 +468,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = summer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -477,6 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = summer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
