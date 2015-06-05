@@ -34,6 +34,9 @@ class ViewController: UIViewController {
 		view.setShadow(color: UIColor.yellowColor().CGColor, offset: CGSizeMake(5, 5), opacity: 0.5, radius: 10)
 		self.view.addSubview(view)
 		
+		//MARK: 全屏显示
+		view.viewInFullScreen(self)
+		
 		//MARK:ReactiveCocoa
 		self.updateUIState()
 		self.sigInService = SignInService()
@@ -113,6 +116,13 @@ class ViewController: UIViewController {
 	}
 	
 	
+	@IBAction func albumButtonAction(sender: AnyObject) {
+		var vc = AlbumViewController()
+		vc.urlArray = ["http://img0.bdstatic.com/img/image/shouye/sheying0605.jpg", "http://img0.bdstatic.com/img/image/shouye/mingxing0605.jpg", "http://img0.bdstatic.com/img/image/shouye/jianbihua0605.jpg"]
+		self.presentViewController(vc, animated: true) { () -> Void in
+		}
+	}
+	
 	
 	//发送通知消息
 	private func scheduleNotification(itemID:Int){
@@ -153,6 +163,7 @@ class ViewController: UIViewController {
 		}
 		return nil
 	}
+	
 	
 	
 	

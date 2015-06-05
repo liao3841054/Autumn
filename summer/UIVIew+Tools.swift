@@ -20,4 +20,33 @@ extension UIView {
 	func setShadow(color:CGColor, offset:CGSize, opacity:Float, radius:CGFloat) {
 		self.setShadow(color: color, offset: offset, opacity: opacity, radius: radius)
 	}
+	
+	
+	func addFullScreemView(delegate:UIViewController) {
+		var tapGesture = UITapGestureRecognizer(target: delegate, action: "fullScreemView:")
+		tapGesture.numberOfTapsRequired = 1
+		self.addGestureRecognizer(tapGesture)
+	}
+	func fullScreemView(sender: UITapGestureRecognizer) {
+	}
+	
+	
+	func viewInFullScreen(target:UIViewController) {
+		//var fullView = self
+		//target.view.addSubview(fullView)
+		UIView.animateWithDuration(0.3, animations: { () -> Void in
+			self.frame = target.view.frame
+			self.backgroundColor = UIColor.grayColor()
+			self.alpha = 1
+		})
+		var tapGesture = UITapGestureRecognizer(target: self, action: "fullViewTapGesture:")
+		tapGesture.numberOfTapsRequired = 1
+		self.addGestureRecognizer(tapGesture)
+	}
+	func fullViewTapGesture(sender:UIPanGestureRecognizer) {
+		UIView.animateWithDuration(0.5, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
+			}, completion: {(value:Bool) in
+				self.removeFromSuperview()
+		})
+	}
 }

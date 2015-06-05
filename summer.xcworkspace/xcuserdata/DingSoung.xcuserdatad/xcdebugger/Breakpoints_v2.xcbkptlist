@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "summer/ViewController.swift"
-            timestampString = "454836829.441463"
+            filePath = "summer/AlbumImageView.swift"
+            timestampString = "455190154.852793"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "handleTapGesture(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

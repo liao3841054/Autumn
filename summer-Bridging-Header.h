@@ -7,3 +7,7 @@
 
 //MARK: ReactiveCocoa
 #import <ReactiveCocoa/ReactiveCocoa.h>
+
+//MARK: SDWebImage
+#import <SDWebImage/SDWebImageManager.h>
+#import <SDWebImage/UIImageView+WebCache.h>
