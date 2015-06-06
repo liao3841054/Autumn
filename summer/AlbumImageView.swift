@@ -18,14 +18,14 @@ class AlbumImageView: UIImageView {
 		var pin:UIPinchGestureRecognizer = UIPinchGestureRecognizer(target: self, action: Selector("handlePinchGesture:"))
 		self.addGestureRecognizer(pin)
 		
-		var gr1:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: Selector("handleTapGesture:"))
-		var gr2:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: Selector("handleTapGesture:"))
-		gr1.numberOfTapsRequired = 1
-		gr1.requireGestureRecognizerToFail(gr2)//这里保证双击的时候不会出发单击时间
-		gr2.numberOfTapsRequired = 2
+		var tg1:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: Selector("handleTapGesture:"))
+		var tg2:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: Selector("handleTapGesture:"))
+		tg1.numberOfTapsRequired = 1
+		tg1.requireGestureRecognizerToFail(tg2)		//这里保证双击的时候不会出发单击时间
+		tg2.numberOfTapsRequired = 2
 		self.userInteractionEnabled = true
-		self.addGestureRecognizer(gr1)
-		self.addGestureRecognizer(gr2)
+		self.addGestureRecognizer(tg1)
+		self.addGestureRecognizer(tg2)
 	}
 	required init(coder aDecoder: NSCoder) {
 	    fatalError("init(coder:) has not been implemented")

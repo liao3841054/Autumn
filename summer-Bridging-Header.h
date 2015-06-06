@@ -11,3 +11,6 @@
 //MARK: SDWebImage
 #import <SDWebImage/SDWebImageManager.h>
 #import <SDWebImage/UIImageView+WebCache.h>
+
+//MARK: MD5
+#import <CommonCrypto/CommonCrypto.h>

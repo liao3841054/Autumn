@@ -25,6 +25,9 @@
 		634DC3261B15C18000CDB013 /* demoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 634DC3251B15C18000CDB013 /* demoVC.m */; };
 		63CD66A01B21961C00ABECB7 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CD669F1B21961C00ABECB7 /* AlbumViewController.swift */; };
 		63CD66A21B21A29A00ABECB7 /* AlbumImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CD66A11B21A29A00ABECB7 /* AlbumImageView.swift */; };
+		63CD66AC1B229CF300ABECB7 /* Int+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CD66A91B229CF300ABECB7 /* Int+Tools.swift */; };
+		63CD66AD1B229CF300ABECB7 /* NSData+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CD66AA1B229CF300ABECB7 /* NSData+Tools.swift */; };
+		63CD66AE1B229CF300ABECB7 /* NSMutableData+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CD66AB1B229CF300ABECB7 /* NSMutableData+Tools.swift */; };
 		63EEE51E1B1AD7EB00AF00D2 /* SignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EEE51D1B1AD7EB00AF00D2 /* SignInService.swift */; };
 		95798A6C8B1E5732F55555D9 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD470143EDD4313F3155499 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -64,6 +67,9 @@
 		634DC3251B15C18000CDB013 /* demoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = demoVC.m; path = summer/demoVC.m; sourceTree = "<group>"; };
 		63CD669F1B21961C00ABECB7 /* AlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlbumViewController.swift; path = summer/AlbumViewController.swift; sourceTree = "<group>"; };
 		63CD66A11B21A29A00ABECB7 /* AlbumImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlbumImageView.swift; path = summer/AlbumImageView.swift; sourceTree = "<group>"; };
+		63CD66A91B229CF300ABECB7 /* Int+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Int+Tools.swift"; path = "summer/Int+Tools.swift"; sourceTree = "<group>"; };
+		63CD66AA1B229CF300ABECB7 /* NSData+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSData+Tools.swift"; path = "summer/NSData+Tools.swift"; sourceTree = "<group>"; };
+		63CD66AB1B229CF300ABECB7 /* NSMutableData+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSMutableData+Tools.swift"; path = "summer/NSMutableData+Tools.swift"; sourceTree = "<group>"; };
 		63EEE51D1B1AD7EB00AF00D2 /* SignInService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInService.swift; sourceTree = "<group>"; };
 		7CD470143EDD4313F3155499 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		832947808C0F33D46BA11AC2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +106,9 @@
 		632CF3B61B12E9130025F833 = {
 			isa = PBXGroup;
 			children = (
+				63CD66A91B229CF300ABECB7 /* Int+Tools.swift */,
+				63CD66AA1B229CF300ABECB7 /* NSData+Tools.swift */,
+				63CD66AB1B229CF300ABECB7 /* NSMutableData+Tools.swift */,
 				63CD669F1B21961C00ABECB7 /* AlbumViewController.swift */,
 				63CD66A11B21A29A00ABECB7 /* AlbumImageView.swift */,
 				632CF3E71B12EA3C0025F833 /* ShareData.swift */,
@@ -332,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				634DC3131B148E9D00CDB013 /* String+Tools.swift in Sources */,
+				63CD66AC1B229CF300ABECB7 /* Int+Tools.swift in Sources */,
 				634DC3061B144E1E00CDB013 /* GCDManager.swift in Sources */,
 				63CD66A21B21A29A00ABECB7 /* AlbumImageView.swift in Sources */,
 				632CF3EC1B1316850025F833 /* BaseModel.swift in Sources */,
@@ -344,6 +354,8 @@
 				632CF3C81B12E9130025F833 /* summer.xcdatamodeld in Sources */,
 				63EEE51E1B1AD7EB00AF00D2 /* SignInService.swift in Sources */,
 				634DC3081B145A6800CDB013 /* NetManager.swift in Sources */,
+				63CD66AD1B229CF300ABECB7 /* NSData+Tools.swift in Sources */,
+				63CD66AE1B229CF300ABECB7 /* NSMutableData+Tools.swift in Sources */,
 				632CF3C51B12E9130025F833 /* AppDelegate.swift in Sources */,
 				632CF3E81B12EA3C0025F833 /* ShareData.swift in Sources */,
 			);

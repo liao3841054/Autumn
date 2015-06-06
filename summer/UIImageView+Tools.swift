@@ -24,10 +24,10 @@ extension UIImageView {
 	}
 	
 	//MARK: 设置调整大小后的image
-	func setImageScaled(imageUrl: String!, ratio: CGFloat) {
-		self.image = UIImageView.imageScale(UIImage(named: imageUrl), ratio: ratio)
+	func setImageScaled(imageNamed: String!, ratio: CGFloat) {
+		self.image = UIImageView.imageScale(UIImage(named: imageNamed), ratio: ratio)
 	}
-	func setImageScaled(imageUrl: String!, size: CGSize) {
-		self.image = UIImageView.imageScale(UIImage(named: imageUrl), size: size)
+	func setImageScaled(imageNamed: String!, size: CGSize) {
+		self.image = UIImageView.imageScale(UIImage(named: imageNamed), size: size)
 	}
 }
