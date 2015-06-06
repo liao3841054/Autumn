@@ -8,35 +8,34 @@
 
 import UIKit
 
-class AlbumViewController: UIViewController, UIScrollViewDelegate {
+class AlbumViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 	
 	var urlArray:[String] = []
 	var index:CGFloat = 0
 	
-	private var scrollView: UIScrollView!
-	
+	private var tableView: UITableView!
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		NSNotificationCenter.defaultCenter().addObserver(self, selector: "networkStatusChanged", name: "networkStatusChanged", object: nil)
 		
-		self.view.backgroundColor = UIColor.blackColor()
+		self.view.backgroundColor = UIColor.redColor()
 		
-		self.scrollView = UIScrollView(frame: self.view.frame)
-		self.scrollView.contentSize = self.scrollView.frame.size
-		self.scrollView.delegate = self
-		self.scrollView.pagingEnabled = true
-		self.scrollView.bounces = true
-		self.scrollView.showsHorizontalScrollIndicator = false
-		self.scrollView.showsVerticalScrollIndicator = false
-		self.scrollView.backgroundColor = UIColor.clearColor()
-		self.view.addSubview(scrollView)
+		tableView = UITableView(frame: CGRectMake(0, 0, self.view.frame.height, self.view.frame.size.width), style: UITableViewStyle.Grouped)
+		tableView.center = CGPointMake(self.view.frame.size.width * 0.5, self.view.frame.size.height * 0.5)
+		tableView.transform = CGAffineTransformMakeRotation(-3.14159265358979323846264338327950288 * 0.5)
+		tableView.pagingEnabled = true
 		
+		tableView.backgroundColor = UIColor.clearColor()
+		tableView.tintColor = UIColor(red:0.2, green:0.76, blue:0.43, alpha:1)
+		tableView.separatorStyle = UITableViewCellSeparatorStyle.SingleLine
+		tableView.contentInset = UIEdgeInsetsMake(0, -0.01, 0, -0.01)
+		tableView.tableFooterView = UIView.new() //hide empty cell
+		tableView.tableHeaderView = UIView(frame: CGRectMake(0, 0, 0, 0.01)) //hide head view shown in group
+		tableView.showsVerticalScrollIndicator = false
+		tableView.separatorStyle = UITableViewCellSeparatorStyle.None
 		
-//		var tapGesture = UITapGestureRecognizer(target: self, action: "viewTapGesture:")
-//		tapGesture.numberOfTapsRequired = 1
-//		self.scrollView.addGestureRecognizer(tapGesture)
-//		self.scrollView.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: "viewPanGesture:"))
-		
+		tableView.delegate = self
+		tableView.dataSource = self
+		self.view.addSubview(tableView)
 	}
 	override func viewWillAppear(animated: Bool) {
 		super.viewWillAppear(animated)
@@ -44,42 +43,44 @@ class AlbumViewController: UIViewController, UIScrollViewDelegate {
 		self.navigationController?.navigationBarHidden = true
 		self.tabBarController?.tabBar.hidden = true
 		
-		self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width * CGFloat(self.urlArray.count), self.scrollView.frame.size.width)
-		for var index = 0; index < self.urlArray.count; index += 1 {
-			var view = AlbumImageView(frame: self.view.frame)
-			view.frame.origin.x = self.view.frame.size.width * CGFloat(index)
-			view.sd_setImageWithURL(NSURL(string: self.urlArray[index]), placeholderImage: UIImage(named: ""))
-			scrollView.addSubview(view)
-		}
-		UIView.animateWithDuration(0.3, animations: { () -> Void in
-			self.scrollView.contentOffset = CGPointMake(self.scrollView.frame.size.width * self.index, 0)
-		})
+		self.tableView.reloadData()
 	}
 	override func viewWillDisappear(animated: Bool) {
 		super.viewWillDisappear(animated)
 	}
-	func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-		if(scrollView == self.scrollView) {
-			//self.segment.selectedSegmentIndex = Int(scrollView.contentOffset.x / self.view.frame.width)
+	
+	
+	func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+		return self.urlArray.count
+	}
+	func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+		return 0.01
+	}
+	func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+		return 0.01
+	}
+	func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+		return self.view.frame.size.width
+	}
+	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		return 1
+	}
+	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+		let cellIdentifer = "Cell"
+		var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifer) as? UITableViewCell
+		if cell == nil {
+			cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: cellIdentifer)
 		}
+		cell?.accessoryType = UITableViewCellAccessoryType.None
+		cell?.selectionStyle = UITableViewCellSelectionStyle.None
+		//set View
+		var view = AlbumImageView(frame: self.view.frame)
+		view.img.sd_setImageWithURL(NSURL(string: self.urlArray[indexPath.section]), placeholderImage: UIImage(named: ""))
+		cell?.contentView.addSubview(view)
+		cell!.contentView.transform = CGAffineTransformMakeRotation(3.14159265358979323846264338327950288 * 0.5)
+		return cell!
 	}
 	
-	
-	
-
-	
-	
-	func viewTapGesture(sender: UITapGestureRecognizer) {
-		self.dissmissThisView()
-	}
-	func viewPanGesture(sender:UIPanGestureRecognizer) {
-		self.dissmissThisView()
-	}
-	private func dissmissThisView(){
-		UIView.animateWithDuration(0.3, animations: { () -> Void in
-			self.dissmissThisView()
-		})
-	}
 	
 	
 	
