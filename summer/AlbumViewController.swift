@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AlbumViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class AlbumViewController: UIViewController, UITableViewDelegate, UITableViewDataSource,AlbumImageViewDelegate {
 	
 	var urlArray:[String] = []
 	var index:CGFloat = 0
@@ -49,7 +49,13 @@ class AlbumViewController: UIViewController, UITableViewDelegate, UITableViewDat
 		super.viewWillDisappear(animated)
 	}
 	
+	//MARK: AlbumImageView delegate
+	func albumImageViewSignalTaped() {
+		self.dismissViewControllerAnimated(true, completion: { () -> Void in
+		})
+	}
 	
+	//MARK: tableView delegate
 	func numberOfSectionsInTableView(tableView: UITableView) -> Int {
 		return self.urlArray.count
 	}
@@ -70,13 +76,16 @@ class AlbumViewController: UIViewController, UITableViewDelegate, UITableViewDat
 		var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifer) as? UITableViewCell
 		if cell == nil {
 			cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: cellIdentifer)
+			cell?.accessoryType = UITableViewCellAccessoryType.None
+			cell?.selectionStyle = UITableViewCellSelectionStyle.None
+			cell?.backgroundColor = UIColor.clearColor()
+			
+			//set View
+			var view = AlbumImageView(frame: self.view.frame)
+			view.delegate = self
+			view.img.sd_setImageWithURL(NSURL(string: self.urlArray[indexPath.section]), placeholderImage: UIImage(named: ""))
+			cell?.contentView.addSubview(view)
 		}
-		cell?.accessoryType = UITableViewCellAccessoryType.None
-		cell?.selectionStyle = UITableViewCellSelectionStyle.None
-		//set View
-		var view = AlbumImageView(frame: self.view.frame)
-		view.img.sd_setImageWithURL(NSURL(string: self.urlArray[indexPath.section]), placeholderImage: UIImage(named: ""))
-		cell?.contentView.addSubview(view)
 		cell!.contentView.transform = CGAffineTransformMakeRotation(3.14159265358979323846264338327950288 * 0.5)
 		return cell!
 	}

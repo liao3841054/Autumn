@@ -118,7 +118,11 @@ class ViewController: UIViewController {
 	
 	@IBAction func albumButtonAction(sender: AnyObject) {
 		var vc = AlbumViewController()
-		vc.urlArray = ["http://img0.bdstatic.com/img/image/shouye/sheying0605.jpg", "http://img0.bdstatic.com/img/image/shouye/mingxing0605.jpg", "http://img0.bdstatic.com/img/image/shouye/jianbihua0605.jpg"]
+		vc.urlArray = [
+			"http://e.hiphotos.baidu.com/image/pic/item/b2de9c82d158ccbfa0345b821bd8bc3eb03541fa.jpg",
+			"http://h.hiphotos.baidu.com/image/pic/item/f11f3a292df5e0febe8bd3005e6034a85edf721b.jpg",
+			"http://g.hiphotos.baidu.com/image/pic/item/e1fe9925bc315c60f2148de58fb1cb1349547733.jpg",
+			"http://h.hiphotos.baidu.com/image/pic/item/962bd40735fae6cd9caa64690db30f2442a70f98.jpg"]
 		self.presentViewController(vc, animated: true) { () -> Void in
 		}
 	}
