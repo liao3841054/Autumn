@@ -38,16 +38,17 @@ class ViewController: UIViewController {
 		//MARK: 全屏显示
 		view.viewInFullScreen()
 		
+		
+		
+		
 		//MARK:ReactiveCocoa
-		self.updateUIState()
-		self.sigInService = SignInService()
-		self.name.addTarget(self, action: "nameChanged:", forControlEvents: UIControlEvents.EditingChanged)
-		self.pwssword.addTarget(self, action: "passwdChanged:", forControlEvents: UIControlEvents.EditingChanged)
+		//过滤 text长度大于3时的信号 打印dat
 		self.name.rac_textSignal().filter { (dat) -> Bool in
 			return (dat as! NSString).length > 3
 			}.subscribeNext { (dat) -> Void in
 				println(dat)
 		}
+		//信号映射text 转为 NSNumber,  过滤number>3的信号  打印number
 		self.pwssword.rac_textSignal()
 			.map { (dat) -> AnyObject! in
 				return (dat as! NSString).length
@@ -59,7 +60,7 @@ class ViewController: UIViewController {
 		self.sigIn.rac_signalForControlEvents(UIControlEvents.TouchUpInside).subscribeNext { (dat) -> Void in
 			println("button clinked")
 		}
-		
+		//定义信号变量
 		var vaidNameSignal = self.name.rac_textSignal().map { (dat) -> AnyObject! in
 			return (dat as! String).isMobileNumber
 		}
