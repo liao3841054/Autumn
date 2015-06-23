@@ -10,7 +10,7 @@ import UIKit
 
 extension UIView {
 	//MARK: 设置阴影
-	func setShadow(color:CGColor? = UIColor.darkGrayColor().CGColor, offset:CGSize? = CGSizeMake(2, 3), opacity:Float? = 0.5, radius:CGFloat? = 3) {
+	func setShadow(color:CGColor? = UIColor.blackColor().CGColor, offset:CGSize? = CGSizeMake(0.25, 0.5), opacity:Float? = 0.15, radius:CGFloat? = 1.5) {
 		if let v = color { self.layer.shadowColor = v }
 		if let v = offset { self.layer.shadowOffset = v }
 		if let v = opacity { self.layer.shadowOpacity = v }
@@ -21,30 +21,18 @@ extension UIView {
 		self.setShadow(color: color, offset: offset, opacity: opacity, radius: radius)
 	}
 	
-	
-	func addFullScreemView(delegate:UIViewController) {
-		var tapGesture = UITapGestureRecognizer(target: delegate, action: "fullScreemView:")
-		tapGesture.numberOfTapsRequired = 1
-		self.addGestureRecognizer(tapGesture)
-	}
-	func fullScreemView(sender: UITapGestureRecognizer) {
-	}
-	
-	
-	func viewInFullScreen(target:UIViewController) {
-		//var fullView = self
-		//target.view.addSubview(fullView)
-		UIView.animateWithDuration(0.3, animations: { () -> Void in
-			self.frame = target.view.frame
-			self.backgroundColor = UIColor.grayColor()
-			self.alpha = 1
+	//MARK: 动态全屏  触摸消失
+	func viewInFullScreen() {
+		UIView.animateWithDuration(1, animations: { () -> Void in
+			self.backgroundColor = UIColor(white: 0, alpha: 0.3)
 		})
 		var tapGesture = UITapGestureRecognizer(target: self, action: "fullViewTapGesture:")
 		tapGesture.numberOfTapsRequired = 1
 		self.addGestureRecognizer(tapGesture)
 	}
 	func fullViewTapGesture(sender:UIPanGestureRecognizer) {
-		UIView.animateWithDuration(0.5, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
+		UIView.animateWithDuration(1, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
+			self.backgroundColor = UIColor(white: 0, alpha: 0)
 			}, completion: {(value:Bool) in
 				self.removeFromSuperview()
 		})

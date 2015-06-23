@@ -20,6 +20,8 @@ class ViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		
+		
 		println(ShareData.instance.index)
 		
 		//MARK: GCD异步延时
@@ -35,7 +37,7 @@ class ViewController: UIViewController {
 		self.view.addSubview(view)
 		
 		//MARK: 全屏显示
-		view.viewInFullScreen(self)
+		view.viewInFullScreen()
 		
 		//MARK:ReactiveCocoa
 		self.updateUIState()
@@ -69,8 +71,6 @@ class ViewController: UIViewController {
 		//			return (self.vaidNameSignal as! Bool)
 		//		}
 		
-		
-		
 		#if false //RAC 宏定义在swift中不可用
 			RAC(self.name.backgroundColor) = vaidNameSignal.map({ (dat) -> AnyObject! in
 			return (dat as! Bool) ? UIColor.clearColor() : UIColor.whiteColor()
@@ -89,19 +89,15 @@ class ViewController: UIViewController {
 		}
 		
 		
-		
-		
-		//发送通知消息
-		scheduleNotification(12345);
-		//取消通知消息
-		//cancelNotification(12345);
+		//MARK: 本地推送消息
+		NotificationManager.instance.scheduleNotification(itemID: 123, delaySeconds: 3, timeZone: NSTimeZone.defaultTimeZone(), message: "本地消息")
+		//cancelNotification(123);
 		
 	}
 	
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 	}
-	
 	
 	private func updateUIState() {
 		self.sigIn.enabled = self.nameIsValid && self.passwordISValid
@@ -115,7 +111,6 @@ class ViewController: UIViewController {
 		self.updateUIState()
 	}
 	
-	
 	@IBAction func albumButtonAction(sender: AnyObject) {
 		var vc = AlbumViewController()
 		vc.urlArray = [
@@ -127,47 +122,7 @@ class ViewController: UIViewController {
 		}
 	}
 	
-	
-	//发送通知消息
-	private func scheduleNotification(itemID:Int){
-		//如果已存在该通知消息，则先取消
-		cancelNotification(itemID)
-		//创建UILocalNotification来进行本地消息通知
-		var localNotification = UILocalNotification()
-		//推送时间（设置为30秒以后）
-		localNotification.fireDate = NSDate(timeIntervalSinceNow: 5)
-		//时区
-		localNotification.timeZone = NSTimeZone.defaultTimeZone()
-		//推送内容
-		localNotification.alertBody = "来自hangge.com的本地消息"
-		//声音
-		localNotification.soundName = UILocalNotificationDefaultSoundName
-		//额外信息
-		localNotification.userInfo = ["ItemID":itemID]
-		UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
-	}
-	//取消通知消息
-	private func cancelNotification(itemID:Int){
-		//通过itemID获取已有的消息推送，然后删除掉，以便重新判断
-		let existingNotification = self.notificationForThisItem(itemID) as UILocalNotification?
-		if existingNotification != nil {
-			//如果existingNotification不为nil，就取消消息推送
-			UIApplication.sharedApplication().cancelLocalNotification(existingNotification!)
-		}
-	}
-	//通过遍历所有消息推送，通过itemid的对比，返回UIlocalNotification
-	private func notificationForThisItem(itemID:Int)-> UILocalNotification? {
-		let allNotifications = UIApplication.sharedApplication().scheduledLocalNotifications
-		for notification in allNotifications {
-			var info:Dictionary<String,Int>? = notification.userInfo as? Dictionary
-			var number = info?["ItemID"]
-			if number != nil && number == itemID {
-				return notification as? UILocalNotification
-			}
-		}
-		return nil
-	}
-	
+
 	
 	
 	

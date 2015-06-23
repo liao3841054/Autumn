@@ -44,6 +44,6 @@ class BaseModel: NSObject {
 	}
 	
 	override func setValue(value: AnyObject!, forUndefinedKey key: String) {
-		println("未定义的key:\(key)")
+		println("未定义的key:\(key) for value:\(value)")
 	}
 }

@@ -9,7 +9,6 @@
 import UIKit
 
 extension NSData {
-
 	
 	public func checksum() -> UInt16 {
 		var s:UInt32 = 0;

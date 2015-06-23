@@ -14,3 +14,7 @@
 
 //MARK: MD5
 #import <CommonCrypto/CommonCrypto.h>
+
+//MARK: Wechat
+#import "WXApi.h"
+#import "WXApiObject.h"

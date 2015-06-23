@@ -9,13 +9,15 @@
 import UIKit
 import AFNetworking
 
-class NetManager {
+class AFNetManager {
+	//AFNetworking 已经做好了任务调度 管理，不需要写成单例手动管理
 	typealias AFSuccess = (AFHTTPRequestOperation, AnyObject) -> Void
 	typealias AFFail = (AFHTTPRequestOperation, NSError) -> Void
 	
 	class func POST(url:String,parameter:AnyObject!, success:AFSuccess, fail:AFFail) {
 		let url = url.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
 		let manager = AFHTTPRequestOperationManager()
+		
 		manager.POST(url, parameters: parameter, success: { (request, data) -> Void in
 			success(request,data)
 			}, failure: { (request, error) -> Void in
@@ -33,7 +35,7 @@ class NetManager {
 	}
 }
 
-extension NetManager {
+extension AFNetManager {
 	typealias Success = (data:AnyObject) -> ()
 	typealias Fail = (error:NSError) -> Void
 	

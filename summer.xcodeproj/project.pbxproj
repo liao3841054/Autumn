@@ -9,27 +9,35 @@
 /* Begin PBXBuildFile section */
 		632CF3C51B12E9130025F833 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CF3C41B12E9130025F833 /* AppDelegate.swift */; };
 		632CF3C81B12E9130025F833 /* summer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 632CF3C61B12E9130025F833 /* summer.xcdatamodeld */; };
-		632CF3CA1B12E9130025F833 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CF3C91B12E9130025F833 /* ViewController.swift */; };
-		632CF3CD1B12E9130025F833 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632CF3CB1B12E9130025F833 /* Main.storyboard */; };
 		632CF3CF1B12E9130025F833 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632CF3CE1B12E9130025F833 /* Images.xcassets */; };
-		632CF3D21B12E9130025F833 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 632CF3D01B12E9130025F833 /* LaunchScreen.xib */; };
 		632CF3DE1B12E9130025F833 /* summerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CF3DD1B12E9130025F833 /* summerTests.swift */; };
-		632CF3E81B12EA3C0025F833 /* ShareData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CF3E71B12EA3C0025F833 /* ShareData.swift */; };
-		632CF3EA1B13151D0025F833 /* FontModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CF3E91B13151D0025F833 /* FontModel.swift */; };
-		632CF3EC1B1316850025F833 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CF3EB1B1316850025F833 /* BaseModel.swift */; };
-		634DC3061B144E1E00CDB013 /* GCDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634DC3051B144E1E00CDB013 /* GCDManager.swift */; };
-		634DC3081B145A6800CDB013 /* NetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634DC3071B145A6800CDB013 /* NetManager.swift */; };
-		634DC3131B148E9D00CDB013 /* String+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634DC3121B148E9D00CDB013 /* String+Tools.swift */; };
-		634DC3151B148EC200CDB013 /* UIImageView+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634DC3141B148EC200CDB013 /* UIImageView+Tools.swift */; };
-		634DC3171B15AB6300CDB013 /* UIVIew+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634DC3161B15AB6300CDB013 /* UIVIew+Tools.swift */; };
-		634DC3261B15C18000CDB013 /* demoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 634DC3251B15C18000CDB013 /* demoVC.m */; };
-		63CD66A01B21961C00ABECB7 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CD669F1B21961C00ABECB7 /* AlbumViewController.swift */; };
-		63CD66A21B21A29A00ABECB7 /* AlbumImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CD66A11B21A29A00ABECB7 /* AlbumImageView.swift */; };
-		63CD66AC1B229CF300ABECB7 /* Int+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CD66A91B229CF300ABECB7 /* Int+Tools.swift */; };
-		63CD66AD1B229CF300ABECB7 /* NSData+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CD66AA1B229CF300ABECB7 /* NSData+Tools.swift */; };
-		63CD66AE1B229CF300ABECB7 /* NSMutableData+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CD66AB1B229CF300ABECB7 /* NSMutableData+Tools.swift */; };
-		63CD66B01B22A7CC00ABECB7 /* PhotoZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CD66AF1B22A7CC00ABECB7 /* PhotoZoomView.swift */; };
-		63EEE51E1B1AD7EB00AF00D2 /* SignInService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EEE51D1B1AD7EB00AF00D2 /* SignInService.swift */; };
+		63E14E1B1B395867007CE65F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63E14E171B395867007CE65F /* LaunchScreen.xib */; };
+		63E14E1C1B395867007CE65F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E14E191B395867007CE65F /* Main.storyboard */; };
+		63E14E291B395879007CE65F /* Int+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E1F1B395879007CE65F /* Int+Tools.swift */; };
+		63E14E2A1B395879007CE65F /* NSData+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E201B395879007CE65F /* NSData+Tools.swift */; };
+		63E14E2B1B395879007CE65F /* NSMutableData+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E211B395879007CE65F /* NSMutableData+Tools.swift */; };
+		63E14E2C1B395879007CE65F /* String+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E221B395879007CE65F /* String+Tools.swift */; };
+		63E14E2D1B395879007CE65F /* UIImageView+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E231B395879007CE65F /* UIImageView+Tools.swift */; };
+		63E14E2E1B395879007CE65F /* UIVIew+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E241B395879007CE65F /* UIVIew+Tools.swift */; };
+		63E14E2F1B395879007CE65F /* AFNetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E261B395879007CE65F /* AFNetManager.swift */; };
+		63E14E301B395879007CE65F /* GCDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E271B395879007CE65F /* GCDManager.swift */; };
+		63E14E311B395879007CE65F /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E281B395879007CE65F /* NotificationManager.swift */; };
+		63E14E341B395894007CE65F /* CertificateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E331B395894007CE65F /* CertificateManager.swift */; };
+		63E14E391B3958BC007CE65F /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E361B3958BC007CE65F /* BaseModel.swift */; };
+		63E14E3A1B3958BC007CE65F /* FontModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E371B3958BC007CE65F /* FontModel.swift */; };
+		63E14E3B1B3958BC007CE65F /* ShareData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E381B3958BC007CE65F /* ShareData.swift */; };
+		63E14E461B3958C7007CE65F /* AlbumImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E3E1B3958C7007CE65F /* AlbumImageView.swift */; };
+		63E14E471B3958C7007CE65F /* PhotoZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E3F1B3958C7007CE65F /* PhotoZoomView.swift */; };
+		63E14E481B3958C7007CE65F /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E411B3958C7007CE65F /* AlbumViewController.swift */; };
+		63E14E491B3958C7007CE65F /* demoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E441B3958C7007CE65F /* demoVC.m */; };
+		63E14E4A1B3958C7007CE65F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E451B3958C7007CE65F /* ViewController.swift */; };
+		63E14E511B3958D4007CE65F /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E14E4D1B3958D4007CE65F /* libWeChatSDK.a */; };
+		63E14E521B3958D4007CE65F /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = 63E14E4E1B3958D4007CE65F /* read_me.txt */; };
+		63E14E541B395C1A007CE65F /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E14E531B395C1A007CE65F /* libsqlite3.0.dylib */; };
+		63E14E561B395C86007CE65F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E14E551B395C86007CE65F /* libz.dylib */; };
+		63E14E581B395CE3007CE65F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E14E571B395CE3007CE65F /* SystemConfiguration.framework */; };
+		63E14E5E1B395D8E007CE65F /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E14E5D1B395D8D007CE65F /* libc++.dylib */; };
+		63E14E601B395EE6007CE65F /* WechatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E5F1B395EE6007CE65F /* WechatManager.swift */; };
 		95798A6C8B1E5732F55555D9 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD470143EDD4313F3155499 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -48,31 +56,41 @@
 		632CF3C31B12E9130025F833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		632CF3C41B12E9130025F833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		632CF3C71B12E9130025F833 /* summer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = summer.xcdatamodel; sourceTree = "<group>"; };
-		632CF3C91B12E9130025F833 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		632CF3CC1B12E9130025F833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		632CF3CE1B12E9130025F833 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		632CF3D11B12E9130025F833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		632CF3D71B12E9130025F833 /* summerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = summerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		632CF3DC1B12E9130025F833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		632CF3DD1B12E9130025F833 /* summerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = summerTests.swift; sourceTree = "<group>"; };
-		632CF3E71B12EA3C0025F833 /* ShareData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShareData.swift; path = summer/ShareData.swift; sourceTree = "<group>"; };
-		632CF3E91B13151D0025F833 /* FontModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FontModel.swift; path = summer/FontModel.swift; sourceTree = "<group>"; };
-		632CF3EB1B1316850025F833 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseModel.swift; path = summer/BaseModel.swift; sourceTree = "<group>"; };
-		634DC3051B144E1E00CDB013 /* GCDManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GCDManager.swift; path = summer/GCDManager.swift; sourceTree = "<group>"; };
-		634DC3071B145A6800CDB013 /* NetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetManager.swift; path = summer/NetManager.swift; sourceTree = "<group>"; };
 		634DC3091B145ABB00CDB013 /* summer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "summer-Bridging-Header.h"; sourceTree = "<group>"; };
-		634DC3121B148E9D00CDB013 /* String+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Tools.swift"; path = "summer/String+Tools.swift"; sourceTree = "<group>"; };
-		634DC3141B148EC200CDB013 /* UIImageView+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImageView+Tools.swift"; path = "summer/UIImageView+Tools.swift"; sourceTree = "<group>"; };
-		634DC3161B15AB6300CDB013 /* UIVIew+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIVIew+Tools.swift"; path = "summer/UIVIew+Tools.swift"; sourceTree = "<group>"; };
-		634DC3241B15C18000CDB013 /* demoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = demoVC.h; path = summer/demoVC.h; sourceTree = "<group>"; };
-		634DC3251B15C18000CDB013 /* demoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = demoVC.m; path = summer/demoVC.m; sourceTree = "<group>"; };
-		63CD669F1B21961C00ABECB7 /* AlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlbumViewController.swift; path = summer/AlbumViewController.swift; sourceTree = "<group>"; };
-		63CD66A11B21A29A00ABECB7 /* AlbumImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlbumImageView.swift; path = summer/AlbumImageView.swift; sourceTree = "<group>"; };
-		63CD66A91B229CF300ABECB7 /* Int+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Int+Tools.swift"; path = "summer/Int+Tools.swift"; sourceTree = "<group>"; };
-		63CD66AA1B229CF300ABECB7 /* NSData+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSData+Tools.swift"; path = "summer/NSData+Tools.swift"; sourceTree = "<group>"; };
-		63CD66AB1B229CF300ABECB7 /* NSMutableData+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSMutableData+Tools.swift"; path = "summer/NSMutableData+Tools.swift"; sourceTree = "<group>"; };
-		63CD66AF1B22A7CC00ABECB7 /* PhotoZoomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoZoomView.swift; path = summer/PhotoZoomView.swift; sourceTree = "<group>"; };
-		63EEE51D1B1AD7EB00AF00D2 /* SignInService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInService.swift; sourceTree = "<group>"; };
+		63E14E181B395867007CE65F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		63E14E1A1B395867007CE65F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		63E14E1F1B395879007CE65F /* Int+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Tools.swift"; sourceTree = "<group>"; };
+		63E14E201B395879007CE65F /* NSData+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Tools.swift"; sourceTree = "<group>"; };
+		63E14E211B395879007CE65F /* NSMutableData+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableData+Tools.swift"; sourceTree = "<group>"; };
+		63E14E221B395879007CE65F /* String+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Tools.swift"; sourceTree = "<group>"; };
+		63E14E231B395879007CE65F /* UIImageView+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Tools.swift"; sourceTree = "<group>"; };
+		63E14E241B395879007CE65F /* UIVIew+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+Tools.swift"; sourceTree = "<group>"; };
+		63E14E261B395879007CE65F /* AFNetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFNetManager.swift; sourceTree = "<group>"; };
+		63E14E271B395879007CE65F /* GCDManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDManager.swift; sourceTree = "<group>"; };
+		63E14E281B395879007CE65F /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		63E14E331B395894007CE65F /* CertificateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CertificateManager.swift; sourceTree = "<group>"; };
+		63E14E361B3958BC007CE65F /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		63E14E371B3958BC007CE65F /* FontModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontModel.swift; sourceTree = "<group>"; };
+		63E14E381B3958BC007CE65F /* ShareData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareData.swift; sourceTree = "<group>"; };
+		63E14E3E1B3958C7007CE65F /* AlbumImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumImageView.swift; sourceTree = "<group>"; };
+		63E14E3F1B3958C7007CE65F /* PhotoZoomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoZoomView.swift; sourceTree = "<group>"; };
+		63E14E411B3958C7007CE65F /* AlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		63E14E431B3958C7007CE65F /* demoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demoVC.h; sourceTree = "<group>"; };
+		63E14E441B3958C7007CE65F /* demoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = demoVC.m; sourceTree = "<group>"; };
+		63E14E451B3958C7007CE65F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63E14E4D1B3958D4007CE65F /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		63E14E4E1B3958D4007CE65F /* read_me.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = read_me.txt; sourceTree = "<group>"; };
+		63E14E4F1B3958D4007CE65F /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		63E14E501B3958D4007CE65F /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		63E14E531B395C1A007CE65F /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		63E14E551B395C86007CE65F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		63E14E571B395CE3007CE65F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		63E14E5D1B395D8D007CE65F /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		63E14E5F1B395EE6007CE65F /* WechatManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WechatManager.swift; path = ../../../General/Helpers/WechatManager.swift; sourceTree = "<group>"; };
 		7CD470143EDD4313F3155499 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		832947808C0F33D46BA11AC2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EAB421B99656A9536AA5994F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +101,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63E14E5E1B395D8E007CE65F /* libc++.dylib in Frameworks */,
+				63E14E581B395CE3007CE65F /* SystemConfiguration.framework in Frameworks */,
+				63E14E561B395C86007CE65F /* libz.dylib in Frameworks */,
+				63E14E541B395C1A007CE65F /* libsqlite3.0.dylib in Frameworks */,
+				63E14E511B3958D4007CE65F /* libWeChatSDK.a in Frameworks */,
 				95798A6C8B1E5732F55555D9 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +123,10 @@
 		1C0A09B1824270664CF6C6BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				63E14E5D1B395D8D007CE65F /* libc++.dylib */,
+				63E14E571B395CE3007CE65F /* SystemConfiguration.framework */,
+				63E14E551B395C86007CE65F /* libz.dylib */,
+				63E14E531B395C1A007CE65F /* libsqlite3.0.dylib */,
 				7CD470143EDD4313F3155499 /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -108,22 +135,6 @@
 		632CF3B61B12E9130025F833 = {
 			isa = PBXGroup;
 			children = (
-				63CD66AF1B22A7CC00ABECB7 /* PhotoZoomView.swift */,
-				63CD66A91B229CF300ABECB7 /* Int+Tools.swift */,
-				63CD66AA1B229CF300ABECB7 /* NSData+Tools.swift */,
-				63CD66AB1B229CF300ABECB7 /* NSMutableData+Tools.swift */,
-				63CD669F1B21961C00ABECB7 /* AlbumViewController.swift */,
-				63CD66A11B21A29A00ABECB7 /* AlbumImageView.swift */,
-				632CF3E71B12EA3C0025F833 /* ShareData.swift */,
-				634DC3121B148E9D00CDB013 /* String+Tools.swift */,
-				634DC3141B148EC200CDB013 /* UIImageView+Tools.swift */,
-				634DC3161B15AB6300CDB013 /* UIVIew+Tools.swift */,
-				634DC3051B144E1E00CDB013 /* GCDManager.swift */,
-				634DC3071B145A6800CDB013 /* NetManager.swift */,
-				632CF3E91B13151D0025F833 /* FontModel.swift */,
-				632CF3EB1B1316850025F833 /* BaseModel.swift */,
-				634DC3241B15C18000CDB013 /* demoVC.h */,
-				634DC3251B15C18000CDB013 /* demoVC.m */,
 				632CF3C11B12E9130025F833 /* summer */,
 				632CF3DA1B12E9130025F833 /* summerTests */,
 				632CF3C01B12E9130025F833 /* Products */,
@@ -146,12 +157,14 @@
 			isa = PBXGroup;
 			children = (
 				632CF3C41B12E9130025F833 /* AppDelegate.swift */,
-				632CF3C91B12E9130025F833 /* ViewController.swift */,
-				632CF3CB1B12E9130025F833 /* Main.storyboard */,
-				63EEE51D1B1AD7EB00AF00D2 /* SignInService.swift */,
+				63E14E161B395867007CE65F /* Base.lproj */,
+				63E14E1D1B395879007CE65F /* General */,
+				63E14E321B395894007CE65F /* Helpers */,
 				632CF3CE1B12E9130025F833 /* Images.xcassets */,
-				632CF3D01B12E9130025F833 /* LaunchScreen.xib */,
+				63E14E351B3958BC007CE65F /* Model */,
+				63E14E3C1B3958C7007CE65F /* Sections */,
 				632CF3C61B12E9130025F833 /* summer.xcdatamodeld */,
+				63E14E4B1B3958D4007CE65F /* Vendors */,
 				632CF3C21B12E9130025F833 /* Supporting Files */,
 			);
 			path = summer;
@@ -180,6 +193,123 @@
 				632CF3DC1B12E9130025F833 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63E14E161B395867007CE65F /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				63E14E171B395867007CE65F /* LaunchScreen.xib */,
+				63E14E191B395867007CE65F /* Main.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		63E14E1D1B395879007CE65F /* General */ = {
+			isa = PBXGroup;
+			children = (
+				63E14E1E1B395879007CE65F /* Extension */,
+				63E14E251B395879007CE65F /* Helpers */,
+			);
+			name = General;
+			path = Base.lproj/General;
+			sourceTree = "<group>";
+		};
+		63E14E1E1B395879007CE65F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				63E14E1F1B395879007CE65F /* Int+Tools.swift */,
+				63E14E201B395879007CE65F /* NSData+Tools.swift */,
+				63E14E211B395879007CE65F /* NSMutableData+Tools.swift */,
+				63E14E221B395879007CE65F /* String+Tools.swift */,
+				63E14E231B395879007CE65F /* UIImageView+Tools.swift */,
+				63E14E241B395879007CE65F /* UIVIew+Tools.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		63E14E251B395879007CE65F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				63E14E261B395879007CE65F /* AFNetManager.swift */,
+				63E14E271B395879007CE65F /* GCDManager.swift */,
+				63E14E281B395879007CE65F /* NotificationManager.swift */,
+				63E14E5F1B395EE6007CE65F /* WechatManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		63E14E321B395894007CE65F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				63E14E331B395894007CE65F /* CertificateManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		63E14E351B3958BC007CE65F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63E14E361B3958BC007CE65F /* BaseModel.swift */,
+				63E14E371B3958BC007CE65F /* FontModel.swift */,
+				63E14E381B3958BC007CE65F /* ShareData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63E14E3C1B3958C7007CE65F /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				63E14E3D1B3958C7007CE65F /* View */,
+				63E14E401B3958C7007CE65F /* View Controller */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		63E14E3D1B3958C7007CE65F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63E14E3E1B3958C7007CE65F /* AlbumImageView.swift */,
+				63E14E3F1B3958C7007CE65F /* PhotoZoomView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		63E14E401B3958C7007CE65F /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				63E14E411B3958C7007CE65F /* AlbumViewController.swift */,
+				63E14E421B3958C7007CE65F /* demo */,
+				63E14E451B3958C7007CE65F /* ViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		63E14E421B3958C7007CE65F /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				63E14E431B3958C7007CE65F /* demoVC.h */,
+				63E14E441B3958C7007CE65F /* demoVC.m */,
+			);
+			path = demo;
+			sourceTree = "<group>";
+		};
+		63E14E4B1B3958D4007CE65F /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				63E14E4C1B3958D4007CE65F /* WeChatSDK_1.5 */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		63E14E4C1B3958D4007CE65F /* WeChatSDK_1.5 */ = {
+			isa = PBXGroup;
+			children = (
+				63E14E4D1B3958D4007CE65F /* libWeChatSDK.a */,
+				63E14E4E1B3958D4007CE65F /* read_me.txt */,
+				63E14E4F1B3958D4007CE65F /* WXApi.h */,
+				63E14E501B3958D4007CE65F /* WXApiObject.h */,
+			);
+			path = WeChatSDK_1.5;
 			sourceTree = "<group>";
 		};
 		844158BCD26EF8A3E1DE47E7 /* Pods */ = {
@@ -275,8 +405,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				632CF3CD1B12E9130025F833 /* Main.storyboard in Resources */,
-				632CF3D21B12E9130025F833 /* LaunchScreen.xib in Resources */,
+				63E14E1B1B395867007CE65F /* LaunchScreen.xib in Resources */,
+				63E14E1C1B395867007CE65F /* Main.storyboard in Resources */,
+				63E14E521B3958D4007CE65F /* read_me.txt in Resources */,
 				632CF3CF1B12E9130025F833 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,25 +474,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				634DC3131B148E9D00CDB013 /* String+Tools.swift in Sources */,
-				63CD66AC1B229CF300ABECB7 /* Int+Tools.swift in Sources */,
-				634DC3061B144E1E00CDB013 /* GCDManager.swift in Sources */,
-				63CD66A21B21A29A00ABECB7 /* AlbumImageView.swift in Sources */,
-				632CF3EC1B1316850025F833 /* BaseModel.swift in Sources */,
-				632CF3EA1B13151D0025F833 /* FontModel.swift in Sources */,
-				632CF3CA1B12E9130025F833 /* ViewController.swift in Sources */,
-				634DC3261B15C18000CDB013 /* demoVC.m in Sources */,
-				63CD66A01B21961C00ABECB7 /* AlbumViewController.swift in Sources */,
-				634DC3171B15AB6300CDB013 /* UIVIew+Tools.swift in Sources */,
-				634DC3151B148EC200CDB013 /* UIImageView+Tools.swift in Sources */,
+				63E14E2A1B395879007CE65F /* NSData+Tools.swift in Sources */,
+				63E14E341B395894007CE65F /* CertificateManager.swift in Sources */,
 				632CF3C81B12E9130025F833 /* summer.xcdatamodeld in Sources */,
-				63EEE51E1B1AD7EB00AF00D2 /* SignInService.swift in Sources */,
-				634DC3081B145A6800CDB013 /* NetManager.swift in Sources */,
-				63CD66B01B22A7CC00ABECB7 /* PhotoZoomView.swift in Sources */,
-				63CD66AD1B229CF300ABECB7 /* NSData+Tools.swift in Sources */,
-				63CD66AE1B229CF300ABECB7 /* NSMutableData+Tools.swift in Sources */,
+				63E14E601B395EE6007CE65F /* WechatManager.swift in Sources */,
+				63E14E491B3958C7007CE65F /* demoVC.m in Sources */,
+				63E14E391B3958BC007CE65F /* BaseModel.swift in Sources */,
+				63E14E2E1B395879007CE65F /* UIVIew+Tools.swift in Sources */,
+				63E14E2F1B395879007CE65F /* AFNetManager.swift in Sources */,
+				63E14E3A1B3958BC007CE65F /* FontModel.swift in Sources */,
+				63E14E311B395879007CE65F /* NotificationManager.swift in Sources */,
+				63E14E471B3958C7007CE65F /* PhotoZoomView.swift in Sources */,
+				63E14E4A1B3958C7007CE65F /* ViewController.swift in Sources */,
+				63E14E3B1B3958BC007CE65F /* ShareData.swift in Sources */,
+				63E14E301B395879007CE65F /* GCDManager.swift in Sources */,
+				63E14E2D1B395879007CE65F /* UIImageView+Tools.swift in Sources */,
+				63E14E481B3958C7007CE65F /* AlbumViewController.swift in Sources */,
 				632CF3C51B12E9130025F833 /* AppDelegate.swift in Sources */,
-				632CF3E81B12EA3C0025F833 /* ShareData.swift in Sources */,
+				63E14E2B1B395879007CE65F /* NSMutableData+Tools.swift in Sources */,
+				63E14E2C1B395879007CE65F /* String+Tools.swift in Sources */,
+				63E14E461B3958C7007CE65F /* AlbumImageView.swift in Sources */,
+				63E14E291B395879007CE65F /* Int+Tools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,20 +517,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		632CF3CB1B12E9130025F833 /* Main.storyboard */ = {
+		63E14E171B395867007CE65F /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				632CF3CC1B12E9130025F833 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		632CF3D01B12E9130025F833 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				632CF3D11B12E9130025F833 /* Base */,
+				63E14E181B395867007CE65F /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		63E14E191B395867007CE65F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63E14E1A1B395867007CE65F /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -496,6 +629,10 @@
 				INFOPLIST_FILE = summer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/summer/Vendors/WeChatSDK_1.5",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "summer-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -512,6 +649,10 @@
 				INFOPLIST_FILE = summer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/summer/Vendors/WeChatSDK_1.5",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "summer-Bridging-Header.h";
 			};
