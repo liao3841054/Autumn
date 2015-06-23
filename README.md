@@ -8,3 +8,8 @@
 * NotificationManager 本地消息推送 单例方法
 
 * BaseModel JSON数据安全的映射到model中方便提取
+* WechatManager 微信 授权 支付 manager
+* AlbumViewController  流畅高能效体验较好的相册浏览器
+
+* String+Tools
+  * isMobileNumber正则表达式判断是否手机号

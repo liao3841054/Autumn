@@ -21,7 +21,6 @@ class ViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		
 		println(ShareData.instance.index)
 		
 		//MARK: GCD异步延时
@@ -62,7 +61,7 @@ class ViewController: UIViewController {
 		}
 		
 		var vaidNameSignal = self.name.rac_textSignal().map { (dat) -> AnyObject! in
-			return count(dat as! String) > 3
+			return (dat as! String).isMobileNumber
 		}
 		var vaidPasswdSignal = self.pwssword.rac_textSignal().map { (dat) -> AnyObject! in
 			return count(dat as! String) > 4

@@ -1,6 +1,6 @@
 //
 //  String+Tools.swift
-//  
+//
 //
 //  Created by Ding Soung on 15/5/26.
 //
@@ -26,14 +26,21 @@ extension String {
 		result.dealloc(digestLen)
 		return hash as String
 	}
-	
-	func hexString() -> String {
+	//MARK: 由NSString扩展而来
+	var hexString: String {
 		return (self as NSString).dataUsingEncoding(NSUTF8StringEncoding)!.hexString
 	}
-	func MD5() -> String {
+	var MD5: String {
 		return (self as NSString).dataUsingEncoding(NSUTF8StringEncoding)!.MD5().hexString
 	}
-	func SHA1() -> String {
+	var SHA1: String {
 		return (self as NSString).dataUsingEncoding(NSUTF8StringEncoding)!.SHA1().hexString
+	}
+	
+	//MARK: 是否为手机号
+	var isMobileNumber: Bool {
+		//前缀0 86 17951 或者没有  中间13* 15* 17* 145 147 后加8个0～9的数
+		var format = NSPredicate(format: "SELF MATCHES %@", "^(0|86|086|17951)?1(3[0-9]|4[57]|7[0-9]|8[0123456789])[0-9]{8}$")
+		return format.evaluateWithObject(self)
 	}
 }
