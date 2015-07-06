@@ -36,7 +36,7 @@ class AlbumViewController: UIViewController, UITableViewDelegate, UITableViewDat
 		tableView.delegate = self
 		tableView.dataSource = self
 		self.view.addSubview(tableView)
-	}
+    }
 	override func viewWillAppear(animated: Bool) {
 		super.viewWillAppear(animated)
 		

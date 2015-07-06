@@ -6,8 +6,6 @@
 //  Copyright (c) 2015年 xinyihezi. All rights reserved.
 //
 
-import UIKit
-
 extension NSData {
 	
 	public func checksum() -> UInt16 {
