@@ -16,7 +16,6 @@ class ViewController: UIViewController {
 	@IBOutlet weak var sigIn: UIButton!
 	private var nameIsValid = false
 	private var passwordISValid = false
-	private var sigInService: SignInService!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()

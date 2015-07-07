@@ -7,6 +7,7 @@
 //
 
 extension String {
+    
 	//MARK: 转浮点数
 	var floatValue: Float {
 		return (self as NSString).floatValue
@@ -26,15 +27,16 @@ extension String {
 		result.dealloc(digestLen)
 		return hash as String
 	}
+    
 	//MARK: 由NSString扩展而来
 	var hexString: String {
 		return (self as NSString).dataUsingEncoding(NSUTF8StringEncoding)!.hexString
 	}
 	var MD5: String {
-		return (self as NSString).dataUsingEncoding(NSUTF8StringEncoding)!.MD5().hexString
+		return (self as NSString).dataUsingEncoding(NSUTF8StringEncoding)!.MD5.hexString
 	}
 	var SHA1: String {
-		return (self as NSString).dataUsingEncoding(NSUTF8StringEncoding)!.SHA1().hexString
+		return (self as NSString).dataUsingEncoding(NSUTF8StringEncoding)!.SHA1.hexString
 	}
 	
 	//MARK: 是否为手机号

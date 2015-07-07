@@ -7,6 +7,8 @@ var str = "Hello, playground"
 
 
 
+
 var view = UIView(frame: CGRectMake(0, 0, 200, 300))
 view.backgroundColor = UIColor.redColor()
+
 

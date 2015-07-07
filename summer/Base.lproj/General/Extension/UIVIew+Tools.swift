@@ -9,6 +9,7 @@
 import UIKit
 
 extension UIView {
+    
 	//MARK: 设置阴影
 	func setShadow(color:CGColor? = UIColor.blackColor().CGColor, offset:CGSize? = CGSizeMake(0.25, 0.5), opacity:Float? = 0.15, radius:CGFloat? = 1.5) {
 		if let v = color { self.layer.shadowColor = v }

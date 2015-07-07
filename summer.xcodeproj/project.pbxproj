@@ -22,7 +22,6 @@
 		63E14E2F1B395879007CE65F /* AFNetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E261B395879007CE65F /* AFNetManager.swift */; };
 		63E14E301B395879007CE65F /* GCDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E271B395879007CE65F /* GCDManager.swift */; };
 		63E14E311B395879007CE65F /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E281B395879007CE65F /* NotificationManager.swift */; };
-		63E14E341B395894007CE65F /* CertificateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E331B395894007CE65F /* CertificateManager.swift */; };
 		63E14E391B3958BC007CE65F /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E361B3958BC007CE65F /* BaseModel.swift */; };
 		63E14E3A1B3958BC007CE65F /* FontModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E371B3958BC007CE65F /* FontModel.swift */; };
 		63E14E3B1B3958BC007CE65F /* ShareData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E381B3958BC007CE65F /* ShareData.swift */; };
@@ -39,6 +38,7 @@
 		63E14E5E1B395D8E007CE65F /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E14E5D1B395D8D007CE65F /* libc++.dylib */; };
 		63E14E601B395EE6007CE65F /* WechatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E5F1B395EE6007CE65F /* WechatManager.swift */; };
 		95798A6C8B1E5732F55555D9 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD470143EDD4313F3155499 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FA6FCE731B4BB29100973165 /* CertificateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FCE721B4BB29100973165 /* CertificateModel.swift */; };
 		FAFED7ED1B47BBA2009CA0B7 /* UIColor+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFED7EC1B47BBA2009CA0B7 /* UIColor+Tools.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,7 +73,6 @@
 		63E14E261B395879007CE65F /* AFNetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFNetManager.swift; sourceTree = "<group>"; };
 		63E14E271B395879007CE65F /* GCDManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDManager.swift; sourceTree = "<group>"; };
 		63E14E281B395879007CE65F /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
-		63E14E331B395894007CE65F /* CertificateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CertificateManager.swift; sourceTree = "<group>"; };
 		63E14E361B3958BC007CE65F /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		63E14E371B3958BC007CE65F /* FontModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontModel.swift; sourceTree = "<group>"; };
 		63E14E381B3958BC007CE65F /* ShareData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareData.swift; sourceTree = "<group>"; };
@@ -96,6 +95,7 @@
 		832947808C0F33D46BA11AC2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EAB421B99656A9536AA5994F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FA00F4AF1B4530D3004CA315 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MyPlayground.playground; path = ../MyPlayground.playground; sourceTree = "<group>"; };
+		FA6FCE721B4BB29100973165 /* CertificateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CertificateModel.swift; sourceTree = "<group>"; };
 		FAFED7EC1B47BBA2009CA0B7 /* UIColor+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Tools.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -246,7 +246,6 @@
 		63E14E321B395894007CE65F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				63E14E331B395894007CE65F /* CertificateManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -254,6 +253,7 @@
 		63E14E351B3958BC007CE65F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FA6FCE721B4BB29100973165 /* CertificateModel.swift */,
 				63E14E361B3958BC007CE65F /* BaseModel.swift */,
 				63E14E371B3958BC007CE65F /* FontModel.swift */,
 				63E14E381B3958BC007CE65F /* ShareData.swift */,
@@ -480,8 +480,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				63E14E2A1B395879007CE65F /* NSData+Tools.swift in Sources */,
+				FA6FCE731B4BB29100973165 /* CertificateModel.swift in Sources */,
 				FAFED7ED1B47BBA2009CA0B7 /* UIColor+Tools.swift in Sources */,
-				63E14E341B395894007CE65F /* CertificateManager.swift in Sources */,
 				632CF3C81B12E9130025F833 /* summer.xcdatamodeld in Sources */,
 				63E14E601B395EE6007CE65F /* WechatManager.swift in Sources */,
 				63E14E491B3958C7007CE65F /* demoVC.m in Sources */,

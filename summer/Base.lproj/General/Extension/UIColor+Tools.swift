@@ -8,8 +8,8 @@
 
 
 extension UIColor {
-    //MARK:  UIColor for Hex number
-    public func hexInr(FFFFFFFF:Int) -> UIColor {
+    //MARK: UIColor for Hex number
+    public func hexInt(FFFFFFFF:Int) -> UIColor {
         let r = FFFFFFFF >> 24
         let g = (FFFFFFFF >> 16) & 0xFF
         let b = (FFFFFFFF >> 8) & 0xFF
@@ -22,7 +22,7 @@ extension UIColor {
         }
         if count(FFFFFFFF) == 10 {
             if let ffffffff = FFFFFFFF.toInt() {
-                return hexInr(ffffffff)
+                return hexInt(ffffffff)
             } else {
                 assert(false, "string value error")
             }

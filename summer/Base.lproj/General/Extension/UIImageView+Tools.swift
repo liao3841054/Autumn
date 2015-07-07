@@ -7,6 +7,7 @@
 //
 
 extension UIImageView {
+    
 	//MARK: 按比例或者指定尺寸缩放Image
 	class func imageScale(image: UIImage!, ratio: CGFloat) -> UIImage {
 		UIGraphicsBeginImageContext(CGSizeMake(image.size.width * ratio,image.size.height * ratio));

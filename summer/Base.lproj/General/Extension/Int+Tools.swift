@@ -7,7 +7,7 @@
 //
 
 extension Int {
-	func hexString() -> String {
+    var hexString: String {
 		return String(format:"%02x", self)
 	}
 }

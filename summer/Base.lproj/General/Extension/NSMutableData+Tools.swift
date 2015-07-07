@@ -8,9 +8,8 @@
 
 extension NSMutableData {
 	
-	/** Convenient way to append bytes */
+	//MARK: Convenient way to append bytes
 	internal func appendBytes(arrayOfBytes: [UInt8]) {
 		self.appendBytes(arrayOfBytes, length: arrayOfBytes.count)
 	}
-	
 }
