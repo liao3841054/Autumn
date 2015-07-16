@@ -11,53 +11,69 @@ import UIKit
 protocol AlbumImageViewDelegate {
 	func albumImageViewSignalTaped()
 }
-class AlbumImageView: UIView, UIScrollViewDelegate {
+class AlbumImageView: UITableViewCell, UIScrollViewDelegate {
 	
 	var img: UIImageView!
 	var delegate:AlbumImageViewDelegate?
 	private var scrollView:UIScrollView!
 	private var containerView:UIView!
 	
-	override init(frame: CGRect) {
-		super.init(frame: frame)
-		
-		self.backgroundColor = UIColor.clearColor()
-		
-		self.scrollView = UIScrollView(frame: self.bounds)
-		self.scrollView.backgroundColor = UIColor.clearColor()
-		self.scrollView.autoresizingMask = UIViewAutoresizing.FlexibleHeight | UIViewAutoresizing.FlexibleWidth
-		self.scrollView.showsHorizontalScrollIndicator = false
-		self.scrollView.showsVerticalScrollIndicator = false
-		self.scrollView.delegate = self
-		self.scrollView.bounces = false
-		self.scrollView.maximumZoomScale = 5.0
-		self.scrollView.minimumZoomScale = 1.0
-		self.scrollView.zoomScale = 1.0
-		self.addSubview(self.scrollView)
-		
-		self.containerView = UIView(frame: self.bounds)
-		self.containerView.backgroundColor = UIColor.clearColor()
-		self.scrollView.addSubview(self.containerView)
-		
-		self.img = UIImageView(frame: frame)
-		self.img.backgroundColor = UIColor.clearColor()
-		self.img.clipsToBounds = true
-		self.img.contentMode = UIViewContentMode.ScaleAspectFit
-		self.containerView.addSubview(self.img)
-		
-		var doubleTapGesture = UITapGestureRecognizer(target: self, action: "tapAction:")
-		doubleTapGesture.numberOfTapsRequired = 2
-		self.containerView.addGestureRecognizer(doubleTapGesture)
-		var tapGesture = UITapGestureRecognizer(target: self, action: "tapAction:")
-		tapGesture.numberOfTapsRequired = 1
-		self.containerView.addGestureRecognizer(tapGesture)
-		tapGesture.requireGestureRecognizerToFail(doubleTapGesture) //双击失败后执行单击
-		
-		//init process
-	}
+    
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        
+        self.backgroundColor = UIColor.clearColor()
+        
+        self.scrollView = UIScrollView(frame: self.bounds)
+        self.scrollView.backgroundColor = UIColor.clearColor()
+        self.scrollView.autoresizingMask = UIViewAutoresizing.FlexibleHeight | UIViewAutoresizing.FlexibleWidth
+        self.scrollView.showsHorizontalScrollIndicator = false
+        self.scrollView.showsVerticalScrollIndicator = false
+        self.scrollView.delegate = self
+        self.scrollView.bounces = false
+        self.scrollView.maximumZoomScale = 5.0
+        self.scrollView.minimumZoomScale = 1.0
+        self.scrollView.zoomScale = 1.0
+        self.addSubview(self.scrollView)
+        
+        self.containerView = UIView(frame: self.bounds)
+        self.containerView.backgroundColor = UIColor.clearColor()
+        self.scrollView.addSubview(self.containerView)
+        
+        self.img = UIImageView(frame: frame)
+        self.img.backgroundColor = UIColor.clearColor()
+        self.img.clipsToBounds = true
+        self.img.contentMode = UIViewContentMode.ScaleAspectFit
+        self.containerView.addSubview(self.img)
+        
+        var doubleTapGesture = UITapGestureRecognizer(target: self, action: "tapAction:")
+        doubleTapGesture.numberOfTapsRequired = 2
+        self.containerView.addGestureRecognizer(doubleTapGesture)
+        var tapGesture = UITapGestureRecognizer(target: self, action: "tapAction:")
+        tapGesture.numberOfTapsRequired = 1
+        self.containerView.addGestureRecognizer(tapGesture)
+        tapGesture.requireGestureRecognizerToFail(doubleTapGesture) //双击失败后执行单击
+        
+        //init process
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
+    override func setSelected(selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+    }
+    
 	required init(coder aDecoder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
 	}
+    
+    
+    override func drawRect(rect: CGRect) {
+        super.drawRect(rect)
+    }
 	
 	//MARK: ScrollView delegate
 	func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {

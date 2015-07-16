@@ -62,7 +62,7 @@ class WechatManager {
 	//MARK: WeChat call Back
 	 //to weChat
 	func onReq(req: BaseReq!) {
-		print(req.openID)
+		println(req.openID)
 	}
 	
 	//from weChat

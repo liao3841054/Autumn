@@ -94,7 +94,7 @@
 		7CD470143EDD4313F3155499 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		832947808C0F33D46BA11AC2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EAB421B99656A9536AA5994F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		FA00F4AF1B4530D3004CA315 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MyPlayground.playground; path = ../MyPlayground.playground; sourceTree = "<group>"; };
+		FA00F4AF1B4530D3004CA315 /* summer.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = summer.playground; path = ../summer.playground; sourceTree = "<group>"; };
 		FA6FCE721B4BB29100973165 /* CertificateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CertificateModel.swift; sourceTree = "<group>"; };
 		FAFED7EC1B47BBA2009CA0B7 /* UIColor+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Tools.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,7 +159,7 @@
 		632CF3C11B12E9130025F833 /* summer */ = {
 			isa = PBXGroup;
 			children = (
-				FA00F4AF1B4530D3004CA315 /* MyPlayground.playground */,
+				FA00F4AF1B4530D3004CA315 /* summer.playground */,
 				632CF3C41B12E9130025F833 /* AppDelegate.swift */,
 				63E14E161B395867007CE65F /* Base.lproj */,
 				63E14E1D1B395879007CE65F /* General */,
