@@ -24,7 +24,7 @@ class NotificationManager {
 	//MARK: 定时发送通知消息
 	func scheduleNotification(itemID:Int = 0,delaySeconds:NSTimeInterval? = 2,timeZone:NSTimeZone? = NSTimeZone.defaultTimeZone(),message:String? = "default meaasge form Notification Manager"){
 		self.cancelNotification(itemID) //如果已存在该通知消息，则先取消
-		var localNotification = UILocalNotification() //创建UILocalNotification来进行本地消息通知
+		let localNotification = UILocalNotification() //创建UILocalNotification来进行本地消息通知
 		localNotification.fireDate =  NSDate(timeIntervalSinceNow: delaySeconds!) //推送时间（设置为x秒）
 		localNotification.timeZone = timeZone //时区
 		localNotification.alertBody = message //推送内容
@@ -32,8 +32,8 @@ class NotificationManager {
 		localNotification.userInfo = ["ItemID":itemID] //额外信息
 		UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
 	}
-	func scheduleNotification(itemID:Int,delaySeconds:NSTimeInterval,timeZone:NSTimeZone,message:String){
-		self.scheduleNotification(itemID: itemID, delaySeconds: delaySeconds, timeZone: timeZone, message: message)
+	func scheduleNotificationOC(itemID:Int,delaySeconds:NSTimeInterval,timeZone:NSTimeZone,message:String){
+		self.scheduleNotification(itemID, delaySeconds: delaySeconds, timeZone: timeZone, message: message)
 	}
 	
 	//MARK: 取消通知消息
@@ -45,14 +45,15 @@ class NotificationManager {
 	}
 	//MARK: 通过遍历所有消息推送，通过itemid的对比，返回UIlocalNotification
 	func notificationForItem(itemID:Int) -> UILocalNotification? {
-		let allNotifications = UIApplication.sharedApplication().scheduledLocalNotifications
-		for notification in allNotifications {
-			var info:Dictionary<String,Int>? = notification.userInfo as? Dictionary
-			var number = info?["ItemID"]
-			if number != nil && number == itemID {
-				return notification as? UILocalNotification
-			}
-		}
+        if let allNotifications = UIApplication.sharedApplication().scheduledLocalNotifications as [UILocalNotification]! {
+            for notification in allNotifications {
+                var info = notification.userInfo as? Dictionary<String,Int>
+                let number = info?["ItemID"]
+                if number != nil && number == itemID {
+                    return notification
+                }
+            }
+        }
 		return nil
 	}
 	

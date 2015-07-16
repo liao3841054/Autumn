@@ -73,7 +73,7 @@ class AlbumViewController: UIViewController, UITableViewDelegate, UITableViewDat
 	}
 	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 		let cellIdentifer = "Cell"
-		var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifer) as? UITableViewCell
+		var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifer) as UITableViewCell?
 		if cell == nil {
 			cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: cellIdentifer)
 			cell?.accessoryType = UITableViewCellAccessoryType.None
@@ -81,7 +81,7 @@ class AlbumViewController: UIViewController, UITableViewDelegate, UITableViewDat
 			cell?.backgroundColor = UIColor.clearColor()
 			
 			//set View
-			var view = AlbumImageView(frame: self.view.frame)
+			let view = AlbumImageView(frame: self.view.frame)
 			view.delegate = self
 			view.img.sd_setImageWithURL(NSURL(string: self.urlArray[indexPath.section]), placeholderImage: UIImage(named: ""))
 			cell?.contentView.addSubview(view)

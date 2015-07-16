@@ -10,7 +10,8 @@ import UIKit
 
 class BaseModel: NSObject {
 	
-	//MARK: JSON转model
+    #if false
+    //MARK: JSON转model
 	init(JSONString: String) {
 		super.init()
 		var error : NSError?
@@ -25,25 +26,26 @@ class BaseModel: NSObject {
 			}
 		}
 	}
+    #endif
 	
 	//MARK: 字典转model
-	init(JSONDic : NSDictionary) {
+	init(JSONDic : [String : AnyObject]) {
 		super.init()
-		self.setValuesForKeysWithDictionary(JSONDic as [NSObject : AnyObject])
+        self.setValuesForKeysWithDictionary(JSONDic)
 	}
 	
 	//MARK: 字典转array
 	class func modelWithArray(dictArray:[NSDictionary]) -> NSArray {
-		var array: NSMutableArray = []
+		let array: NSMutableArray = []
 		for dic in dictArray {
-			var model = self.new()
-			model.setValuesForKeysWithDictionary(dic as [NSObject : AnyObject])
+			let model = self.new()
+			model.setValuesForKeysWithDictionary(dic as! [String : AnyObject])
 			array.addObject(model)
 		}
 		return array
 	}
 	
 	override func setValue(value: AnyObject!, forUndefinedKey key: String) {
-		println("未定义的key:\(key) for value:\(value)")
+		print("未定义的key:\(key) for value:\(value)")
 	}
 }

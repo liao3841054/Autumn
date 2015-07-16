@@ -373,12 +373,13 @@
 		632CF3B71B12E9130025F833 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Ding Soung";
 				TargetAttributes = {
 					632CF3BE1B12E9130025F833 = {
 						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = 74H7DHDVF5;
+						DevelopmentTeam = 7R3E2Y2ETG;
 					};
 					632CF3D61B12E9130025F833 = {
 						CreatedOnToolsVersion = 6.3.2;

@@ -30,7 +30,7 @@ class CertificateModel {
     
     
 	func signInWithNamePassWD(name:String, passWD:String, success: (Bool) -> Void){
-		var result = true
+		let result = true
 		success(result)
 	}
    

@@ -20,7 +20,7 @@ extension String {
 		let digestLen = Int(CC_MD5_DIGEST_LENGTH)
 		let result = UnsafeMutablePointer<CUnsignedChar>.alloc(digestLen)
 		CC_MD5(str!, strLen, result)
-		var hash = NSMutableString()
+		let hash = NSMutableString()
 		for i in 0..<digestLen {
 			hash.appendFormat("%02x", result[i])
 		}
@@ -42,14 +42,14 @@ extension String {
 	//MARK: 是否为手机号
 	var isMobileNumber: Bool {
 		//前缀0 86 17951 或者没有  中间13* 15* 17* 145 147 后加8个0～9的数
-		var format = NSPredicate(format: "SELF MATCHES %@", "^(0|86|086|17951)?1(3[0-9]|4[57]|7[0-9]|8[0123456789])[0-9]{8}$")
+		let format = NSPredicate(format: "SELF MATCHES %@", "^(0|86|086|17951)?1(3[0-9]|4[57]|7[0-9]|8[0123456789])[0-9]{8}$")
 		return format.evaluateWithObject(self)
 	}
 	
 	//MARK: 是否为一代或二代身份证号
 	var isIDCard: Bool {
-		var format1 = NSPredicate(format: "SELF MATCHES %@", "^[1-9]\\d{7}((0\\d)|(1[0-2]))(([0|1|2]\\d)|3[0-1])\\d{3}$")
-		var format2 = NSPredicate(format: "SELF MATCHES %@", "^[1-9]\\d{5}[1-9]\\d{3}((0\\d)|(1[0-2))(([0|1|2]\\d)|2[0-1])\\d{4}$")
+		let format1 = NSPredicate(format: "SELF MATCHES %@", "^[1-9]\\d{7}((0\\d)|(1[0-2]))(([0|1|2]\\d)|3[0-1])\\d{3}$")
+		let format2 = NSPredicate(format: "SELF MATCHES %@", "^[1-9]\\d{5}[1-9]\\d{3}((0\\d)|(1[0-2))(([0|1|2]\\d)|2[0-1])\\d{4}$")
 		return format1.evaluateWithObject(self) || format2.evaluateWithObject(self)
 	}
 	

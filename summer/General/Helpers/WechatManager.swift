@@ -45,14 +45,14 @@ class WechatManager {
 		return WXApi.isWXAppInstalled()
 	}
 	func wechatAuthShare(message:String){
-		var req = SendMessageToWXReq()
-		req.scene = Int32(WXSceneSession.value)
+		let req = SendMessageToWXReq()
+		req.scene = Int32(WXSceneSession.rawValue)
 		req.text = "test weChat Share"
 		req.bText = true
 		WXApi.sendReq(req)
 	}
 	func wechatAuth() {
-		var req = SendAuthReq()
+		let req = SendAuthReq()
 		req.scope = "snsapi_userinfo"
 		req.state = "wechat_sdk_demo"  //"73746172626f796368696e61"//于防止csrf攻击
 		WXApi.sendReq(req)
@@ -62,7 +62,7 @@ class WechatManager {
 	//MARK: WeChat call Back
 	 //to weChat
 	func onReq(req: BaseReq!) {
-		println(req.openID)
+		print(req.openID)
 	}
 	
 	//from weChat
@@ -75,7 +75,7 @@ class WechatManager {
 		
 		if (resp.isKindOfClass(SendAuthResp)) {
 			if let temp = resp as? SendAuthResp {
-				var url = "https://api.weixin.qq.com/sns/oauth2/access_token?"
+				let url = "https://api.weixin.qq.com/sns/oauth2/access_token?"
 					+ "appid=" + weChatAppID
 					+ "&secret=" + weChatAppSecret
 					+ "&code=" + temp.code

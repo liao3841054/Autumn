@@ -27,7 +27,7 @@ class AlbumImageView: UITableViewCell, UIScrollViewDelegate {
         
         self.scrollView = UIScrollView(frame: self.bounds)
         self.scrollView.backgroundColor = UIColor.clearColor()
-        self.scrollView.autoresizingMask = UIViewAutoresizing.FlexibleHeight | UIViewAutoresizing.FlexibleWidth
+        self.scrollView.autoresizingMask = [UIViewAutoresizing.FlexibleHeight, UIViewAutoresizing.FlexibleWidth]
         self.scrollView.showsHorizontalScrollIndicator = false
         self.scrollView.showsVerticalScrollIndicator = false
         self.scrollView.delegate = self
@@ -47,10 +47,10 @@ class AlbumImageView: UITableViewCell, UIScrollViewDelegate {
         self.img.contentMode = UIViewContentMode.ScaleAspectFit
         self.containerView.addSubview(self.img)
         
-        var doubleTapGesture = UITapGestureRecognizer(target: self, action: "tapAction:")
+        let doubleTapGesture = UITapGestureRecognizer(target: self, action: "tapAction:")
         doubleTapGesture.numberOfTapsRequired = 2
         self.containerView.addGestureRecognizer(doubleTapGesture)
-        var tapGesture = UITapGestureRecognizer(target: self, action: "tapAction:")
+        let tapGesture = UITapGestureRecognizer(target: self, action: "tapAction:")
         tapGesture.numberOfTapsRequired = 1
         self.containerView.addGestureRecognizer(tapGesture)
         tapGesture.requireGestureRecognizerToFail(doubleTapGesture) //双击失败后执行单击
@@ -80,10 +80,10 @@ class AlbumImageView: UITableViewCell, UIScrollViewDelegate {
 		return self.containerView
 	}
 	func scrollViewDidZoom(scrollView: UIScrollView) {
-		var Ws = self.scrollView.frame.size.width - self.scrollView.contentInset.left - self.scrollView.contentInset.right
-		var Hs = self.scrollView.frame.size.height - self.scrollView.contentInset.top - self.scrollView.contentInset.bottom
-		var W = self.containerView.frame.size.width
-		var H = self.containerView.frame.size.height
+		let Ws = self.scrollView.frame.size.width - self.scrollView.contentInset.left - self.scrollView.contentInset.right
+		let Hs = self.scrollView.frame.size.height - self.scrollView.contentInset.top - self.scrollView.contentInset.bottom
+		let W = self.containerView.frame.size.width
+		let H = self.containerView.frame.size.height
 		var rct = self.containerView.frame
 		rct.origin.x = max((Ws - W) * 0.5, 0)
 		rct.origin.y = max((Hs - H) * 0.5, 0)
@@ -116,12 +116,12 @@ class AlbumImageView: UITableViewCell, UIScrollViewDelegate {
 		var newSize = CGSizeZero
 		if(oldSize.width > maxSize.width ||  oldSize.height > maxSize.height) {
 			var bs = self.getImgWithFactor()
-			var newHeight = oldSize.height * bs
+			let newHeight = oldSize.height * bs
 			newSize = CGSizeMake(maxSize.width, newHeight)
 			
 			if(newHeight > maxSize.height) {
 				bs = self.getImgHeightFactor()
-				var newWidth = oldSize.width * bs
+				let newWidth = oldSize.width * bs
 				newSize = CGSizeMake(newWidth, maxSize.height)
 			}
 		} else {
