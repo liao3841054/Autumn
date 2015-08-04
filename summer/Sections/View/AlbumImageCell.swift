@@ -11,9 +11,21 @@ import UIKit
 protocol AlbumImageViewDelegate {
 	func albumImageViewSignalTaped()
 }
-class AlbumImageView: UITableViewCell, UIScrollViewDelegate {
+
+class AlbumImageCell: UITableViewCell, UIScrollViewDelegate {
 	
-	var img: UIImageView!
+    var imageUrl:String? {
+        set {
+            if let value = newValue {
+                self.img.sd_setImageWithURL(NSURL(string: value), placeholderImage: nil)
+            }
+        }
+        get {
+            return nil
+        }
+    }
+    
+    var img: UIImageView!
 	var delegate:AlbumImageViewDelegate?
 	private var scrollView:UIScrollView!
 	private var containerView:UIView!

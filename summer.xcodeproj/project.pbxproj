@@ -24,7 +24,7 @@
 		63E14E391B3958BC007CE65F /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E361B3958BC007CE65F /* BaseModel.swift */; };
 		63E14E3A1B3958BC007CE65F /* FontModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E371B3958BC007CE65F /* FontModel.swift */; };
 		63E14E3B1B3958BC007CE65F /* ShareData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E381B3958BC007CE65F /* ShareData.swift */; };
-		63E14E461B3958C7007CE65F /* AlbumImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E3E1B3958C7007CE65F /* AlbumImageView.swift */; };
+		63E14E461B3958C7007CE65F /* AlbumImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E3E1B3958C7007CE65F /* AlbumImageCell.swift */; };
 		63E14E471B3958C7007CE65F /* PhotoZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E3F1B3958C7007CE65F /* PhotoZoomView.swift */; };
 		63E14E481B3958C7007CE65F /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E411B3958C7007CE65F /* AlbumViewController.swift */; };
 		63E14E491B3958C7007CE65F /* demoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E441B3958C7007CE65F /* demoVC.m */; };
@@ -34,6 +34,9 @@
 		63E14E581B395CE3007CE65F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E14E571B395CE3007CE65F /* SystemConfiguration.framework */; };
 		63E14E601B395EE6007CE65F /* WechatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E5F1B395EE6007CE65F /* WechatManager.swift */; };
 		95798A6C8B1E5732F55555D9 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD470143EDD4313F3155499 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FA349A661B70D29900DF021E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA349A651B70D29900DF021E /* libc++.tbd */; };
+		FA349A681B70D2A800DF021E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA349A671B70D2A800DF021E /* libsqlite3.tbd */; };
+		FA349A6A1B70D2B200DF021E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FA349A691B70D2B200DF021E /* libz.tbd */; };
 		FA6FCE731B4BB29100973165 /* CertificateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FCE721B4BB29100973165 /* CertificateModel.swift */; };
 		FAFED7ED1B47BBA2009CA0B7 /* UIColor+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFED7EC1B47BBA2009CA0B7 /* UIColor+Tools.swift */; };
 /* End PBXBuildFile section */
@@ -71,7 +74,7 @@
 		63E14E361B3958BC007CE65F /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		63E14E371B3958BC007CE65F /* FontModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontModel.swift; sourceTree = "<group>"; };
 		63E14E381B3958BC007CE65F /* ShareData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareData.swift; sourceTree = "<group>"; };
-		63E14E3E1B3958C7007CE65F /* AlbumImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumImageView.swift; sourceTree = "<group>"; };
+		63E14E3E1B3958C7007CE65F /* AlbumImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumImageCell.swift; sourceTree = "<group>"; };
 		63E14E3F1B3958C7007CE65F /* PhotoZoomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoZoomView.swift; sourceTree = "<group>"; };
 		63E14E411B3958C7007CE65F /* AlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		63E14E431B3958C7007CE65F /* demoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = demoVC.h; sourceTree = "<group>"; };
@@ -87,6 +90,9 @@
 		832947808C0F33D46BA11AC2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EAB421B99656A9536AA5994F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FA00F4AF1B4530D3004CA315 /* summer.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = summer.playground; path = ../summer.playground; sourceTree = "<group>"; };
+		FA349A651B70D29900DF021E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		FA349A671B70D2A800DF021E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		FA349A691B70D2B200DF021E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		FA6FCE721B4BB29100973165 /* CertificateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CertificateModel.swift; sourceTree = "<group>"; };
 		FAFED7EC1B47BBA2009CA0B7 /* UIColor+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Tools.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +102,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA349A6A1B70D2B200DF021E /* libz.tbd in Frameworks */,
+				FA349A681B70D2A800DF021E /* libsqlite3.tbd in Frameworks */,
+				FA349A661B70D29900DF021E /* libc++.tbd in Frameworks */,
 				63E14E581B395CE3007CE65F /* SystemConfiguration.framework in Frameworks */,
 				63E14E511B3958D4007CE65F /* libWeChatSDK.a in Frameworks */,
 				95798A6C8B1E5732F55555D9 /* Pods.framework in Frameworks */,
@@ -115,6 +124,9 @@
 		1C0A09B1824270664CF6C6BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA349A691B70D2B200DF021E /* libz.tbd */,
+				FA349A671B70D2A800DF021E /* libsqlite3.tbd */,
+				FA349A651B70D29900DF021E /* libc++.tbd */,
 				63E14E571B395CE3007CE65F /* SystemConfiguration.framework */,
 				7CD470143EDD4313F3155499 /* Pods.framework */,
 			);
@@ -258,7 +270,7 @@
 		63E14E3D1B3958C7007CE65F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				63E14E3E1B3958C7007CE65F /* AlbumImageView.swift */,
+				63E14E3E1B3958C7007CE65F /* AlbumImageCell.swift */,
 				63E14E3F1B3958C7007CE65F /* PhotoZoomView.swift */,
 			);
 			path = View;
@@ -484,7 +496,7 @@
 				632CF3C51B12E9130025F833 /* AppDelegate.swift in Sources */,
 				63E14E2B1B395879007CE65F /* NSMutableData+Tools.swift in Sources */,
 				63E14E2C1B395879007CE65F /* String+Tools.swift in Sources */,
-				63E14E461B3958C7007CE65F /* AlbumImageView.swift in Sources */,
+				63E14E461B3958C7007CE65F /* AlbumImageCell.swift in Sources */,
 				63E14E291B395879007CE65F /* Int+Tools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
