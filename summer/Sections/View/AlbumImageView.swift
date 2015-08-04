@@ -134,7 +134,7 @@ class AlbumImageView: UITableViewCell, UIScrollViewDelegate {
 		self.scrollView.frame = self.bounds
 		self.containerView.frame = self.bounds
 		
-		var vsize = self.frame.size
+		_ = self.frame.size
 		//process
 	}
 }

@@ -4,55 +4,55 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-AFNetworking.xcscheme</key>
+		<key>AFNetworking.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Pods-FMDB.xcscheme</key>
+		<key>FMDB.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
-		</dict>
-		<key>Pods-ReactiveCocoa.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
-		</dict>
-		<key>Pods-SDWebImage.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ReactiveCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>33C8FFA764568A1424D40469</key>
+		<key>0C37EF3B311122A1BD1308BE30FE2867</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8BFC02F4DDC7DED1A2A5C433</key>
+		<key>1EA96B8E923BF78ADEFC585DC7E800A6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A765E4CF544BF15650AA620A</key>
+		<key>45C0BC7D5A9BAD1EF0B9C872A6CBADEB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BB0E7ABCBBBDEFB715D0C164</key>
+		<key>9858970870C02E65E78C5631DC3DC8BE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DD3C3338238E0A0C63F34C8B</key>
+		<key>BB30A9B716322D2764E9FAF8236C4CE5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

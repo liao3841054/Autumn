@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		632CF3C51B12E9130025F833 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CF3C41B12E9130025F833 /* AppDelegate.swift */; };
-		632CF3C81B12E9130025F833 /* summer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 632CF3C61B12E9130025F833 /* summer.xcdatamodeld */; };
 		632CF3CF1B12E9130025F833 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632CF3CE1B12E9130025F833 /* Images.xcassets */; };
 		632CF3DE1B12E9130025F833 /* summerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632CF3DD1B12E9130025F833 /* summerTests.swift */; };
 		63E14E1B1B395867007CE65F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63E14E171B395867007CE65F /* LaunchScreen.xib */; };
@@ -32,10 +31,7 @@
 		63E14E4A1B3958C7007CE65F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E451B3958C7007CE65F /* ViewController.swift */; };
 		63E14E511B3958D4007CE65F /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E14E4D1B3958D4007CE65F /* libWeChatSDK.a */; };
 		63E14E521B3958D4007CE65F /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = 63E14E4E1B3958D4007CE65F /* read_me.txt */; };
-		63E14E541B395C1A007CE65F /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E14E531B395C1A007CE65F /* libsqlite3.0.dylib */; };
-		63E14E561B395C86007CE65F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E14E551B395C86007CE65F /* libz.dylib */; };
 		63E14E581B395CE3007CE65F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E14E571B395CE3007CE65F /* SystemConfiguration.framework */; };
-		63E14E5E1B395D8E007CE65F /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E14E5D1B395D8D007CE65F /* libc++.dylib */; };
 		63E14E601B395EE6007CE65F /* WechatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E14E5F1B395EE6007CE65F /* WechatManager.swift */; };
 		95798A6C8B1E5732F55555D9 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD470143EDD4313F3155499 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		FA6FCE731B4BB29100973165 /* CertificateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6FCE721B4BB29100973165 /* CertificateModel.swift */; };
@@ -56,7 +52,6 @@
 		632CF3BF1B12E9130025F833 /* summer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = summer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		632CF3C31B12E9130025F833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		632CF3C41B12E9130025F833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		632CF3C71B12E9130025F833 /* summer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = summer.xcdatamodel; sourceTree = "<group>"; };
 		632CF3CE1B12E9130025F833 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		632CF3D71B12E9130025F833 /* summerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = summerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		632CF3DC1B12E9130025F833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,10 +81,7 @@
 		63E14E4E1B3958D4007CE65F /* read_me.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = read_me.txt; sourceTree = "<group>"; };
 		63E14E4F1B3958D4007CE65F /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		63E14E501B3958D4007CE65F /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
-		63E14E531B395C1A007CE65F /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
-		63E14E551B395C86007CE65F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		63E14E571B395CE3007CE65F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		63E14E5D1B395D8D007CE65F /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		63E14E5F1B395EE6007CE65F /* WechatManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WechatManager.swift; path = ../../../General/Helpers/WechatManager.swift; sourceTree = "<group>"; };
 		7CD470143EDD4313F3155499 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		832947808C0F33D46BA11AC2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -104,10 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63E14E5E1B395D8E007CE65F /* libc++.dylib in Frameworks */,
 				63E14E581B395CE3007CE65F /* SystemConfiguration.framework in Frameworks */,
-				63E14E561B395C86007CE65F /* libz.dylib in Frameworks */,
-				63E14E541B395C1A007CE65F /* libsqlite3.0.dylib in Frameworks */,
 				63E14E511B3958D4007CE65F /* libWeChatSDK.a in Frameworks */,
 				95798A6C8B1E5732F55555D9 /* Pods.framework in Frameworks */,
 			);
@@ -126,10 +115,7 @@
 		1C0A09B1824270664CF6C6BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				63E14E5D1B395D8D007CE65F /* libc++.dylib */,
 				63E14E571B395CE3007CE65F /* SystemConfiguration.framework */,
-				63E14E551B395C86007CE65F /* libz.dylib */,
-				63E14E531B395C1A007CE65F /* libsqlite3.0.dylib */,
 				7CD470143EDD4313F3155499 /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -167,7 +153,6 @@
 				632CF3CE1B12E9130025F833 /* Images.xcassets */,
 				63E14E351B3958BC007CE65F /* Model */,
 				63E14E3C1B3958C7007CE65F /* Sections */,
-				632CF3C61B12E9130025F833 /* summer.xcdatamodeld */,
 				63E14E4B1B3958D4007CE65F /* Vendors */,
 				632CF3C21B12E9130025F833 /* Supporting Files */,
 			);
@@ -374,7 +359,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Ding Soung";
 				TargetAttributes = {
 					632CF3BE1B12E9130025F833 = {
@@ -483,7 +468,6 @@
 				63E14E2A1B395879007CE65F /* NSData+Tools.swift in Sources */,
 				FA6FCE731B4BB29100973165 /* CertificateModel.swift in Sources */,
 				FAFED7ED1B47BBA2009CA0B7 /* UIColor+Tools.swift in Sources */,
-				632CF3C81B12E9130025F833 /* summer.xcdatamodeld in Sources */,
 				63E14E601B395EE6007CE65F /* WechatManager.swift in Sources */,
 				63E14E491B3958C7007CE65F /* demoVC.m in Sources */,
 				63E14E391B3958BC007CE65F /* BaseModel.swift in Sources */,
@@ -564,6 +548,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -633,6 +618,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = summer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -640,6 +629,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/summer/Vendors/WeChatSDK_1.5",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "DS.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "summer-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -653,6 +643,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = summer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -660,6 +654,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/summer/Vendors/WeChatSDK_1.5",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "DS.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "summer-Bridging-Header.h";
 			};
@@ -679,6 +674,7 @@
 				);
 				INFOPLIST_FILE = summerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DS.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/summer.app/summer";
 			};
@@ -694,6 +690,7 @@
 				);
 				INFOPLIST_FILE = summerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DS.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/summer.app/summer";
 			};
@@ -730,19 +727,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		632CF3C61B12E9130025F833 /* summer.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				632CF3C71B12E9130025F833 /* summer.xcdatamodel */,
-			);
-			currentVersion = 632CF3C71B12E9130025F833 /* summer.xcdatamodel */;
-			path = summer.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 632CF3B71B12E9130025F833 /* Project object */;
 }

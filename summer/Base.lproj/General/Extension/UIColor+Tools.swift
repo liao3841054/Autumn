@@ -18,7 +18,7 @@ extension UIColor {
     }
     public func hexStr(FFFFFFFF:String) -> UIColor {
         if FFFFFFFF.characters.count == 8 {
-            let FFFFFFFF = "0x" + FFFFFFFF
+            _ = "0x" + FFFFFFFF
         }
         if FFFFFFFF.characters.count == 10 {
             if let ffffffff = Int(FFFFFFFF) {

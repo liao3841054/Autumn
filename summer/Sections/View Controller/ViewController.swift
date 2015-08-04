@@ -23,13 +23,13 @@ class ViewController: UIViewController {
 		print(ShareData.instance.index)
 		
 		//MARK: GCD异步延时
-		var task = GCDManager.delay(2, task: { () -> () in
+		_ = GCDManager.delay(2, task: { () -> () in
 			print("task start", appendNewline: false)
 		})
 		//GCDManager.cancel(task)
 		
 		//MARK: 设置阴影
-		var view = UIButton(frame: CGRectMake(40, 40, 50, 50))
+		let view = UIButton(frame: CGRectMake(40, 40, 50, 50))
 		view.backgroundColor = UIColor.greenColor()
 		view.setShadow(UIColor.yellowColor().CGColor, offset: CGSizeMake(5, 5), opacity: 0.5, radius: 10)
 		self.view.addSubview(view)
@@ -63,7 +63,7 @@ class ViewController: UIViewController {
 		var vaidNameSignal = self.name.rac_textSignal().map { (dat) -> AnyObject! in
 			return (dat as! String).isMobileNumber
 		}
-		var vaidPasswdSignal = self.pwssword.rac_textSignal().map { (dat) -> AnyObject! in
+		let vaidPasswdSignal = self.pwssword.rac_textSignal().map { (dat) -> AnyObject! in
 			return (dat as! String).characters.count > 4
 		}
 		//		var signUpSignal = RACSignal.combineLatest([vaidNameSignal,vaidPasswdSignal]).map { (dat) -> AnyObject! in

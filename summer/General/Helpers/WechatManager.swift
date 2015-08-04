@@ -68,7 +68,7 @@ class WechatManager {
 	//from weChat
 	func onResp(resp: BaseResp!) {
 		if resp.isKindOfClass(PayResp) {
-			if let temp = resp as? PayResp {
+			if let _ = resp as? PayResp {
 				//支付的回调
 			}
 		}
