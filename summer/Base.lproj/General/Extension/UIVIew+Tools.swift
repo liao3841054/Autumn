@@ -19,7 +19,7 @@ extension UIView {
 	}
 	//MARK: 兼容Objective－C
 	public func setShadowOC(color:CGColor, offset:CGSize, opacity:Float, radius:CGFloat) {
-        self.setShadow(color, offset: offset, opacity: opacity, radius: radius)
+        self.setShadow(color: color, offset: offset, opacity: opacity, radius: radius)
 	}
 	
 	//MARK: 动态全屏  触摸消失

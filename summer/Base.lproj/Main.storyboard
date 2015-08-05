@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,35 +18,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MO4-Wx-LEu">
-                                <rect key="frame" x="16" y="20" width="223" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MO4-Wx-LEu">
+                                <rect key="frame" x="60" y="20" width="480" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aQE-Wz-Gdr">
-                                <rect key="frame" x="16" y="58" width="223" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aQE-Wz-Gdr">
+                                <rect key="frame" x="60" y="58" width="480" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSi-av-CZh">
-                                <rect key="frame" x="16" y="96" width="76" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSi-av-CZh">
+                                <rect key="frame" x="60" y="96" width="48" height="30"/>
                                 <state key="normal" title="Sign In">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAN-84-aOU">
-                                <rect key="frame" x="195" y="96" width="44" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAN-84-aOU">
+                                <rect key="frame" x="496" y="96" width="44" height="30"/>
                                 <state key="normal" title="Album">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="albumButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TzS-VI-jMC"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MO4-Wx-LEu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="7h4-8I-Xr7"/>
+                            <constraint firstItem="jSi-av-CZh" firstAttribute="top" secondItem="aQE-Wz-Gdr" secondAttribute="bottom" constant="8" id="8c9-gh-dZr"/>
+                            <constraint firstItem="MO4-Wx-LEu" firstAttribute="centerX" secondItem="aQE-Wz-Gdr" secondAttribute="centerX" id="9Fp-Nv-iAn"/>
+                            <constraint firstItem="MO4-Wx-LEu" firstAttribute="width" secondItem="aQE-Wz-Gdr" secondAttribute="width" id="BZs-Ev-CHf"/>
+                            <constraint firstItem="cAN-84-aOU" firstAttribute="centerY" secondItem="jSi-av-CZh" secondAttribute="centerY" id="Nhk-sO-AOv"/>
+                            <constraint firstItem="aQE-Wz-Gdr" firstAttribute="top" secondItem="MO4-Wx-LEu" secondAttribute="bottom" constant="8" id="cO3-a0-j5j"/>
+                            <constraint firstItem="cAN-84-aOU" firstAttribute="trailing" secondItem="aQE-Wz-Gdr" secondAttribute="trailing" id="hXy-cK-abA"/>
+                            <constraint firstAttribute="centerX" secondItem="MO4-Wx-LEu" secondAttribute="centerX" id="jeS-lu-5in"/>
+                            <constraint firstItem="aQE-Wz-Gdr" firstAttribute="leading" secondItem="jSi-av-CZh" secondAttribute="leading" id="pNq-gq-DGM"/>
+                            <constraint firstAttribute="width" secondItem="MO4-Wx-LEu" secondAttribute="width" multiplier="10:8" id="rsa-Lt-g63"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="album" destination="cAN-84-aOU" id="MFg-EB-IVp"/>
                         <outlet property="name" destination="MO4-Wx-LEu" id="9bO-zS-Uq0"/>
                         <outlet property="pwssword" destination="aQE-Wz-Gdr" id="7Ub-vw-Xhy"/>
                         <outlet property="sigIn" destination="jSi-av-CZh" id="rwh-eR-PkD"/>

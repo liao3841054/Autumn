@@ -8,22 +8,18 @@
 
 import UIKit
 
-class AlbumViewController: UIViewController, UITableViewDelegate, UITableViewDataSource,AlbumImageViewDelegate {
+class AlbumViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var urlArray:[String] = [
-        "http://i.imgur.com/iCH2RvP.jpg",
-        "http://ww2.sinaimg.cn/large/ce744de6gw1eih8x32sacj21400p0wl8.jpg",
-        "http://ww4.sinaimg.cn/bmiddle/620ae61atw1eihftaqjvxj20vk0no40y.jpg",
-    ]
+    var urlArray:[String] = []
     var index:CGFloat = 0
     
     private var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor.lightGrayColor()
+        self.view.backgroundColor = UIColor.clearColor()
         
-        tableView = UITableView(frame: CGRectMake(0, 0, self.view.frame.height, self.view.frame.size.width), style: UITableViewStyle.Grouped)
+        tableView = UITableView(frame: CGRectMake(0, 0, self.view.frame.size.height, self.view.frame.size.width), style: UITableViewStyle.Grouped)
         tableView.center = CGPointMake(self.view.frame.size.width * 0.5, self.view.frame.size.height * 0.5)
         tableView.transform = CGAffineTransformMakeRotation(-3.14159265358979323846264338327950288 * 0.5)
         tableView.pagingEnabled = true
@@ -53,12 +49,6 @@ class AlbumViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.viewWillDisappear(animated)
     }
     
-    //MARK: AlbumImageView delegate
-    func albumImageViewSignalTaped() {
-        self.dismissViewControllerAnimated(true, completion: { () -> Void in
-        })
-    }
-    
     //MARK: tableView delegate
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return self.urlArray.count
@@ -76,38 +66,35 @@ class AlbumViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return 1
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        /*
-        let cellIdentifer = "Cell"
-        var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifer) as UITableViewCell?
-        if cell == nil {
-        cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: cellIdentifer)
-        cell?.accessoryType = UITableViewCellAccessoryType.None
-        cell?.selectionStyle = UITableViewCellSelectionStyle.None
-        cell?.backgroundColor = UIColor.clearColor()
-        
-        //set View
-        let view = AlbumImageView(frame: self.view.frame)
-        view.delegate = self
-        
-        cell?.contentView.addSubview(view)
-        }
-        cell!.contentView.transform = CGAffineTransformMakeRotation(3.14159265358979323846264338327950288 * 0.5)
-        return cell!
-        */
+        #if true
         var cell = tableView.dequeueReusableCellWithIdentifier("cell") as? AlbumImageCell
         if cell == nil {
-            cell = AlbumImageCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "cell")
-            cell?.frame = self.tableView.frame
+            cell = NSBundle.mainBundle().loadNibNamed("AlbumImageCell", owner: self, options: nil).first as? AlbumImageCell
+            cell?.frame.size.height = tableView.frame.size.width
+            cell?.frame.size.width = tableView.frame.size.height
             cell?.accessoryType = UITableViewCellAccessoryType.None
             cell?.selectionStyle = UITableViewCellSelectionStyle.None
-            //cell?.backgroundColor = UIColor.clearColor()
             
+            cell?.transform = CGAffineTransformMakeRotation(3.14159265358979323846264338327950288 * 0.5)
             cell?.delegate = self
-            //cell?.contentView.transform = CGAffineTransformMakeRotation(3.14159265358979323846264338327950288 * 0.5)
         }
-        //cell?.imageUrl = self.urlArray[indexPath.section]
-        cell?.img.sd_setImageWithURL(NSURL(string: self.urlArray[indexPath.section]), placeholderImage: UIImage(named: ""))
+        cell?.imageUrl = self.urlArray[indexPath.section]
         return cell!
+        #else
+            var cell = tableView.dequeueReusableCellWithIdentifier("cell") as? AlbumImageCell
+            if cell == nil {
+                cell = AlbumImageCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "cell")
+                cell?.frame.size.height = tableView.frame.size.width
+                cell?.frame.size.width = tableView.frame.size.height
+                cell?.accessoryType = UITableViewCellAccessoryType.None
+                cell?.selectionStyle = UITableViewCellSelectionStyle.None
+                cell?.transform = CGAffineTransformMakeRotation(3.14159265358979323846264338327950288 * 0.5)
+                cell?.delegate = self
+                
+            }
+            cell?.imageUrl = self.urlArray[indexPath.section]
+            return cell!
+        #endif
     }
 }
 

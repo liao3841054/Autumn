@@ -33,7 +33,7 @@ class NotificationManager {
 		UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
 	}
 	func scheduleNotificationOC(itemID:Int,delaySeconds:NSTimeInterval,timeZone:NSTimeZone,message:String){
-		self.scheduleNotification(itemID, delaySeconds: delaySeconds, timeZone: timeZone, message: message)
+		self.scheduleNotification(itemID: itemID, delaySeconds: delaySeconds, timeZone: timeZone, message: message)
 	}
 	
 	//MARK: 取消通知消息
@@ -45,7 +45,7 @@ class NotificationManager {
 	}
 	//MARK: 通过遍历所有消息推送，通过itemid的对比，返回UIlocalNotification
 	func notificationForItem(itemID:Int) -> UILocalNotification? {
-        if let allNotifications = UIApplication.sharedApplication().scheduledLocalNotifications as [UILocalNotification]! {
+        if let allNotifications = UIApplication.sharedApplication().scheduledLocalNotifications as? [UILocalNotification] {
             for notification in allNotifications {
                 var info = notification.userInfo as? Dictionary<String,Int>
                 let number = info?["ItemID"]

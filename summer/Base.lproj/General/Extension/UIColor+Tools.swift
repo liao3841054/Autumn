@@ -17,16 +17,11 @@ extension UIColor {
         return UIColor(red: CGFloat(r) * 0.00390625, green: CGFloat(g) * 0.00390625, blue: CGFloat(b) * 0.00390625, alpha: CGFloat(a) * 0.00390625)
     }
     public func hexStr(FFFFFFFF:String) -> UIColor {
-        if FFFFFFFF.characters.count == 8 {
-            _ = "0x" + FFFFFFFF
+        if let v = ("0x" + FFFFFFFF).toInt() {
+            return self.hexInt(v)
+        }else{
+            assert(false, "string value error")
+            return UIColor.clearColor()
         }
-        if FFFFFFFF.characters.count == 10 {
-            if let ffffffff = Int(FFFFFFFF) {
-                return hexInt(ffffffff)
-            } else {
-                assert(false, "string value error")
-            }
-        }
-        return UIColor.clearColor()
     }
 }

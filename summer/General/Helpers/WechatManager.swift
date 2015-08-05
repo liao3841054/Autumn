@@ -46,7 +46,7 @@ class WechatManager {
 	}
 	func wechatAuthShare(message:String){
 		let req = SendMessageToWXReq()
-		req.scene = Int32(WXSceneSession.rawValue)
+		req.scene = Int32(WXSceneSession.value)
 		req.text = "test weChat Share"
 		req.bText = true
 		WXApi.sendReq(req)
