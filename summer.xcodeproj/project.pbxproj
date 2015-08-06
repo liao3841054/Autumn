@@ -88,7 +88,6 @@
 		7CD470143EDD4313F3155499 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		832947808C0F33D46BA11AC2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EAB421B99656A9536AA5994F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		FA00F4AF1B4530D3004CA315 /* summer.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = summer.playground; path = ../summer.playground; sourceTree = "<group>"; };
 		FA5681E71B71BC580060FCBA /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		FA5681E91B71BC5F0060FCBA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		FA5681EB1B71BC670060FCBA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -157,12 +156,9 @@
 		632CF3C11B12E9130025F833 /* summer */ = {
 			isa = PBXGroup;
 			children = (
-				FA00F4AF1B4530D3004CA315 /* summer.playground */,
-				632CF3C41B12E9130025F833 /* AppDelegate.swift */,
 				63E14E161B395867007CE65F /* Base.lproj */,
 				63E14E1D1B395879007CE65F /* General */,
 				63E14E321B395894007CE65F /* Helpers */,
-				632CF3CE1B12E9130025F833 /* Images.xcassets */,
 				63E14E351B3958BC007CE65F /* Model */,
 				63E14E3C1B3958C7007CE65F /* Sections */,
 				63E14E4B1B3958D4007CE65F /* Vendors */,
@@ -174,6 +170,8 @@
 		632CF3C21B12E9130025F833 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				632CF3CE1B12E9130025F833 /* Images.xcassets */,
+				632CF3C41B12E9130025F833 /* AppDelegate.swift */,
 				632CF3C31B12E9130025F833 /* Info.plist */,
 			);
 			name = "Supporting Files";
