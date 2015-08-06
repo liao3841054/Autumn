@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0640"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "632CF3BE1B12E9130025F833"
+               BlueprintIdentifier = "FABCAF801B736F5A0091B3C1"
                BuildableName = "summer.app"
                BlueprintName = "summer"
                ReferencedContainer = "container:summer.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "632CF3D61B12E9130025F833"
+               BlueprintIdentifier = "FABCAF981B736F5A0091B3C1"
                BuildableName = "summerTests.xctest"
                BlueprintName = "summerTests"
                ReferencedContainer = "container:summer.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "632CF3D61B12E9130025F833"
+               BlueprintIdentifier = "FABCAF981B736F5A0091B3C1"
                BuildableName = "summerTests.xctest"
                BlueprintName = "summerTests"
                ReferencedContainer = "container:summer.xcodeproj">
@@ -56,14 +56,12 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "632CF3BE1B12E9130025F833"
+            BlueprintIdentifier = "FABCAF801B736F5A0091B3C1"
             BuildableName = "summer.app"
             BlueprintName = "summer"
             ReferencedContainer = "container:summer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -73,13 +71,12 @@
       buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
-      debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "632CF3BE1B12E9130025F833"
+            BlueprintIdentifier = "FABCAF801B736F5A0091B3C1"
             BuildableName = "summer.app"
             BlueprintName = "summer"
             ReferencedContainer = "container:summer.xcodeproj">
@@ -98,7 +95,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "632CF3BE1B12E9130025F833"
+            BlueprintIdentifier = "FABCAF801B736F5A0091B3C1"
             BuildableName = "summer.app"
             BlueprintName = "summer"
             ReferencedContainer = "container:summer.xcodeproj">
