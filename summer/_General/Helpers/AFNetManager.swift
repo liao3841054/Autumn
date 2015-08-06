@@ -11,8 +11,6 @@ import AFNetworking
 
 class AFNetManager {
 	//AFNetworking 已经做好了任务调度 管理，不需要写成单例手动管理
-	//typealias AFSuccess = (AFHTTPRequestOperation, AnyObject) -> Void
-	//typealias AFFail = (AFHTTPRequestOperation, NSError) -> Void
 	
 	class func POST(url:String,parameter:AnyObject!, success:(AFHTTPRequestOperation, AnyObject) -> Void, fail:(AFHTTPRequestOperation, NSError) -> Void) {
 		let url = url.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
@@ -37,7 +35,7 @@ class AFNetManager {
 
 extension AFNetManager {
 	
-	class func POST(url:String,parameter:[String:AnyObject],success:(data:AnyObject) -> (), fail:(error:NSError) -> Void) {
+	class func POST(url:String,parameter:Dictionary<String, AnyObject>,success:(data:AnyObject) -> (), fail:(error:NSError) -> Void) {
 		//TODO: 转换parameter 为JSON
 		self.POST(url, parameter: parameter, success: { (AFHTTPRequestOperation, AnyObject) -> Void in
 			success(data: AnyObject)
@@ -53,3 +51,6 @@ extension AFNetManager {
 		}
 	}
 }
+
+
+
