@@ -32,6 +32,7 @@ class BaseNaviViewController: BaseViewController {
         }
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Done, target: self, action: "leftBarButtonAction")
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: self, action: "rightBarButtonAction")
+        //self.navigationItem.leftBarButtonItem?
         if self.rightBlock == nil {
             self.leftBlock = { () -> Void in
                 if let v = self.srcDeleagte {
@@ -47,10 +48,10 @@ class BaseNaviViewController: BaseViewController {
         
         self.navigationController?.navigationBarHidden = false
     }
-    private func leftBarButtonAction(){
+    func leftBarButtonAction(){
         self.leftBlock?()
     }
-    private func rightBarButtonAction(){
+    func rightBarButtonAction(){
         self.rightBlock?()
     }
 }

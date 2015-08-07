@@ -22,7 +22,7 @@ class LoginView: UIView {
         
         //MARK: 过滤 text长度大于3时的信号 打印dat
         self.mobile.rac_textSignal().filter { (dat) -> Bool in
-            self.mobile.backgroundColor = count(dat as! String) > 3 ? UIColor.whiteColor() : UIColor.yellowColor()
+            self.mobile.backgroundColor = (dat as! String).isMobileNumber ? UIColor.whiteColor() : UIColor.yellowColor()
             return (dat as! NSString).length > 3
             }.subscribeNext { (dat) -> Void in
                 println(dat)
