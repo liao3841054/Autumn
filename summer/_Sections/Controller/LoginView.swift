@@ -13,16 +13,16 @@ class LoginView: UIView {
     
     var delegate:UIViewController?
     
-    @IBOutlet weak var userName: UITextField!
+    @IBOutlet weak var mobile: UITextField!
     @IBOutlet weak var passWord: UITextField!
     @IBOutlet weak var signIn: UIButton!
     @IBOutlet weak var register: UIButton!
     
     override func awakeFromNib() {
-        /*
+        
         //MARK: 过滤 text长度大于3时的信号 打印dat
-        self.userName.rac_textSignal().filter { (dat) -> Bool in
-            self.userName.backgroundColor = count(dat as! String) > 3 ? UIColor.whiteColor() : UIColor.yellowColor()
+        self.mobile.rac_textSignal().filter { (dat) -> Bool in
+            self.mobile.backgroundColor = count(dat as! String) > 3 ? UIColor.whiteColor() : UIColor.yellowColor()
             return (dat as! NSString).length > 3
             }.subscribeNext { (dat) -> Void in
                 println(dat)
@@ -56,7 +56,7 @@ class LoginView: UIView {
         
         
         //定义信号变量
-        var vaidNameSignal = self.userName.rac_textSignal().map { (dat) -> AnyObject! in
+        var vaidNameSignal = self.mobile.rac_textSignal().map { (dat) -> AnyObject! in
             return (dat as! String).isMobileNumber
         }
         let vaidPasswdSignal = self.passWord.rac_textSignal().map { (dat) -> AnyObject! in
@@ -81,7 +81,7 @@ class LoginView: UIView {
             return (dat as! Bool) ? UIColor.clearColor() : UIColor.yellowColor()
             }.subscribeNext { (dat) -> Void in
                 self.passWord.backgroundColor = (dat as! UIColor)
-        }*/
+        }
     }
     
     /*

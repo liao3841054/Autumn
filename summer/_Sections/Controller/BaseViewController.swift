@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  BaseViewController.swift
 //  summer
 //
 //  Created by Alex D. on 15/8/7.
@@ -8,17 +8,14 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class BaseViewController: UIViewController {
 
+    var srcDeleagte:UIViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        if let v = (NSBundle.mainBundle().loadNibNamed("LoginView", owner: self, options: nil) as NSArray).lastObject as? LoginView {
-            v.frame = self.view.frame
-            v.delegate = self
-            self.view.addSubview(v)
-        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,9 +23,10 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+
     /*
     // MARK: - Navigation
+
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.

@@ -38,6 +38,8 @@
 		FABCAFE51B7451290091B3C1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAFE31B7451290091B3C1 /* LoginViewController.swift */; };
 		FABCAFE61B7451290091B3C1 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FABCAFE41B7451290091B3C1 /* LoginView.xib */; };
 		FABCAFE81B74523E0091B3C1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAFE71B74523E0091B3C1 /* LoginView.swift */; };
+		FABCAFEA1B74BDE40091B3C1 /* BaseNaviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAFE91B74BDE40091B3C1 /* BaseNaviViewController.swift */; };
+		FABCAFEC1B74C52C0091B3C1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAFEB1B74C52C0091B3C1 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,11 +92,11 @@
 		FABCAFDC1B73711D0091B3C1 /* summer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "summer-Bridging-Header.h"; sourceTree = "<group>"; };
 		FABCAFDE1B7371790091B3C1 /* DemoOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemoOC.h; path = summer/DemoOC.h; sourceTree = SOURCE_ROOT; };
 		FABCAFDF1B7371790091B3C1 /* DemoOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DemoOC.m; path = summer/DemoOC.m; sourceTree = SOURCE_ROOT; };
-		FABCAFE11B744AEF0091B3C1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
-		FABCAFE21B744AEF0091B3C1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		FABCAFE31B7451290091B3C1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FABCAFE41B7451290091B3C1 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		FABCAFE71B74523E0091B3C1 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FABCAFE91B74BDE40091B3C1 /* BaseNaviViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNaviViewController.swift; sourceTree = "<group>"; };
+		FABCAFEB1B74C52C0091B3C1 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +267,8 @@
 		FABCAFBE1B73701D0091B3C1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FABCAFEB1B74C52C0091B3C1 /* BaseViewController.swift */,
+				FABCAFE91B74BDE40091B3C1 /* BaseNaviViewController.swift */,
 				FABCAFE31B7451290091B3C1 /* LoginViewController.swift */,
 				FABCAFE41B7451290091B3C1 /* LoginView.xib */,
 				FABCAFE71B74523E0091B3C1 /* LoginView.swift */,
@@ -458,7 +462,9 @@
 				FABCAFE51B7451290091B3C1 /* LoginViewController.swift in Sources */,
 				FABCAFD11B73701D0091B3C1 /* GCDManager.swift in Sources */,
 				FABCAF8C1B736F5A0091B3C1 /* ViewController.swift in Sources */,
+				FABCAFEA1B74BDE40091B3C1 /* BaseNaviViewController.swift in Sources */,
 				FABCAFD51B73701D0091B3C1 /* FontModel.swift in Sources */,
+				FABCAFEC1B74C52C0091B3C1 /* BaseViewController.swift in Sources */,
 				FABCAFD31B73701D0091B3C1 /* BaseModel.swift in Sources */,
 				FABCAFCA1B73701D0091B3C1 /* NSData+Tools.swift in Sources */,
 				FABCAFD01B73701D0091B3C1 /* AFNetManager.swift in Sources */,
@@ -503,7 +509,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				FABCAF8E1B736F5A0091B3C1 /* Base */,
-				FABCAFE11B744AEF0091B3C1 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -512,7 +517,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				FABCAF931B736F5A0091B3C1 /* Base */,
-				FABCAFE21B744AEF0091B3C1 /* zh-Hans */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
