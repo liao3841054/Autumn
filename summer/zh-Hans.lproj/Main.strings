@@ -1,0 +1,12 @@
+
+/* Class = "UITextField"; placeholder = "username"; ObjectID = "MO4-Wx-LEu"; */
+"MO4-Wx-LEu.placeholder" = "username";
+
+/* Class = "UITextField"; placeholder = "password"; ObjectID = "aQE-Wz-Gdr"; */
+"aQE-Wz-Gdr.placeholder" = "password";
+
+/* Class = "UIButton"; normalTitle = "Album"; ObjectID = "cAN-84-aOU"; */
+"cAN-84-aOU.normalTitle" = "Album";
+
+/* Class = "UIButton"; normalTitle = "Sign In"; ObjectID = "jSi-av-CZh"; */
+"jSi-av-CZh.normalTitle" = "Sign In";
