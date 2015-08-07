@@ -40,6 +40,7 @@
 		FABCAFE81B74523E0091B3C1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAFE71B74523E0091B3C1 /* LoginView.swift */; };
 		FABCAFEA1B74BDE40091B3C1 /* BaseNaviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAFE91B74BDE40091B3C1 /* BaseNaviViewController.swift */; };
 		FABCAFEC1B74C52C0091B3C1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAFEB1B74C52C0091B3C1 /* BaseViewController.swift */; };
+		FABCAFEE1B74DB5B0091B3C1 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAFED1B74DB5B0091B3C1 /* AlbumView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		FABCAFE71B74523E0091B3C1 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FABCAFE91B74BDE40091B3C1 /* BaseNaviViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNaviViewController.swift; sourceTree = "<group>"; };
 		FABCAFEB1B74C52C0091B3C1 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		FABCAFED1B74DB5B0091B3C1 /* AlbumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +282,7 @@
 		FABCAFC01B73701D0091B3C1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FABCAFED1B74DB5B0091B3C1 /* AlbumView.swift */,
 				FABCAFC11B73701D0091B3C1 /* AlbumImageCell.swift */,
 				FABCAFC21B73701D0091B3C1 /* AlbumImageCell.xib */,
 			);
@@ -462,6 +465,7 @@
 				FABCAFE51B7451290091B3C1 /* LoginViewController.swift in Sources */,
 				FABCAFD11B73701D0091B3C1 /* GCDManager.swift in Sources */,
 				FABCAF8C1B736F5A0091B3C1 /* ViewController.swift in Sources */,
+				FABCAFEE1B74DB5B0091B3C1 /* AlbumView.swift in Sources */,
 				FABCAFEA1B74BDE40091B3C1 /* BaseNaviViewController.swift in Sources */,
 				FABCAFD51B73701D0091B3C1 /* FontModel.swift in Sources */,
 				FABCAFEC1B74C52C0091B3C1 /* BaseViewController.swift in Sources */,
