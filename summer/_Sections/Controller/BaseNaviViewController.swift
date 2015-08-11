@@ -35,7 +35,7 @@ class BaseNaviViewController: BaseViewController {
         //self.navigationItem.leftBarButtonItem?
         if self.rightBlock == nil {
             self.leftBlock = { () -> Void in
-                if let v = self.srcDeleagte {
+                if let v = self.srcVC {
                     self.navigationController?.popToViewController(v, animated: true)
                 }else{
                     self.navigationController?.popViewControllerAnimated(true)

@@ -59,16 +59,6 @@ class AlbumImageCell: UITableViewCell, UIScrollViewDelegate {
     func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
         return self.img
     }
-    func scrollViewDidZoom(scrollView: UIScrollView) {
-        let Ws = self.scrollView.frame.size.width - self.scrollView.contentInset.left - self.scrollView.contentInset.right
-        let Hs = self.scrollView.frame.size.height - self.scrollView.contentInset.top - self.scrollView.contentInset.bottom
-        let W = self.img.frame.size.width
-        let H = self.img.frame.size.height
-        var rct = self.img.frame
-        rct.origin.x = max((Ws - W) * 0.5, 0)
-        rct.origin.y = max((Hs - H) * 0.5, 0)
-        self.img.frame = rct
-    }
     
     //MARK: tapgestuew action
     func tapAction(tap:UITapGestureRecognizer) {
@@ -84,7 +74,25 @@ class AlbumImageCell: UITableViewCell, UIScrollViewDelegate {
         }
     }
     
+    func scrollViewDidZoom(scrollView: UIScrollView) {
+        let Ws = self.scrollView.frame.size.width - self.scrollView.contentInset.left - self.scrollView.contentInset.right
+        let Hs = self.scrollView.frame.size.height - self.scrollView.contentInset.top - self.scrollView.contentInset.bottom
+        let W = self.img.frame.size.width
+        let H = self.img.frame.size.height
+        var rct = self.img.frame
+        rct.origin.x = max((Ws - W) * 0.5, 0)
+        rct.origin.y = max((Hs - H) * 0.5, 0)
+        self.img.frame = rct
+    }
+    
+    
+    
+    
+    
     #if false
+    
+    
+    
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }

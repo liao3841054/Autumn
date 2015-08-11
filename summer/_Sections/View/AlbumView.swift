@@ -8,11 +8,10 @@
 
 import UIKit
 
-protocol AlbumViewDelegate{
-    func onAlbumItemClick()
-}
-
-class AlbumView: UIView, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, AlbumViewDelegate{
+class AlbumView: UIView, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, AlbumViewCellDelegate {
+    
+    var exitBlock:(() -> Void)?
+    var urlArray:[String] = []
     
     var indexPath: NSIndexPath!
     var collectionView:UICollectionView!
@@ -48,6 +47,8 @@ class AlbumView: UIView, UICollectionViewDataSource, UICollectionViewDelegate, U
             collectionView.scrollToItemAtIndexPath(indexPath, atScrollPosition: UICollectionViewScrollPosition.CenteredHorizontally, animated: false)
         }
     }
+    
+    //MARK: UIColection delegate
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
         return 20
     }
@@ -56,28 +57,47 @@ class AlbumView: UIView, UICollectionViewDataSource, UICollectionViewDelegate, U
     }
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell{
         var cell = collectionView.dequeueReusableCellWithReuseIdentifier(identifier, forIndexPath: indexPath) as! AlbumViewCell
-        cell.setData()
+        cell.imageUrl = self.urlArray[0]
         cell.delegate = self
         return cell
-        
     }
-    func onAlbumItemClick(){
-        //点击cell回调
+    
+    //MARK: AlbumViewCellDelegate
+    func albumViewCellSignalClick() {
+        self.exitBlock?()
     }
 }
 
+protocol AlbumViewCellDelegate {
+    func albumViewCellSignalClick()
+}
 class AlbumViewCell: UICollectionViewCell ,UIScrollViewDelegate {
-    var vScrollView: UIScrollView!
-    var startContentOffsetX :CGFloat!
-    var startContentOffsetY :CGFloat!
-    var vImage: UIImageView!
-    var delegate: AlbumViewDelegate!
+    
+    var delegate:AlbumViewCellDelegate?
+    var imageUrl:String? {
+        set {
+            if let value = newValue {
+                vScrollView.zoomScale = 1
+                vImage.sd_setImageWithURL(NSURL(string: value), placeholderImage: nil)
+            }
+        }
+        get {
+            return nil
+        }
+    }
+    
+    private var vScrollView: UIScrollView!
+    private var vImage: UIImageView!
+    
+//    var startContentOffsetX :CGFloat!
+//    var startContentOffsetY :CGFloat!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         vImage = UIImageView()
         vImage.frame.size = frame.size
+        //        self.img.clipsToBounds = true
         vImage.contentMode = UIViewContentMode.ScaleAspectFit
         
         vScrollView = UIScrollView()
@@ -85,53 +105,73 @@ class AlbumViewCell: UICollectionViewCell ,UIScrollViewDelegate {
         vScrollView.addSubview(vImage)
         
         vScrollView.delegate = self
-        vScrollView.minimumZoomScale = 0.5
-        vScrollView.maximumZoomScale = 2
+        vScrollView.minimumZoomScale = 1.0 //0.5
+        vScrollView.maximumZoomScale = 5.0 //2
         vScrollView.showsVerticalScrollIndicator = false
         vScrollView.showsHorizontalScrollIndicator = false
-        //添加单击
-        var tapRecognizer = UITapGestureRecognizer(target: self, action: "scrollViewTapped:")
-        vScrollView.addGestureRecognizer(tapRecognizer)
-        self.addSubview(vScrollView)
+        
+        
+        let doubleTapGesture = UITapGestureRecognizer(target: self, action: "tapAction:")
+        doubleTapGesture.numberOfTapsRequired = 2
+        vScrollView.addGestureRecognizer(doubleTapGesture)
+        let tapGesture = UITapGestureRecognizer(target: self, action: "tapAction:")
+        tapGesture.numberOfTapsRequired = 1
+        vScrollView.addGestureRecognizer(tapGesture)
+        tapGesture.requireGestureRecognizerToFail(doubleTapGesture) //双击失败后执行单击
     }
     
-    func setData() {
-        vScrollView.zoomScale = 1
-        vImage.image = UIImage(named:"IMG_1798")
-    }
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    //MARK: ScrollView delegate
     func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
         return vImage
     }
-    //缩放触发
+    #if true
     func scrollViewDidZoom(scrollView: UIScrollView) {
-        centerScrollViewContents()//缩小图片的时候把图片设置到scrollview中间
+        let Ws = vScrollView.frame.size.width - vScrollView.contentInset.left - vScrollView.contentInset.right
+        let Hs = vScrollView.frame.size.height - vScrollView.contentInset.top - vScrollView.contentInset.bottom
+        let W = vImage.frame.size.width
+        let H = vImage.frame.size.height
+        var rct = vImage.frame
+        rct.origin.x = max((Ws - W) * 0.5, 0)
+        rct.origin.y = max((Hs - H) * 0.5, 0)
+        vImage.frame = rct
     }
-    func centerScrollViewContents() {
-        let boundsSize = vScrollView.bounds.size
-        var contentsFrame = vImage.frame
-        
-        if contentsFrame.size.width < boundsSize.width {
-            contentsFrame.origin.x = (boundsSize.width - contentsFrame.size.width) / 2.0
-        } else {
-            contentsFrame.origin.x = 0.0
-        }
-        
-        if contentsFrame.size.height < boundsSize.height {
-            contentsFrame.origin.y = (boundsSize.height - contentsFrame.size.height) / 2.0
-        } else {
-            contentsFrame.origin.y = 0.0
-        }
-        
-        vImage.frame = contentsFrame
+    #else
+    func scrollViewDidZoom(scrollView: UIScrollView) {
+    //缩小图片的时候把图片设置到scrollview中间
+    let boundsSize = vScrollView.bounds.size
+    var contentsFrame = vImage.frame
+    if contentsFrame.size.width < boundsSize.width {
+    contentsFrame.origin.x = (boundsSize.width - contentsFrame.size.width) / 2.0
+    } else {
+    contentsFrame.origin.x = 0.0
     }
-    func scrollViewTapped(recognizer: UITapGestureRecognizer) {
-        //单击回调
-        if(delegate != nil){
-            delegate.onAlbumItemClick()
+    if contentsFrame.size.height < boundsSize.height {
+    contentsFrame.origin.y = (boundsSize.height - contentsFrame.size.height) / 2.0
+    } else {
+    contentsFrame.origin.y = 0.0
+    }
+    vImage.frame = contentsFrame
+    }
+    #endif
+    
+    //MARK: tapgestuew action
+    func tapAction(tap:UITapGestureRecognizer) {
+        if(tap.numberOfTapsRequired == 2) {
+            if (vScrollView.minimumZoomScale <= vScrollView.zoomScale && vScrollView.maximumZoomScale > vScrollView.zoomScale) {
+                vScrollView.setZoomScale(vScrollView.maximumZoomScale, animated: true)
+            }else {
+                vScrollView.setZoomScale(vScrollView.minimumZoomScale, animated: true)
+            }
+        } else if(tap.numberOfTapsRequired == 1) {
+            self.delegate?.albumViewCellSignalClick()
         }
     }
+    
+    
+    
 }
 
