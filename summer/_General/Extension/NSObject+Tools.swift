@@ -9,7 +9,8 @@
 extension NSObject {
     
     //MARK: 闭包实现 C中的代码块功能
-    func closure(mark:String? = "",
+    func closure(
+        mark:String? = "",
         run:Bool? = true,
         block:()->Void,
         complete:(()->Void)? = {()->Void in

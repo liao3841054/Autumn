@@ -23,3 +23,6 @@
 #import <UIKit/UIKit.h>
 #import "WXApi.h"
 #import "WXApiObject.h"
+
+//MARK: Qiniu
+#import <Qiniu/QiniuSDK.h>
