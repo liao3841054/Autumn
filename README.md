@@ -12,6 +12,8 @@
 * WechatManager 微信 授权 支付 manager
 * AlbumViewController  流畅高能效体验较好的相册浏览器
 
+* NSObject+Tool
+ * run  执行闭包，期待代码块的作用 隔离 临时释放变量内存等等 
 
 * Int+Tools
   * hexString

@@ -11,8 +11,6 @@ import ReactiveCocoa
 
 class LoginView: UIView {
     
-    var delegate:UIViewController?
-    
     @IBOutlet weak var mobile: UITextField!
     @IBOutlet weak var passWord: UITextField!
     @IBOutlet weak var signIn: UIButton!
@@ -98,9 +96,8 @@ class LoginView: UIView {
         }
         //MARK: Register
         self.register.rac_signalForControlEvents(UIControlEvents.TouchUpInside).subscribeNext { (dat) -> Void in
-            self.delegate?.navigationController?.pushViewController(UIViewController(), animated: true)
+            self.superViewController?.navigationController?.pushViewController(UIViewController(), animated: true)
         }
-        
     }
     
     /*

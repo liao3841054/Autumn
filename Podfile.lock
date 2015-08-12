@@ -25,6 +25,8 @@ PODS:
   - FMDB/common (2.5)
   - FMDB/standard (2.5):
     - FMDB/common
+  - Qiniu (7.0.11.1):
+    - AFNetworking (~> 2.0)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -39,12 +41,14 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - FMDB
+  - Qiniu (~> 7.0)
   - ReactiveCocoa
   - SDWebImage
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
+  Qiniu: 080a6728b969f6b0e77c9de574ede37e78b0912b
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
 

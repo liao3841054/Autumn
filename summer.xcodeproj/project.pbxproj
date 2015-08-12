@@ -8,6 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		991742CE5F7AF16E62B615E3 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D913051FEBB5C6F5FE1F40E /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FA6E80B61B7B04EA00428951 /* Int+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80911B7B04EA00428951 /* Int+Tools.swift */; };
+		FA6E80B71B7B04EA00428951 /* NSData+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80921B7B04EA00428951 /* NSData+Tools.swift */; };
+		FA6E80B81B7B04EA00428951 /* NSMutableData+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80931B7B04EA00428951 /* NSMutableData+Tools.swift */; };
+		FA6E80B91B7B04EA00428951 /* String+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80941B7B04EA00428951 /* String+Tools.swift */; };
+		FA6E80BA1B7B04EA00428951 /* UIColor+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80951B7B04EA00428951 /* UIColor+Tools.swift */; };
+		FA6E80BB1B7B04EA00428951 /* UIImageView+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80961B7B04EA00428951 /* UIImageView+Tools.swift */; };
+		FA6E80BC1B7B04EA00428951 /* UIVIew+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80971B7B04EA00428951 /* UIVIew+Tools.swift */; };
+		FA6E80BD1B7B04EA00428951 /* AFNetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80991B7B04EA00428951 /* AFNetManager.swift */; };
+		FA6E80BE1B7B04EA00428951 /* GCDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E809A1B7B04EA00428951 /* GCDManager.swift */; };
+		FA6E80C01B7B04EA00428951 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E809C1B7B04EA00428951 /* NotificationManager.swift */; };
+		FA6E80C11B7B04EA00428951 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80A01B7B04EA00428951 /* BaseModel.swift */; };
+		FA6E80C21B7B04EA00428951 /* CertificateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80A11B7B04EA00428951 /* CertificateModel.swift */; };
+		FA6E80C31B7B04EA00428951 /* FontModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80A21B7B04EA00428951 /* FontModel.swift */; };
+		FA6E80C41B7B04EA00428951 /* ShareData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80A31B7B04EA00428951 /* ShareData.swift */; };
+		FA6E80C51B7B04EA00428951 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80A61B7B04EA00428951 /* AlbumViewController.swift */; };
+		FA6E80C61B7B04EA00428951 /* BaseNaviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80A71B7B04EA00428951 /* BaseNaviViewController.swift */; };
+		FA6E80C71B7B04EA00428951 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80A81B7B04EA00428951 /* BaseViewController.swift */; };
+		FA6E80C81B7B04EA00428951 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80A91B7B04EA00428951 /* LoginView.swift */; };
+		FA6E80C91B7B04EA00428951 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6E80AA1B7B04EA00428951 /* LoginView.xib */; };
+		FA6E80CA1B7B04EA00428951 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80AB1B7B04EA00428951 /* LoginViewController.swift */; };
+		FA6E80CB1B7B04EA00428951 /* AlbumImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80AD1B7B04EA00428951 /* AlbumImageCell.swift */; };
+		FA6E80CC1B7B04EA00428951 /* AlbumImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6E80AE1B7B04EA00428951 /* AlbumImageCell.xib */; };
+		FA6E80CD1B7B04EA00428951 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80AF1B7B04EA00428951 /* AlbumView.swift */; };
+		FA6E80CE1B7B04EA00428951 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6E80B21B7B04EA00428951 /* libWeChatSDK.a */; };
+		FA6E80CF1B7B04EA00428951 /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = FA6E80B31B7B04EA00428951 /* read_me.txt */; };
+		FA6E80D11B7B2B4800428951 /* NSObject+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80D01B7B2B4800428951 /* NSObject+Tools.swift */; };
+		FA6E80D31B7B2F0C00428951 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80D21B7B2F0C00428951 /* README.md */; };
 		FABCAF871B736F5A0091B3C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAF861B736F5A0091B3C1 /* AppDelegate.swift */; };
 		FABCAF8A1B736F5A0091B3C1 /* summer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FABCAF881B736F5A0091B3C1 /* summer.xcdatamodeld */; };
 		FABCAF8C1B736F5A0091B3C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAF8B1B736F5A0091B3C1 /* ViewController.swift */; };
@@ -15,32 +42,6 @@
 		FABCAF911B736F5A0091B3C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABCAF901B736F5A0091B3C1 /* Images.xcassets */; };
 		FABCAF941B736F5A0091B3C1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FABCAF921B736F5A0091B3C1 /* LaunchScreen.xib */; };
 		FABCAFA01B736F5A0091B3C1 /* summerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAF9F1B736F5A0091B3C1 /* summerTests.swift */; };
-		FABCAFC91B73701D0091B3C1 /* Int+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAFAB1B73701D0091B3C1 /* Int+Tools.swift */; };
-		FABCAFCA1B73701D0091B3C1 /* NSData+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAFAC1B73701D0091B3C1 /* NSData+Tools.swift */; };
-		FABCAFCB1B73701D0091B3C1 /* NSMutableData+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAFAD1B73701D0091B3C1 /* NSMutableData+Tools.swift */; };
-		FABCAFCC1B73701D0091B3C1 /* String+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAFAE1B73701D0091B3C1 /* String+Tools.swift */; };
-		FABCAFCD1B73701D0091B3C1 /* UIColor+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAFAF1B73701D0091B3C1 /* UIColor+Tools.swift */; };
-		FABCAFCE1B73701D0091B3C1 /* UIImageView+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAFB01B73701D0091B3C1 /* UIImageView+Tools.swift */; };
-		FABCAFCF1B73701D0091B3C1 /* UIVIew+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAFB11B73701D0091B3C1 /* UIVIew+Tools.swift */; };
-		FABCAFD01B73701D0091B3C1 /* AFNetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAFB31B73701D0091B3C1 /* AFNetManager.swift */; };
-		FABCAFD11B73701D0091B3C1 /* GCDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAFB41B73701D0091B3C1 /* GCDManager.swift */; };
-		FABCAFD21B73701D0091B3C1 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAFB51B73701D0091B3C1 /* NotificationManager.swift */; };
-		FABCAFD31B73701D0091B3C1 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAFB91B73701D0091B3C1 /* BaseModel.swift */; };
-		FABCAFD41B73701D0091B3C1 /* CertificateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAFBA1B73701D0091B3C1 /* CertificateModel.swift */; };
-		FABCAFD51B73701D0091B3C1 /* FontModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAFBB1B73701D0091B3C1 /* FontModel.swift */; };
-		FABCAFD61B73701D0091B3C1 /* ShareData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAFBC1B73701D0091B3C1 /* ShareData.swift */; };
-		FABCAFD71B73701D0091B3C1 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAFBF1B73701D0091B3C1 /* AlbumViewController.swift */; };
-		FABCAFD81B73701D0091B3C1 /* AlbumImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAFC11B73701D0091B3C1 /* AlbumImageCell.swift */; };
-		FABCAFD91B73701D0091B3C1 /* AlbumImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FABCAFC21B73701D0091B3C1 /* AlbumImageCell.xib */; };
-		FABCAFDA1B73701D0091B3C1 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FABCAFC51B73701D0091B3C1 /* libWeChatSDK.a */; };
-		FABCAFDB1B73701E0091B3C1 /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = FABCAFC61B73701D0091B3C1 /* read_me.txt */; };
-		FABCAFE01B7371790091B3C1 /* DemoOC.m in Sources */ = {isa = PBXBuildFile; fileRef = FABCAFDF1B7371790091B3C1 /* DemoOC.m */; };
-		FABCAFE51B7451290091B3C1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAFE31B7451290091B3C1 /* LoginViewController.swift */; };
-		FABCAFE61B7451290091B3C1 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FABCAFE41B7451290091B3C1 /* LoginView.xib */; };
-		FABCAFE81B74523E0091B3C1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAFE71B74523E0091B3C1 /* LoginView.swift */; };
-		FABCAFEA1B74BDE40091B3C1 /* BaseNaviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAFE91B74BDE40091B3C1 /* BaseNaviViewController.swift */; };
-		FABCAFEC1B74C52C0091B3C1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAFEB1B74C52C0091B3C1 /* BaseViewController.swift */; };
-		FABCAFEE1B74DB5B0091B3C1 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAFED1B74DB5B0091B3C1 /* AlbumView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,36 @@
 		20883E02CEADDAC602018D2E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8D913051FEBB5C6F5FE1F40E /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFEBAE990CCB934033BF1BED /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FA6E80911B7B04EA00428951 /* Int+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Tools.swift"; sourceTree = "<group>"; };
+		FA6E80921B7B04EA00428951 /* NSData+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Tools.swift"; sourceTree = "<group>"; };
+		FA6E80931B7B04EA00428951 /* NSMutableData+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableData+Tools.swift"; sourceTree = "<group>"; };
+		FA6E80941B7B04EA00428951 /* String+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Tools.swift"; sourceTree = "<group>"; };
+		FA6E80951B7B04EA00428951 /* UIColor+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Tools.swift"; sourceTree = "<group>"; };
+		FA6E80961B7B04EA00428951 /* UIImageView+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Tools.swift"; sourceTree = "<group>"; };
+		FA6E80971B7B04EA00428951 /* UIVIew+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+Tools.swift"; sourceTree = "<group>"; };
+		FA6E80991B7B04EA00428951 /* AFNetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFNetManager.swift; sourceTree = "<group>"; };
+		FA6E809A1B7B04EA00428951 /* GCDManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDManager.swift; sourceTree = "<group>"; };
+		FA6E809C1B7B04EA00428951 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		FA6E809D1B7B04EA00428951 /* summer.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = summer.playground; sourceTree = "<group>"; };
+		FA6E80A01B7B04EA00428951 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		FA6E80A11B7B04EA00428951 /* CertificateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CertificateModel.swift; sourceTree = "<group>"; };
+		FA6E80A21B7B04EA00428951 /* FontModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontModel.swift; sourceTree = "<group>"; };
+		FA6E80A31B7B04EA00428951 /* ShareData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareData.swift; sourceTree = "<group>"; };
+		FA6E80A61B7B04EA00428951 /* AlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		FA6E80A71B7B04EA00428951 /* BaseNaviViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNaviViewController.swift; sourceTree = "<group>"; };
+		FA6E80A81B7B04EA00428951 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		FA6E80A91B7B04EA00428951 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FA6E80AA1B7B04EA00428951 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		FA6E80AB1B7B04EA00428951 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FA6E80AD1B7B04EA00428951 /* AlbumImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumImageCell.swift; sourceTree = "<group>"; };
+		FA6E80AE1B7B04EA00428951 /* AlbumImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlbumImageCell.xib; sourceTree = "<group>"; };
+		FA6E80AF1B7B04EA00428951 /* AlbumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
+		FA6E80B21B7B04EA00428951 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		FA6E80B31B7B04EA00428951 /* read_me.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = read_me.txt; sourceTree = "<group>"; };
+		FA6E80B41B7B04EA00428951 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		FA6E80B51B7B04EA00428951 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		FA6E80D01B7B2B4800428951 /* NSObject+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Tools.swift"; sourceTree = "<group>"; };
+		FA6E80D21B7B2F0C00428951 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FABCAF811B736F5A0091B3C1 /* summer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = summer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABCAF851B736F5A0091B3C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FABCAF861B736F5A0091B3C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,37 +99,7 @@
 		FABCAF991B736F5A0091B3C1 /* summerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = summerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABCAF9E1B736F5A0091B3C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FABCAF9F1B736F5A0091B3C1 /* summerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = summerTests.swift; sourceTree = "<group>"; };
-		FABCAFAB1B73701D0091B3C1 /* Int+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Tools.swift"; sourceTree = "<group>"; };
-		FABCAFAC1B73701D0091B3C1 /* NSData+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Tools.swift"; sourceTree = "<group>"; };
-		FABCAFAD1B73701D0091B3C1 /* NSMutableData+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableData+Tools.swift"; sourceTree = "<group>"; };
-		FABCAFAE1B73701D0091B3C1 /* String+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Tools.swift"; sourceTree = "<group>"; };
-		FABCAFAF1B73701D0091B3C1 /* UIColor+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Tools.swift"; sourceTree = "<group>"; };
-		FABCAFB01B73701D0091B3C1 /* UIImageView+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Tools.swift"; sourceTree = "<group>"; };
-		FABCAFB11B73701D0091B3C1 /* UIVIew+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+Tools.swift"; sourceTree = "<group>"; };
-		FABCAFB31B73701D0091B3C1 /* AFNetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFNetManager.swift; sourceTree = "<group>"; };
-		FABCAFB41B73701D0091B3C1 /* GCDManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDManager.swift; sourceTree = "<group>"; };
-		FABCAFB51B73701D0091B3C1 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
-		FABCAFB61B73701D0091B3C1 /* summer.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = summer.playground; sourceTree = "<group>"; };
-		FABCAFB91B73701D0091B3C1 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
-		FABCAFBA1B73701D0091B3C1 /* CertificateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CertificateModel.swift; sourceTree = "<group>"; };
-		FABCAFBB1B73701D0091B3C1 /* FontModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontModel.swift; sourceTree = "<group>"; };
-		FABCAFBC1B73701D0091B3C1 /* ShareData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareData.swift; sourceTree = "<group>"; };
-		FABCAFBF1B73701D0091B3C1 /* AlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
-		FABCAFC11B73701D0091B3C1 /* AlbumImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumImageCell.swift; sourceTree = "<group>"; };
-		FABCAFC21B73701D0091B3C1 /* AlbumImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlbumImageCell.xib; sourceTree = "<group>"; };
-		FABCAFC51B73701D0091B3C1 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
-		FABCAFC61B73701D0091B3C1 /* read_me.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = read_me.txt; sourceTree = "<group>"; };
-		FABCAFC71B73701D0091B3C1 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
-		FABCAFC81B73701D0091B3C1 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		FABCAFDC1B73711D0091B3C1 /* summer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "summer-Bridging-Header.h"; sourceTree = "<group>"; };
-		FABCAFDE1B7371790091B3C1 /* DemoOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemoOC.h; path = summer/DemoOC.h; sourceTree = SOURCE_ROOT; };
-		FABCAFDF1B7371790091B3C1 /* DemoOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DemoOC.m; path = summer/DemoOC.m; sourceTree = SOURCE_ROOT; };
-		FABCAFE31B7451290091B3C1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		FABCAFE41B7451290091B3C1 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
-		FABCAFE71B74523E0091B3C1 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		FABCAFE91B74BDE40091B3C1 /* BaseNaviViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNaviViewController.swift; sourceTree = "<group>"; };
-		FABCAFEB1B74C52C0091B3C1 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		FABCAFED1B74DB5B0091B3C1 /* AlbumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FABCAFDA1B73701D0091B3C1 /* libWeChatSDK.a in Frameworks */,
+				FA6E80CE1B7B04EA00428951 /* libWeChatSDK.a in Frameworks */,
 				991742CE5F7AF16E62B615E3 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +139,114 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FA6E808F1B7B04EA00428951 /* _General */ = {
+			isa = PBXGroup;
+			children = (
+				FA6E80901B7B04EA00428951 /* Extension */,
+				FA6E80981B7B04EA00428951 /* Helpers */,
+				FA6E809D1B7B04EA00428951 /* summer.playground */,
+			);
+			path = _General;
+			sourceTree = "<group>";
+		};
+		FA6E80901B7B04EA00428951 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FA6E80911B7B04EA00428951 /* Int+Tools.swift */,
+				FA6E80D01B7B2B4800428951 /* NSObject+Tools.swift */,
+				FA6E80921B7B04EA00428951 /* NSData+Tools.swift */,
+				FA6E80931B7B04EA00428951 /* NSMutableData+Tools.swift */,
+				FA6E80941B7B04EA00428951 /* String+Tools.swift */,
+				FA6E80951B7B04EA00428951 /* UIColor+Tools.swift */,
+				FA6E80961B7B04EA00428951 /* UIImageView+Tools.swift */,
+				FA6E80971B7B04EA00428951 /* UIVIew+Tools.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FA6E80981B7B04EA00428951 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FA6E80991B7B04EA00428951 /* AFNetManager.swift */,
+				FA6E809A1B7B04EA00428951 /* GCDManager.swift */,
+				FA6E809C1B7B04EA00428951 /* NotificationManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FA6E809E1B7B04EA00428951 /* _Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = _Helpers;
+			sourceTree = "<group>";
+		};
+		FA6E809F1B7B04EA00428951 /* _Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA6E80A01B7B04EA00428951 /* BaseModel.swift */,
+				FA6E80A11B7B04EA00428951 /* CertificateModel.swift */,
+				FA6E80A21B7B04EA00428951 /* FontModel.swift */,
+				FA6E80A31B7B04EA00428951 /* ShareData.swift */,
+			);
+			path = _Model;
+			sourceTree = "<group>";
+		};
+		FA6E80A41B7B04EA00428951 /* _Sections */ = {
+			isa = PBXGroup;
+			children = (
+				FA6E80A51B7B04EA00428951 /* Controller */,
+				FA6E80AC1B7B04EA00428951 /* View */,
+			);
+			path = _Sections;
+			sourceTree = "<group>";
+		};
+		FA6E80A51B7B04EA00428951 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA6E80A61B7B04EA00428951 /* AlbumViewController.swift */,
+				FA6E80A71B7B04EA00428951 /* BaseNaviViewController.swift */,
+				FA6E80A81B7B04EA00428951 /* BaseViewController.swift */,
+				FA6E80A91B7B04EA00428951 /* LoginView.swift */,
+				FA6E80AA1B7B04EA00428951 /* LoginView.xib */,
+				FA6E80AB1B7B04EA00428951 /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA6E80AC1B7B04EA00428951 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA6E80AD1B7B04EA00428951 /* AlbumImageCell.swift */,
+				FA6E80AE1B7B04EA00428951 /* AlbumImageCell.xib */,
+				FA6E80AF1B7B04EA00428951 /* AlbumView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA6E80B01B7B04EA00428951 /* _Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				FA6E80B11B7B04EA00428951 /* WeChatSDK_1.5 */,
+			);
+			path = _Vendors;
+			sourceTree = "<group>";
+		};
+		FA6E80B11B7B04EA00428951 /* WeChatSDK_1.5 */ = {
+			isa = PBXGroup;
+			children = (
+				FA6E80B21B7B04EA00428951 /* libWeChatSDK.a */,
+				FA6E80B31B7B04EA00428951 /* read_me.txt */,
+				FA6E80B41B7B04EA00428951 /* WXApi.h */,
+				FA6E80B51B7B04EA00428951 /* WXApiObject.h */,
+			);
+			path = WeChatSDK_1.5;
+			sourceTree = "<group>";
+		};
 		FABCAF781B736F5A0091B3C1 = {
 			isa = PBXGroup;
 			children = (
+				FA6E80D21B7B2F0C00428951 /* README.md */,
 				FABCAF831B736F5A0091B3C1 /* summer */,
 				FABCAF9C1B736F5A0091B3C1 /* summerTests */,
 				FABCAF821B736F5A0091B3C1 /* Products */,
@@ -161,11 +267,11 @@
 		FABCAF831B736F5A0091B3C1 /* summer */ = {
 			isa = PBXGroup;
 			children = (
-				FABCAFA91B73701D0091B3C1 /* _General */,
-				FABCAFB71B73701D0091B3C1 /* _Helpers */,
-				FABCAFB81B73701D0091B3C1 /* _Model */,
-				FABCAFBD1B73701D0091B3C1 /* _Sections */,
-				FABCAFC31B73701D0091B3C1 /* _Vendors */,
+				FA6E808F1B7B04EA00428951 /* _General */,
+				FA6E809E1B7B04EA00428951 /* _Helpers */,
+				FA6E809F1B7B04EA00428951 /* _Model */,
+				FA6E80A41B7B04EA00428951 /* _Sections */,
+				FA6E80B01B7B04EA00428951 /* _Vendors */,
 				FABCAFDC1B73711D0091B3C1 /* summer-Bridging-Header.h */,
 				FABCAF861B736F5A0091B3C1 /* AppDelegate.swift */,
 				FABCAF8B1B736F5A0091B3C1 /* ViewController.swift */,
@@ -201,111 +307,6 @@
 				FABCAF9E1B736F5A0091B3C1 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FABCAFA91B73701D0091B3C1 /* _General */ = {
-			isa = PBXGroup;
-			children = (
-				FABCAFAA1B73701D0091B3C1 /* Extension */,
-				FABCAFB21B73701D0091B3C1 /* Helpers */,
-				FABCAFB61B73701D0091B3C1 /* summer.playground */,
-			);
-			path = _General;
-			sourceTree = "<group>";
-		};
-		FABCAFAA1B73701D0091B3C1 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				FABCAFAB1B73701D0091B3C1 /* Int+Tools.swift */,
-				FABCAFAC1B73701D0091B3C1 /* NSData+Tools.swift */,
-				FABCAFAD1B73701D0091B3C1 /* NSMutableData+Tools.swift */,
-				FABCAFAE1B73701D0091B3C1 /* String+Tools.swift */,
-				FABCAFAF1B73701D0091B3C1 /* UIColor+Tools.swift */,
-				FABCAFB01B73701D0091B3C1 /* UIImageView+Tools.swift */,
-				FABCAFB11B73701D0091B3C1 /* UIVIew+Tools.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		FABCAFB21B73701D0091B3C1 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				FABCAFB31B73701D0091B3C1 /* AFNetManager.swift */,
-				FABCAFB41B73701D0091B3C1 /* GCDManager.swift */,
-				FABCAFB51B73701D0091B3C1 /* NotificationManager.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		FABCAFB71B73701D0091B3C1 /* _Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = _Helpers;
-			sourceTree = "<group>";
-		};
-		FABCAFB81B73701D0091B3C1 /* _Model */ = {
-			isa = PBXGroup;
-			children = (
-				FABCAFDE1B7371790091B3C1 /* DemoOC.h */,
-				FABCAFDF1B7371790091B3C1 /* DemoOC.m */,
-				FABCAFB91B73701D0091B3C1 /* BaseModel.swift */,
-				FABCAFBA1B73701D0091B3C1 /* CertificateModel.swift */,
-				FABCAFBB1B73701D0091B3C1 /* FontModel.swift */,
-				FABCAFBC1B73701D0091B3C1 /* ShareData.swift */,
-			);
-			path = _Model;
-			sourceTree = "<group>";
-		};
-		FABCAFBD1B73701D0091B3C1 /* _Sections */ = {
-			isa = PBXGroup;
-			children = (
-				FABCAFBE1B73701D0091B3C1 /* Controller */,
-				FABCAFC01B73701D0091B3C1 /* View */,
-			);
-			path = _Sections;
-			sourceTree = "<group>";
-		};
-		FABCAFBE1B73701D0091B3C1 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				FABCAFEB1B74C52C0091B3C1 /* BaseViewController.swift */,
-				FABCAFE91B74BDE40091B3C1 /* BaseNaviViewController.swift */,
-				FABCAFE31B7451290091B3C1 /* LoginViewController.swift */,
-				FABCAFE41B7451290091B3C1 /* LoginView.xib */,
-				FABCAFE71B74523E0091B3C1 /* LoginView.swift */,
-				FABCAFBF1B73701D0091B3C1 /* AlbumViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		FABCAFC01B73701D0091B3C1 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				FABCAFED1B74DB5B0091B3C1 /* AlbumView.swift */,
-				FABCAFC11B73701D0091B3C1 /* AlbumImageCell.swift */,
-				FABCAFC21B73701D0091B3C1 /* AlbumImageCell.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		FABCAFC31B73701D0091B3C1 /* _Vendors */ = {
-			isa = PBXGroup;
-			children = (
-				FABCAFC41B73701D0091B3C1 /* WeChatSDK_1.5 */,
-			);
-			path = _Vendors;
-			sourceTree = "<group>";
-		};
-		FABCAFC41B73701D0091B3C1 /* WeChatSDK_1.5 */ = {
-			isa = PBXGroup;
-			children = (
-				FABCAFC51B73701D0091B3C1 /* libWeChatSDK.a */,
-				FABCAFC61B73701D0091B3C1 /* read_me.txt */,
-				FABCAFC71B73701D0091B3C1 /* WXApi.h */,
-				FABCAFC81B73701D0091B3C1 /* WXApiObject.h */,
-			);
-			path = WeChatSDK_1.5;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,12 +392,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA6E80CC1B7B04EA00428951 /* AlbumImageCell.xib in Resources */,
 				FABCAF8F1B736F5A0091B3C1 /* Main.storyboard in Resources */,
 				FABCAF941B736F5A0091B3C1 /* LaunchScreen.xib in Resources */,
-				FABCAFE61B7451290091B3C1 /* LoginView.xib in Resources */,
+				FA6E80C91B7B04EA00428951 /* LoginView.xib in Resources */,
+				FA6E80CF1B7B04EA00428951 /* read_me.txt in Resources */,
 				FABCAF911B736F5A0091B3C1 /* Images.xcassets in Resources */,
-				FABCAFD91B73701D0091B3C1 /* AlbumImageCell.xib in Resources */,
-				FABCAFDB1B73701E0091B3C1 /* read_me.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,31 +463,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FABCAFE51B7451290091B3C1 /* LoginViewController.swift in Sources */,
-				FABCAFD11B73701D0091B3C1 /* GCDManager.swift in Sources */,
+				FA6E80BE1B7B04EA00428951 /* GCDManager.swift in Sources */,
 				FABCAF8C1B736F5A0091B3C1 /* ViewController.swift in Sources */,
-				FABCAFEE1B74DB5B0091B3C1 /* AlbumView.swift in Sources */,
-				FABCAFEA1B74BDE40091B3C1 /* BaseNaviViewController.swift in Sources */,
-				FABCAFD51B73701D0091B3C1 /* FontModel.swift in Sources */,
-				FABCAFEC1B74C52C0091B3C1 /* BaseViewController.swift in Sources */,
-				FABCAFD31B73701D0091B3C1 /* BaseModel.swift in Sources */,
-				FABCAFCA1B73701D0091B3C1 /* NSData+Tools.swift in Sources */,
-				FABCAFD01B73701D0091B3C1 /* AFNetManager.swift in Sources */,
-				FABCAFE01B7371790091B3C1 /* DemoOC.m in Sources */,
-				FABCAFE81B74523E0091B3C1 /* LoginView.swift in Sources */,
-				FABCAFCC1B73701D0091B3C1 /* String+Tools.swift in Sources */,
-				FABCAFC91B73701D0091B3C1 /* Int+Tools.swift in Sources */,
-				FABCAFD41B73701D0091B3C1 /* CertificateModel.swift in Sources */,
-				FABCAFD21B73701D0091B3C1 /* NotificationManager.swift in Sources */,
-				FABCAFCB1B73701D0091B3C1 /* NSMutableData+Tools.swift in Sources */,
+				FA6E80CD1B7B04EA00428951 /* AlbumView.swift in Sources */,
+				FA6E80CA1B7B04EA00428951 /* LoginViewController.swift in Sources */,
+				FA6E80D31B7B2F0C00428951 /* README.md in Sources */,
+				FA6E80C61B7B04EA00428951 /* BaseNaviViewController.swift in Sources */,
+				FA6E80B71B7B04EA00428951 /* NSData+Tools.swift in Sources */,
+				FA6E80C71B7B04EA00428951 /* BaseViewController.swift in Sources */,
+				FA6E80C01B7B04EA00428951 /* NotificationManager.swift in Sources */,
+				FA6E80D11B7B2B4800428951 /* NSObject+Tools.swift in Sources */,
+				FA6E80C41B7B04EA00428951 /* ShareData.swift in Sources */,
+				FA6E80C81B7B04EA00428951 /* LoginView.swift in Sources */,
+				FA6E80C21B7B04EA00428951 /* CertificateModel.swift in Sources */,
+				FA6E80BD1B7B04EA00428951 /* AFNetManager.swift in Sources */,
+				FA6E80B91B7B04EA00428951 /* String+Tools.swift in Sources */,
+				FA6E80B61B7B04EA00428951 /* Int+Tools.swift in Sources */,
+				FA6E80B81B7B04EA00428951 /* NSMutableData+Tools.swift in Sources */,
+				FA6E80C11B7B04EA00428951 /* BaseModel.swift in Sources */,
 				FABCAF8A1B736F5A0091B3C1 /* summer.xcdatamodeld in Sources */,
-				FABCAFD71B73701D0091B3C1 /* AlbumViewController.swift in Sources */,
-				FABCAFCF1B73701D0091B3C1 /* UIVIew+Tools.swift in Sources */,
-				FABCAFD81B73701D0091B3C1 /* AlbumImageCell.swift in Sources */,
+				FA6E80BC1B7B04EA00428951 /* UIVIew+Tools.swift in Sources */,
 				FABCAF871B736F5A0091B3C1 /* AppDelegate.swift in Sources */,
-				FABCAFCD1B73701D0091B3C1 /* UIColor+Tools.swift in Sources */,
-				FABCAFD61B73701D0091B3C1 /* ShareData.swift in Sources */,
-				FABCAFCE1B73701D0091B3C1 /* UIImageView+Tools.swift in Sources */,
+				FA6E80CB1B7B04EA00428951 /* AlbumImageCell.swift in Sources */,
+				FA6E80C31B7B04EA00428951 /* FontModel.swift in Sources */,
+				FA6E80BA1B7B04EA00428951 /* UIColor+Tools.swift in Sources */,
+				FA6E80C51B7B04EA00428951 /* AlbumViewController.swift in Sources */,
+				FA6E80BB1B7B04EA00428951 /* UIImageView+Tools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Qiniu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>ReactiveCocoa.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,12 +37,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>5B8217319796D60578116F8726EF2190</key>
+		<key>5DD120629272D81C5342EF46A99972B7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>712C15662BDD3E4B76841C8C529C9937</key>
+		<key>608EDFFDDBCC3C1F700766477EBF87CE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8566CF9881BC5F42C47426D2137E13F6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8C2D04939DBFDE6A2882EFDD1AAA1B8B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -48,11 +63,6 @@
 			<true/>
 		</dict>
 		<key>BC8923913D4CEE9471212638D2FDA38C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F71192C60BC407A99F21D96873C77269</key>
 		<dict>
 			<key>primary</key>
 			<true/>

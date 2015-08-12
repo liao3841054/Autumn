@@ -10,7 +10,7 @@ import UIKit
 
 class ShareData {
 	
-	var index:Int!
+	var index:Int = 0
 	
 	class var instance: ShareData {
 		dispatch_once(&Inner.token){
@@ -22,8 +22,7 @@ class ShareData {
 		static var instance:ShareData? = nil
 		static var token: dispatch_once_t = 0
 	}
-	
 	init() {
-		index = 0
+        index = index + 1
 	}
 }

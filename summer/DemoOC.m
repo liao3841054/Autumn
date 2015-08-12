@@ -8,6 +8,6 @@
 
 #import "DemoOC.h"
 
-@implementation DemoOC
+@implementation DemoOC(UIViewController)
 
 @end
