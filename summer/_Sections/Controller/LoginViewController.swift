@@ -43,6 +43,7 @@ class LoginViewController: BaseNaviViewController, UINavigationControllerDelegat
         shareData.index = shareData.index + 1
         println(shareData.index)
         println(ShareData.instance.index)
+        ShareData.instance.demoFunc()
         
         //MARK: 设置阴影
         let view = UIButton(frame: CGRectMake(40, 40, 50, 50))
@@ -58,7 +59,7 @@ class LoginViewController: BaseNaviViewController, UINavigationControllerDelegat
         
         
         
-        closure(mark: "摄像头录制视频", run: true, block: { () -> Void in
+        closure(mark: "摄像头录制视频", run: false, block: { () -> Void in
             if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera) {
                 var picker = UIImagePickerController()
                 picker.delegate = self
@@ -107,6 +108,11 @@ class LoginViewController: BaseNaviViewController, UINavigationControllerDelegat
                 let alert = UIAlertView(title: "", message: "相机已被禁用，请在设置中设置允许", delegate: self, cancelButtonTitle: "OK")
                 alert.show()
             }
+        })
+        
+        
+        closure(mark: "测试七牛上传", run: true, block: { () -> Void in
+            QiniuManager.instance.upload("tolken form server", data: NSData(), key: "test key")
         })
     }
     

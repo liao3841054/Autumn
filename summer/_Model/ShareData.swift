@@ -23,6 +23,9 @@ class ShareData {
 		static var token: dispatch_once_t = 0
 	}
 	init() {
-        index = index + 1
+        index = 1
 	}
+    func demoFunc(){
+        index = index + 1
+    }
 }
