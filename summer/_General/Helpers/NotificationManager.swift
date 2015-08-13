@@ -20,7 +20,8 @@ class NotificationManager {
 		static var instance:NotificationManager? = nil
 		static var token: dispatch_once_t = 0
 	}
-	
+    private init() {}
+    
 	//MARK: 定时发送通知消息
 	func scheduleNotification(itemID:Int = 0,delaySeconds:NSTimeInterval? = 2,timeZone:NSTimeZone? = NSTimeZone.defaultTimeZone(),message:String? = "default meaasge form Notification Manager"){
 		self.cancelNotification(itemID) //如果已存在该通知消息，则先取消

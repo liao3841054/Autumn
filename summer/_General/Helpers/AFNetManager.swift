@@ -10,22 +10,35 @@ import UIKit
 import AFNetworking
 
 class AFNetManager {
-	//AFNetworking 已经做好了任务调度 管理，不需要写成单例手动管理
+	//AFNetworking 已经做好了任务调度 管理，不需要这里管理请求队列
 	
-	class func POST(url:String,parameter:AnyObject!, success:(AFHTTPRequestOperation, AnyObject) -> Void, fail:(AFHTTPRequestOperation, NSError) -> Void) {
+    private var manager:AFHTTPRequestOperationManager?
+    class var instance: AFNetManager {
+        dispatch_once(&Inner.token){
+            Inner.instance = AFNetManager()
+        }
+        return Inner.instance!
+    }
+    private struct Inner {
+        static var instance:AFNetManager? = nil
+        static var token: dispatch_once_t = 0
+    }
+    private init() {
+        manager = AFHTTPRequestOperationManager()
+    }
+    
+    //MARK: 基本的POST和GET
+    func POST(url:String,parameter:AnyObject!, success:(AFHTTPRequestOperation, AnyObject) -> Void, fail:(AFHTTPRequestOperation, NSError) -> Void) {
 		let url = url.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
-		let manager = AFHTTPRequestOperationManager()
-		
-		manager.POST(url, parameters: parameter, success: { (request, data) -> Void in
+		manager?.POST(url, parameters: parameter, success: { (request, data) -> Void in
 			success(request,data)
 			}, failure: { (request, error) -> Void in
 				fail(request, error)
 		})
 	}
-	class func GET(url:String,parameter:AnyObject?, success:(AFHTTPRequestOperation, AnyObject) -> Void, fail:(AFHTTPRequestOperation, NSError) -> Void) {
+    func GET(url:String,parameter:AnyObject?, success:(AFHTTPRequestOperation, AnyObject) -> Void, fail:(AFHTTPRequestOperation, NSError) -> Void) {
 		let url = url.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
-		let manager = AFHTTPRequestOperationManager()
-		manager.GET(url, parameters: nil, success: { (request, data) -> Void in
+		manager?.GET(url, parameters: nil, success: { (request, data) -> Void in
 			success(request,data)
 			}, failure: { (request, error) -> Void in
 				fail(request, error)
@@ -34,8 +47,8 @@ class AFNetManager {
 }
 
 extension AFNetManager {
-	
-	class func POST(url:String,parameter:Dictionary<String, AnyObject>,success:(data:AnyObject) -> (), fail:(error:NSError) -> Void) {
+	//MARK: 字典传入
+    func POST(url:String,parameter:Dictionary<String, AnyObject>,success:(data:AnyObject) -> (), fail:(error:NSError) -> Void) {
 		//TODO: 转换parameter 为JSON
 		self.POST(url, parameter: parameter, success: { (AFHTTPRequestOperation, AnyObject) -> Void in
 			success(data: AnyObject)
@@ -43,7 +56,8 @@ extension AFNetManager {
 				fail(error: NSError)
 		}
 	}
-	class func GET(url:String, success:(data:AnyObject) -> (), fail:(error:NSError) -> Void) {
+    //MARK: 简化的GET
+    func GET(url:String, success:(data:AnyObject) -> (), fail:(error:NSError) -> Void) {
 		self.GET(url, parameter: nil, success: { (request, data) -> Void in
 			success(data: data)
 			}) { (request, error) -> Void in

@@ -39,10 +39,6 @@ class LoginViewController: BaseNaviViewController, UINavigationControllerDelegat
         println(ShareData.instance.index)
         ShareData.instance.index = ShareData.instance.index + 1
         println(ShareData.instance.index)
-        var shareData = ShareData()
-        shareData.index = shareData.index + 1
-        println(shareData.index)
-        println(ShareData.instance.index)
         ShareData.instance.demoFunc()
         
         //MARK: 设置阴影

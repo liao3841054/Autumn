@@ -10,24 +10,21 @@ import UIKit
 
 class CertificateModel {
     
-    var index:Int!
+    private var index:Int!
     
-    class var instance: ShareData {
+    class var instance: CertificateModel {
         dispatch_once(&Inner.token){
-            Inner.instance = ShareData() //只初始化一次
+            Inner.instance = CertificateModel() //只初始化一次
         }
         return Inner.instance!
     }
     private struct Inner {
-        static var instance:ShareData? = nil
+        static var instance:CertificateModel? = nil
         static var token: dispatch_once_t = 0
     }
-    
-    init() {
+    private init() {
         index = 0
     }
-    
-    
     
 	func signInWithNamePassWD(name:String, passWD:String, success: (Bool) -> Void){
 		let result = true

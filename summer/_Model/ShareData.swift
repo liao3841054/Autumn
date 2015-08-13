@@ -22,7 +22,7 @@ class ShareData {
 		static var instance:ShareData? = nil
 		static var token: dispatch_once_t = 0
 	}
-	init() {
+	private init() {
         index = 1
 	}
     func demoFunc(){

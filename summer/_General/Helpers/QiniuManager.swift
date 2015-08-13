@@ -23,7 +23,8 @@ class QiniuManager {
         static var instance:QiniuManager? = nil
         static var token: dispatch_once_t = 0
     }
-    init() {
+    // 私有化构造方法，阻止其他对象使用这个类的默认的'()'构造方法
+    private init() {
         upManager = QNUploadManager()
     }
     

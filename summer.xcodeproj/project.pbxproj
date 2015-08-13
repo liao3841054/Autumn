@@ -35,7 +35,7 @@
 		FA6E80CF1B7B04EA00428951 /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = FA6E80B31B7B04EA00428951 /* read_me.txt */; };
 		FA6E80D11B7B2B4800428951 /* NSObject+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80D01B7B2B4800428951 /* NSObject+Tools.swift */; };
 		FA6E80D31B7B2F0C00428951 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80D21B7B2F0C00428951 /* README.md */; };
-		FA6E80D51B7B600E00428951 /* QiniuXX.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80D41B7B600E00428951 /* QiniuXX.swift */; };
+		FA6E80D51B7B600E00428951 /* QiniuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80D41B7B600E00428951 /* QiniuManager.swift */; };
 		FABCAF871B736F5A0091B3C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAF861B736F5A0091B3C1 /* AppDelegate.swift */; };
 		FABCAF8A1B736F5A0091B3C1 /* summer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FABCAF881B736F5A0091B3C1 /* summer.xcdatamodeld */; };
 		FABCAF8C1B736F5A0091B3C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAF8B1B736F5A0091B3C1 /* ViewController.swift */; };
@@ -89,7 +89,7 @@
 		FA6E80B51B7B04EA00428951 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		FA6E80D01B7B2B4800428951 /* NSObject+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Tools.swift"; sourceTree = "<group>"; };
 		FA6E80D21B7B2F0C00428951 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		FA6E80D41B7B600E00428951 /* QiniuXX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QiniuXX.swift; sourceTree = "<group>"; };
+		FA6E80D41B7B600E00428951 /* QiniuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QiniuManager.swift; sourceTree = "<group>"; };
 		FABCAF811B736F5A0091B3C1 /* summer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = summer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABCAF851B736F5A0091B3C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FABCAF861B736F5A0091B3C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -170,7 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				FA6E80991B7B04EA00428951 /* AFNetManager.swift */,
-				FA6E80D41B7B600E00428951 /* QiniuXX.swift */,
+				FA6E80D41B7B600E00428951 /* QiniuManager.swift */,
 				FA6E809A1B7B04EA00428951 /* GCDManager.swift */,
 				FA6E809C1B7B04EA00428951 /* NotificationManager.swift */,
 			);
@@ -491,7 +491,7 @@
 				FA6E80C31B7B04EA00428951 /* FontModel.swift in Sources */,
 				FA6E80BA1B7B04EA00428951 /* UIColor+Tools.swift in Sources */,
 				FA6E80C51B7B04EA00428951 /* AlbumViewController.swift in Sources */,
-				FA6E80D51B7B600E00428951 /* QiniuXX.swift in Sources */,
+				FA6E80D51B7B600E00428951 /* QiniuManager.swift in Sources */,
 				FA6E80BB1B7B04EA00428951 /* UIImageView+Tools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
