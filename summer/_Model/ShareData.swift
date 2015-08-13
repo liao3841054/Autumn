@@ -6,12 +6,7 @@
 //  Copyright (c) 2015年 Ding Soung. All rights reserved.
 //
 
-import UIKit
-
 class ShareData {
-	
-	var index:Int = 0
-	
 	class var instance: ShareData {
 		dispatch_once(&Inner.token){
 			Inner.instance = ShareData() //只初始化一次
@@ -22,6 +17,9 @@ class ShareData {
 		static var instance:ShareData? = nil
 		static var token: dispatch_once_t = 0
 	}
+    
+    var index:Int = 0
+    // 私有化构造方法，阻止其他对象使用这个类的默认的'()'构造方法
 	private init() {
         index = 1
 	}

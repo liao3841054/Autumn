@@ -41,6 +41,9 @@ class LoginViewController: BaseNaviViewController, UINavigationControllerDelegat
         println(ShareData.instance.index)
         ShareData.instance.demoFunc()
         
+        //MARK: 最简swift单例
+        ShareModel.instance.function()
+        
         //MARK: 设置阴影
         let view = UIButton(frame: CGRectMake(40, 40, 50, 50))
         view.backgroundColor = UIColor.greenColor()

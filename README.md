@@ -5,6 +5,7 @@
   * setShadow 设置阴影
   * addFullScreemView 全屏预览消失 动态效果
 * QiniuManager 七牛上传管理，单例
+* ShareModel 最简Swift单例写法
 
 * ReactiveCocoa 信号，分离，过滤，聚合，MVVM模式
 * NotificationManager 本地消息推送 单例方法
