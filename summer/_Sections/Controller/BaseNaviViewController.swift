@@ -25,7 +25,7 @@ class BaseNaviViewController: BaseViewController {
             if let v = self.navigationController?.navigationBar.frame.height {
                 self.view.frame.origin.y =  v + 20
             }
-        }else{
+        } else if(self.navigationController?.navigationBar.translucent == false){
             if let v = self.navigationController?.navigationBar.frame.height {
                 self.view.frame.size.height -= (v + 20)
             }

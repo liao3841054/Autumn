@@ -11,16 +11,13 @@ import UIKit
 import MobileCoreServices
 import AssetsLibrary
 
-class LoginViewController: BaseNaviViewController, UINavigationControllerDelegate,  UIImagePickerControllerDelegate {
+class MyViewController: BaseNaviViewController, UINavigationControllerDelegate,  UIImagePickerControllerDelegate {
+    
+    private var showSectionBlock: ((view:UIView)->Void)?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        if let v = (NSBundle.mainBundle().loadNibNamed("LoginView", owner: self, options: nil) as NSArray).lastObject as? LoginView {
-            v.frame = self.view.frame
-            self.view.addSubview(v)
-        }
         
         //MARK: GCD异步延时
         _ = GCDManager.delay(0.8, task: { () -> () in
@@ -55,8 +52,6 @@ class LoginViewController: BaseNaviViewController, UINavigationControllerDelegat
         //MARK: 本地推送消息
         NotificationManager.instance.scheduleNotification(itemID: 123, delaySeconds: 3, timeZone: NSTimeZone.defaultTimeZone(), message: "本地消息")
         //cancelNotification(123);
-        
-        
         
         closure(mark: "摄像头录制视频", run: false, block: { () -> Void in
             if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera) {
@@ -101,7 +96,7 @@ class LoginViewController: BaseNaviViewController, UINavigationControllerDelegat
                 picker.cameraDevice = UIImagePickerControllerCameraDevice.Front
                 picker.allowsEditing = true
                 
-
+                
                 self.presentViewController(picker, animated: true, completion: nil)
             } else {
                 let alert = UIAlertView(title: "", message: "相机已被禁用，请在设置中设置允许", delegate: self, cancelButtonTitle: "OK")
@@ -136,7 +131,6 @@ class LoginViewController: BaseNaviViewController, UINavigationControllerDelegat
             picker.dismissViewControllerAnimated(true, completion: nil)
         })
     }
-    
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
         println("image load success")
         self.dismissViewControllerAnimated(true, completion: nil)
@@ -146,4 +140,38 @@ class LoginViewController: BaseNaviViewController, UINavigationControllerDelegat
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
+    
+    @IBAction func loginBtnAction(sender: AnyObject) {
+        if let v = (NSBundle.mainBundle().loadNibNamed("LoginView", owner: self, options: nil) as NSArray).lastObject as? LoginView {
+            showSectionBlock?(view: v)
+            
+            var vc = BaseNaviViewController()
+            v.frame = vc.view.frame
+            vc.view.addSubview(v)
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    @IBAction func httpDebugBtnAction(sender: AnyObject) {
+        if let v = (NSBundle.mainBundle().loadNibNamed("HTTPDebugView", owner: self, options: nil) as NSArray).lastObject as? HTTPDebugView {
+            var vc = BaseNaviViewController()
+            v.frame = vc.view.frame
+            vc.view.addSubview(v)
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -16,7 +16,9 @@ class ViewController: UIViewController {
         
         //MARK: GCD异步延时
         _ = GCDManager.delay(0.8, task: { () -> () in
-            self.presentViewController(UINavigationController(rootViewController: LoginViewController()), animated: true, completion: { () -> Void in
+            
+            var vc = UIStoryboard(name: "Summer", bundle: nil).instantiateViewControllerWithIdentifier("My") as! MyViewController
+            self.presentViewController(UINavigationController(rootViewController: vc), animated: true, completion: { () -> Void in
                 print("task start", appendNewline: false)
             })
         })
