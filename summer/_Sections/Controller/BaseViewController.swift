@@ -9,8 +9,6 @@
 import UIKit
 
 class BaseViewController: UIViewController {
-
-    var srcVC:UIViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()

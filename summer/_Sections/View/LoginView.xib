@@ -8,7 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="summer" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="qiy-sC-tqC" customClass="LoginView" customModule="summer" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="225"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mobile" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="soc-4e-e6T">
@@ -33,11 +33,19 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="服务条款" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0K-zg-Ecd">
+                    <rect key="frame" x="126" y="196.5" width="68" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="aol-w0-1jT" firstAttribute="leading" secondItem="V5t-ZD-P5U" secondAttribute="leading" id="2tZ-wr-eal"/>
+                <constraint firstAttribute="bottom" secondItem="g0K-zg-Ecd" secondAttribute="bottom" constant="8" id="72r-4m-ySE"/>
                 <constraint firstItem="YvR-k0-WdV" firstAttribute="top" secondItem="V5t-ZD-P5U" secondAttribute="bottom" constant="13" id="Fwp-Sf-80A"/>
+                <constraint firstAttribute="centerX" secondItem="g0K-zg-Ecd" secondAttribute="centerX" id="KEv-te-fVc"/>
                 <constraint firstItem="soc-4e-e6T" firstAttribute="top" secondItem="qiy-sC-tqC" secondAttribute="top" constant="20" id="PcF-6g-9Db"/>
                 <constraint firstItem="V5t-ZD-P5U" firstAttribute="top" secondItem="soc-4e-e6T" secondAttribute="bottom" constant="19" id="R7k-OG-KNx"/>
                 <constraint firstItem="soc-4e-e6T" firstAttribute="width" secondItem="V5t-ZD-P5U" secondAttribute="width" id="Xfv-o8-p5f"/>
@@ -54,7 +62,7 @@
                 <outlet property="register" destination="YvR-k0-WdV" id="4Kk-0A-fEh"/>
                 <outlet property="signIn" destination="aol-w0-1jT" id="VPr-W5-GsK"/>
             </connections>
-            <point key="canvasLocation" x="61" y="718"/>
+            <point key="canvasLocation" x="61" y="755.5"/>
         </view>
     </objects>
 </document>

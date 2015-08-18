@@ -18,9 +18,7 @@ class ViewController: UIViewController {
         _ = GCDManager.delay(0.8, task: { () -> () in
             
             var vc = UIStoryboard(name: "Summer", bundle: nil).instantiateViewControllerWithIdentifier("My") as! MyViewController
-            self.presentViewController(UINavigationController(rootViewController: vc), animated: true, completion: { () -> Void in
-                print("task start", appendNewline: false)
-            })
+            self.presentViewController(vc, animated: true, completion: nil)
         })
         //GCDManager.cancel(task)
         

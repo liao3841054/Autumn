@@ -11,7 +11,7 @@ import UIKit
 import MobileCoreServices
 import AssetsLibrary
 
-class MyViewController: BaseNaviViewController, UINavigationControllerDelegate,  UIImagePickerControllerDelegate {
+class MyViewController: BaseViewController, UINavigationControllerDelegate,  UIImagePickerControllerDelegate {
     
     private var showSectionBlock: ((view:UIView)->Void)?
     
@@ -142,22 +142,13 @@ class MyViewController: BaseNaviViewController, UINavigationControllerDelegate, 
     
     
     @IBAction func loginBtnAction(sender: AnyObject) {
-        if let v = (NSBundle.mainBundle().loadNibNamed("LoginView", owner: self, options: nil) as NSArray).lastObject as? LoginView {
-            showSectionBlock?(view: v)
-            
-            var vc = BaseNaviViewController()
-            v.frame = vc.view.frame
-            vc.view.addSubview(v)
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
+        var vc = LoginViewController()
+        var navi = UINavigationController(rootViewController: LoginViewController())
+        self.presentViewController(navi, animated: true, completion: nil)
     }
     @IBAction func httpDebugBtnAction(sender: AnyObject) {
-        if let v = (NSBundle.mainBundle().loadNibNamed("HTTPDebugView", owner: self, options: nil) as NSArray).lastObject as? HTTPDebugView {
-            var vc = BaseNaviViewController()
-            v.frame = vc.view.frame
-            vc.view.addSubview(v)
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
+        var vc = UINavigationController(rootViewController: HTTPDebugViewController())
+        self.presentViewController(vc, animated: true, completion: nil)
     }
     
 }

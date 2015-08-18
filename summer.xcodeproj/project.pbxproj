@@ -25,8 +25,6 @@
 		FA6E80C51B7B04EA00428951 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80A61B7B04EA00428951 /* AlbumViewController.swift */; };
 		FA6E80C61B7B04EA00428951 /* BaseNaviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80A71B7B04EA00428951 /* BaseNaviViewController.swift */; };
 		FA6E80C71B7B04EA00428951 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80A81B7B04EA00428951 /* BaseViewController.swift */; };
-		FA6E80C81B7B04EA00428951 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80A91B7B04EA00428951 /* LoginView.swift */; };
-		FA6E80C91B7B04EA00428951 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6E80AA1B7B04EA00428951 /* LoginView.xib */; };
 		FA6E80CA1B7B04EA00428951 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80AB1B7B04EA00428951 /* MyViewController.swift */; };
 		FA6E80CB1B7B04EA00428951 /* AlbumImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80AD1B7B04EA00428951 /* AlbumImageCell.swift */; };
 		FA6E80CC1B7B04EA00428951 /* AlbumImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6E80AE1B7B04EA00428951 /* AlbumImageCell.xib */; };
@@ -40,6 +38,10 @@
 		FA6E80D91B81C63C00428951 /* HTTPDebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80D81B81C63C00428951 /* HTTPDebugView.swift */; };
 		FA6E80DB1B81C65B00428951 /* HTTPDebugView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6E80DA1B81C65B00428951 /* HTTPDebugView.xib */; };
 		FA6E80DF1B81D31700428951 /* Summer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6E80DE1B81D31700428951 /* Summer.storyboard */; };
+		FA6E80E11B82E9E200428951 /* HTTPDebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80E01B82E9E200428951 /* HTTPDebugViewController.swift */; };
+		FA6E80E41B82EA8200428951 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80E21B82EA8200428951 /* LoginView.swift */; };
+		FA6E80E51B82EA8200428951 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6E80E31B82EA8200428951 /* LoginView.xib */; };
+		FA6E80E71B8308B100428951 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80E61B8308B100428951 /* LoginViewController.swift */; };
 		FABCAF871B736F5A0091B3C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAF861B736F5A0091B3C1 /* AppDelegate.swift */; };
 		FABCAF8A1B736F5A0091B3C1 /* summer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FABCAF881B736F5A0091B3C1 /* summer.xcdatamodeld */; };
 		FABCAF8C1B736F5A0091B3C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAF8B1B736F5A0091B3C1 /* ViewController.swift */; };
@@ -81,8 +83,6 @@
 		FA6E80A61B7B04EA00428951 /* AlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		FA6E80A71B7B04EA00428951 /* BaseNaviViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNaviViewController.swift; sourceTree = "<group>"; };
 		FA6E80A81B7B04EA00428951 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		FA6E80A91B7B04EA00428951 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		FA6E80AA1B7B04EA00428951 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		FA6E80AB1B7B04EA00428951 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyViewController.swift; path = Controller/MyViewController.swift; sourceTree = "<group>"; };
 		FA6E80AD1B7B04EA00428951 /* AlbumImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumImageCell.swift; sourceTree = "<group>"; };
 		FA6E80AE1B7B04EA00428951 /* AlbumImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlbumImageCell.xib; sourceTree = "<group>"; };
@@ -98,6 +98,10 @@
 		FA6E80D81B81C63C00428951 /* HTTPDebugView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTTPDebugView.swift; path = summer/_Sections/View/HTTPDebugView.swift; sourceTree = SOURCE_ROOT; };
 		FA6E80DA1B81C65B00428951 /* HTTPDebugView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HTTPDebugView.xib; sourceTree = "<group>"; };
 		FA6E80DE1B81D31700428951 /* Summer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Summer.storyboard; sourceTree = "<group>"; };
+		FA6E80E01B82E9E200428951 /* HTTPDebugViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTTPDebugViewController.swift; path = summer/_Sections/Controller/HTTPDebugViewController.swift; sourceTree = SOURCE_ROOT; };
+		FA6E80E21B82EA8200428951 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FA6E80E31B82EA8200428951 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		FA6E80E61B8308B100428951 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FABCAF811B736F5A0091B3C1 /* summer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = summer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABCAF851B736F5A0091B3C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FABCAF861B736F5A0091B3C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -221,8 +225,8 @@
 				FA6E80A61B7B04EA00428951 /* AlbumViewController.swift */,
 				FA6E80A71B7B04EA00428951 /* BaseNaviViewController.swift */,
 				FA6E80A81B7B04EA00428951 /* BaseViewController.swift */,
-				FA6E80A91B7B04EA00428951 /* LoginView.swift */,
-				FA6E80AA1B7B04EA00428951 /* LoginView.xib */,
+				FA6E80E01B82E9E200428951 /* HTTPDebugViewController.swift */,
+				FA6E80E61B8308B100428951 /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -230,6 +234,8 @@
 		FA6E80AC1B7B04EA00428951 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FA6E80E21B82EA8200428951 /* LoginView.swift */,
+				FA6E80E31B82EA8200428951 /* LoginView.xib */,
 				FA6E80D81B81C63C00428951 /* HTTPDebugView.swift */,
 				FA6E80DA1B81C65B00428951 /* HTTPDebugView.xib */,
 				FA6E80AD1B7B04EA00428951 /* AlbumImageCell.swift */,
@@ -409,10 +415,10 @@
 			files = (
 				FA6E80CC1B7B04EA00428951 /* AlbumImageCell.xib in Resources */,
 				FABCAF8F1B736F5A0091B3C1 /* Main.storyboard in Resources */,
+				FA6E80E51B82EA8200428951 /* LoginView.xib in Resources */,
 				FA6E80DF1B81D31700428951 /* Summer.storyboard in Resources */,
 				FABCAF941B736F5A0091B3C1 /* LaunchScreen.xib in Resources */,
 				FA6E80DB1B81C65B00428951 /* HTTPDebugView.xib in Resources */,
-				FA6E80C91B7B04EA00428951 /* LoginView.xib in Resources */,
 				FA6E80CF1B7B04EA00428951 /* read_me.txt in Resources */,
 				FABCAF911B736F5A0091B3C1 /* Images.xcassets in Resources */,
 			);
@@ -484,6 +490,7 @@
 				FABCAF8C1B736F5A0091B3C1 /* ViewController.swift in Sources */,
 				FA6E80CD1B7B04EA00428951 /* AlbumView.swift in Sources */,
 				FA6E80CA1B7B04EA00428951 /* MyViewController.swift in Sources */,
+				FA6E80E11B82E9E200428951 /* HTTPDebugViewController.swift in Sources */,
 				FA6E80D31B7B2F0C00428951 /* README.md in Sources */,
 				FA6E80C61B7B04EA00428951 /* BaseNaviViewController.swift in Sources */,
 				FA6E80B71B7B04EA00428951 /* NSData+Tools.swift in Sources */,
@@ -492,12 +499,13 @@
 				FA6E80C01B7B04EA00428951 /* NotificationManager.swift in Sources */,
 				FA6E80D11B7B2B4800428951 /* NSObject+Tools.swift in Sources */,
 				FA6E80C41B7B04EA00428951 /* ShareData.swift in Sources */,
+				FA6E80E71B8308B100428951 /* LoginViewController.swift in Sources */,
 				FA6E80D71B7C9D9B00428951 /* ShareModel.swift in Sources */,
-				FA6E80C81B7B04EA00428951 /* LoginView.swift in Sources */,
 				FA6E80C21B7B04EA00428951 /* CertificateModel.swift in Sources */,
 				FA6E80BD1B7B04EA00428951 /* AFNetManager.swift in Sources */,
 				FA6E80B91B7B04EA00428951 /* String+Tools.swift in Sources */,
 				FA6E80B61B7B04EA00428951 /* Int+Tools.swift in Sources */,
+				FA6E80E41B82EA8200428951 /* LoginView.swift in Sources */,
 				FA6E80B81B7B04EA00428951 /* NSMutableData+Tools.swift in Sources */,
 				FA6E80C11B7B04EA00428951 /* BaseModel.swift in Sources */,
 				FABCAF8A1B736F5A0091B3C1 /* summer.xcdatamodeld in Sources */,
