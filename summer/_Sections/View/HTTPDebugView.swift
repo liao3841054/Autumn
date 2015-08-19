@@ -12,6 +12,7 @@ class HTTPDebugView: UIView {
    
     @IBOutlet weak var url: UITextField!
     @IBOutlet weak var json: UITextView!
+    @IBOutlet weak var log: UITextView!
     
     @IBOutlet weak var post: UIButton!
     @IBOutlet weak var get: UIButton!
@@ -22,23 +23,15 @@ class HTTPDebugView: UIView {
     }
     
     @IBAction func post(sender: AnyObject) {
-        AFNetManager.instance.POST(url.text, parameter: json.text, success: { (opt, obj) -> Void in
-            let alert = UIAlertView(title: "success", message: "\(opt) \r\n\r\n \(obj)", delegate: self, cancelButtonTitle: "OK")
-            alert.show()
-        }) { (opt, error) -> Void in
-            let alert = UIAlertView(title: "fail", message: "\(opt) \r\n\r\n \(error)", delegate: self, cancelButtonTitle: "OK")
+        
+        
+        AFNetManager.instance.POST(ContentTypes.textHTML, url: url.text, parameter: json.text, success: { (task, obj) -> Void in
+            self.log.text.append( "\r\n\r\n-------------------------\r\n \(task) \r\n\r\n \(obj)")
+        }) { (task, error) -> Void in
+            let alert = UIAlertView(title: "fail", message: "\(task) \r\n\r\n \(error)", delegate: self, cancelButtonTitle: "OK")
             alert.show()
         }
     }
     @IBAction func get(sender: AnyObject) {
-        AFNetManager.instance.GET(url.text, parameter: nil, success: { (opt, obj) -> Void in
-            let alert = UIAlertView(title: "success", message: "\(opt) \r\n\r\n \(obj)", delegate: self, cancelButtonTitle: "OK")
-            alert.show()
-        }) { (opt, error) -> Void in
-            let alert = UIAlertView(title: "fail", message: "\(opt) \r\n\r\n \(error)", delegate: self, cancelButtonTitle: "OK")
-            alert.show()
-        }
     }
-    
-    
 }

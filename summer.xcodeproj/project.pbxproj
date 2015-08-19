@@ -15,7 +15,7 @@
 		FA6E80BA1B7B04EA00428951 /* UIColor+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80951B7B04EA00428951 /* UIColor+Tools.swift */; };
 		FA6E80BB1B7B04EA00428951 /* UIImageView+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80961B7B04EA00428951 /* UIImageView+Tools.swift */; };
 		FA6E80BC1B7B04EA00428951 /* UIVIew+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80971B7B04EA00428951 /* UIVIew+Tools.swift */; };
-		FA6E80BD1B7B04EA00428951 /* AFNetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80991B7B04EA00428951 /* AFNetManager.swift */; };
+		FA6E80BD1B7B04EA00428951 /* NetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80991B7B04EA00428951 /* NetManager.swift */; };
 		FA6E80BE1B7B04EA00428951 /* GCDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E809A1B7B04EA00428951 /* GCDManager.swift */; };
 		FA6E80C01B7B04EA00428951 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E809C1B7B04EA00428951 /* NotificationManager.swift */; };
 		FA6E80C11B7B04EA00428951 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80A01B7B04EA00428951 /* BaseModel.swift */; };
@@ -72,7 +72,7 @@
 		FA6E80951B7B04EA00428951 /* UIColor+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Tools.swift"; sourceTree = "<group>"; };
 		FA6E80961B7B04EA00428951 /* UIImageView+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Tools.swift"; sourceTree = "<group>"; };
 		FA6E80971B7B04EA00428951 /* UIVIew+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+Tools.swift"; sourceTree = "<group>"; };
-		FA6E80991B7B04EA00428951 /* AFNetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFNetManager.swift; sourceTree = "<group>"; };
+		FA6E80991B7B04EA00428951 /* NetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetManager.swift; sourceTree = "<group>"; };
 		FA6E809A1B7B04EA00428951 /* GCDManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDManager.swift; sourceTree = "<group>"; };
 		FA6E809C1B7B04EA00428951 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		FA6E809D1B7B04EA00428951 /* summer.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = summer.playground; sourceTree = "<group>"; };
@@ -181,7 +181,7 @@
 		FA6E80981B7B04EA00428951 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				FA6E80991B7B04EA00428951 /* AFNetManager.swift */,
+				FA6E80991B7B04EA00428951 /* NetManager.swift */,
 				FA6E80D41B7B600E00428951 /* QiniuManager.swift */,
 				FA6E809A1B7B04EA00428951 /* GCDManager.swift */,
 				FA6E809C1B7B04EA00428951 /* NotificationManager.swift */,
@@ -502,7 +502,7 @@
 				FA6E80E71B8308B100428951 /* LoginViewController.swift in Sources */,
 				FA6E80D71B7C9D9B00428951 /* ShareModel.swift in Sources */,
 				FA6E80C21B7B04EA00428951 /* CertificateModel.swift in Sources */,
-				FA6E80BD1B7B04EA00428951 /* AFNetManager.swift in Sources */,
+				FA6E80BD1B7B04EA00428951 /* NetManager.swift in Sources */,
 				FA6E80B91B7B04EA00428951 /* String+Tools.swift in Sources */,
 				FA6E80B61B7B04EA00428951 /* Int+Tools.swift in Sources */,
 				FA6E80E41B82EA8200428951 /* LoginView.swift in Sources */,
