@@ -11,41 +11,32 @@
             <rect key="frame" x="0.0" y="0.0" width="319" height="300"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="http://www.douban.com/j/app/radio/channels" borderStyle="roundedRect" placeholder="http://url" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BO2-Sy-YQB">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="http://DingSoung.tk/Study/SimpleAPI.php" borderStyle="roundedRect" placeholder="http://url" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BO2-Sy-YQB">
                     <rect key="frame" x="8" y="8" width="303" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" keyboardType="URL" returnKeyType="next"/>
                 </textField>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="{     &quot;status&quot;: &quot;success&quot;,     &quot;message&quot;: &quot;成功&quot;,     &quot;data&quot;:         {         &quot;key&quot;:&quot;value&quot;,         }, }" translatesAutoresizingMaskIntoConstraints="NO" id="JM6-st-gxW">
-                    <rect key="frame" x="8" y="46" width="303" height="112"/>
+                    <rect key="frame" x="8" y="46" width="303" height="80"/>
                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="alphabet"/>
                 </textView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhB-N1-Le2">
-                    <rect key="frame" x="8" y="262" width="41" height="30"/>
-                    <state key="normal" title="POST">
+                    <rect key="frame" x="8" y="262" width="57" height="30"/>
+                    <state key="normal" title="Request">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="post:" destination="StI-jJ-uKG" eventType="touchUpInside" id="Ln6-ag-hn9"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBt-fP-ISY">
-                    <rect key="frame" x="281" y="262" width="30" height="30"/>
-                    <state key="normal" title="GET">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="get:" destination="StI-jJ-uKG" eventType="touchUpInside" id="hC8-K5-QIp"/>
-                    </connections>
-                </button>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="{     &quot;status&quot;: &quot;success&quot;,     &quot;message&quot;: &quot;成功&quot;,     &quot;data&quot;:         {         &quot;key&quot;:&quot;value&quot;,         }, }" translatesAutoresizingMaskIntoConstraints="NO" id="WMe-4q-qhn">
-                    <rect key="frame" x="8" y="166" width="303" height="88"/>
+                    <rect key="frame" x="8" y="134" width="303" height="120"/>
                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="88" id="Oyf-rq-mT5"/>
+                        <constraint firstAttribute="height" constant="120" id="Oyf-rq-mT5"/>
                     </constraints>
                     <color key="textColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
@@ -54,10 +45,8 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="eBt-fP-ISY" secondAttribute="trailing" constant="8" id="2Np-72-6dR"/>
                 <constraint firstItem="BO2-Sy-YQB" firstAttribute="leading" secondItem="JM6-st-gxW" secondAttribute="leading" id="5sp-hk-Pdb"/>
                 <constraint firstItem="BO2-Sy-YQB" firstAttribute="trailing" secondItem="JM6-st-gxW" secondAttribute="trailing" id="F6h-CR-rmb"/>
-                <constraint firstItem="eBt-fP-ISY" firstAttribute="centerY" secondItem="fhB-N1-Le2" secondAttribute="centerY" id="IVj-Qy-9F5"/>
                 <constraint firstItem="JM6-st-gxW" firstAttribute="top" secondItem="BO2-Sy-YQB" secondAttribute="bottom" constant="10" id="KG3-3y-4Li"/>
                 <constraint firstItem="WMe-4q-qhn" firstAttribute="leading" secondItem="JM6-st-gxW" secondAttribute="leading" id="OCE-ox-D4P"/>
                 <constraint firstItem="fhB-N1-Le2" firstAttribute="leading" secondItem="StI-jJ-uKG" secondAttribute="leading" constant="8" id="OXi-u7-YVu"/>
@@ -81,13 +70,12 @@
                 </mask>
             </variation>
             <connections>
-                <outlet property="get" destination="eBt-fP-ISY" id="scF-VS-Ebk"/>
                 <outlet property="json" destination="JM6-st-gxW" id="qI0-HK-a30"/>
                 <outlet property="log" destination="WMe-4q-qhn" id="gvF-rM-nR9"/>
                 <outlet property="post" destination="fhB-N1-Le2" id="yHr-Zn-s2M"/>
                 <outlet property="url" destination="BO2-Sy-YQB" id="G1M-Br-wBn"/>
             </connections>
-            <point key="canvasLocation" x="452.5" y="153"/>
+            <point key="canvasLocation" x="188.5" y="164"/>
         </view>
     </objects>
 </document>
