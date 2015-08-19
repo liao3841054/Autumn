@@ -36,16 +36,9 @@ class BaseNaviViewController: BaseViewController {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: self, action: "rightBarButtonAction")
         if self.rightBlock == nil {
             self.leftBlock = { () -> Void in
-                if self.navigationController == nil {
+                if self.navigationController == nil || self.navigationController?.viewControllers.count <= 1 {
                     self.dismissViewControllerAnimated(true, completion: nil)
                 }else{
-                    
-                    NSArray *viewControllers = self.navigationController.viewControllers;
-                    UIViewController *rootViewController = (UIViewController *)[viewControllers objectAtIndex:viewControllers.count - 2];
-                    
-                    
-                    self.navigationController?.viewControllers.count
-                    
                     if let v = self.srcVC {
                         self.navigationController?.popToViewController(v, animated: true)
                     }else{

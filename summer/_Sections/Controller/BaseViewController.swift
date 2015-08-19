@@ -13,6 +13,12 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        var tapGesture = UITapGestureRecognizer(target: self, action: "viewTapGesture:")
+        tapGesture.numberOfTapsRequired = 1
+        self.view.addGestureRecognizer(tapGesture)
+        self.view.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: "viewPanGesture:"))
+        self.tabBarController?.tabBar.hidden = true
+        
         // Do any additional setup after loading the view.
     }
 
@@ -21,15 +27,10 @@ class BaseViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func viewTapGesture(sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
     }
-    */
-
+    func viewPanGesture(sender:UIPanGestureRecognizer) {
+        self.view.endEditing(true)
+    }
 }
