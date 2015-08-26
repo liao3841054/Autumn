@@ -108,6 +108,13 @@ class MyViewController: BaseViewController, UINavigationControllerDelegate,  UII
         closure(mark: "测试七牛上传", run: true, block: { () -> Void in
             QiniuManager.instance.upload("tolken form server", data: NSData(), key: "test key")
         })
+        
+        
+        
+        closure { () -> Void in
+            var web = WebView()
+            web.runJS("test", type: "js", function: "factorial", arguments: [10])
+        }
     }
     
     //MARK: ImagePicker delegate

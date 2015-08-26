@@ -58,6 +58,22 @@ class LoginView: UIView {
         }
         #endif
         
+        
+        
+        
+        var signalA = RACSignal.createSignal { (subscriber) -> RACDisposable! in
+            subscriber.sendNext("hello")
+            return nil
+        }
+        signalA.map { (value) -> AnyObject! in
+            if value as? String == "hello" {
+                return "hi"
+            }else{
+                return ""
+            }
+        }
+        
+        
         /*
         #if false //RAC 宏定义在swift中不可用
             RAC(self.name.backgroundColor) = vaidNameSignal.map({ (dat) -> AnyObject! in
