@@ -42,7 +42,7 @@ class MyViewController: BaseViewController, UINavigationControllerDelegate,  UII
         ShareModel.instance.function()
         
         //MARK: 设置阴影
-        let view = UIButton(frame: CGRectMake(40, 40, 50, 50))
+        let view = UIButton(frame: CGRectMake(self.view.frame.size.width - 50 - 10, 40, 50, 50))
         view.backgroundColor = UIColor.greenColor()
         view.setShadow(color: UIColor.yellowColor().CGColor, offset: CGSizeMake(5, 5), opacity: 0.5, radius: 10)
         self.view.addSubview(view)
@@ -109,12 +109,27 @@ class MyViewController: BaseViewController, UINavigationControllerDelegate,  UII
             QiniuManager.instance.upload("tolken form server", data: NSData(), key: "test key")
         })
         
+        closure(mark: "测试JavaScriptManager", run: true, block: { () -> Void in
+            if let  path = NSBundle.mainBundle().pathForResource("test", ofType: "js") {
+                var js = NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding, error: nil) as! String
+                println(JavaScriptManager.instance.runJS(js, function: "factorial", parameter: [10]))
+            }
+            }, complete: nil)
         
-        
-        closure { () -> Void in
-            var web = WebView()
-            web.runJS("test", type: "js", function: "factorial", arguments: [10])
-        }
+        closure(mark: "测试WebView+Tools JS扩展", run: true, block: { () -> Void in
+            if let path = NSBundle.mainBundle().pathForResource("test", ofType: "html") {
+                if let html = NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding, error: nil) as? String {
+                    var web = UIWebView(frame: self.view.frame)
+                    self.view.addSubview(web)
+                    web.loadHTMLString(html, baseURL: NSURL(fileURLWithPath: path))
+                    web.setJS("btnClicked", block: { (str) -> Void in
+                        let alert = UIAlertView(title: "", message: "js call native block", delegate: self, cancelButtonTitle: "OK")
+                        alert.show()
+                        web.removeFromSuperview()
+                    })
+                }
+            }
+            }, complete: nil)
     }
     
     //MARK: ImagePicker delegate

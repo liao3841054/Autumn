@@ -1,3 +1,5 @@
+* JavaScriptManager
+* UIWebView+Tools JS扩展
 * ShareData 单例模式共享数据
 * AFNetManager
 * GCDManager，GCD 延时执行,取消  

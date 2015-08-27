@@ -6,4 +6,17 @@
 //  Copyright (c) 2015年 Alex D. All rights reserved.
 //
 
-import Foundation
+import JavaScriptCore
+
+extension UIWebView {
+    
+    func setJS(forkey:String, block : @objc_block (NSString!) -> Void) {
+        if let context = self.valueForKeyPath("documentView.webView.mainFrame.javaScriptContext") as? JSContext {
+            context.setObject(unsafeBitCast(block, AnyObject.self), forKeyedSubscript: forkey)
+        }
+    }
+    
+}
+
+
+

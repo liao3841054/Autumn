@@ -5,4 +5,4 @@ pod 'FMDB'
 pod 'AFNetworking'
 pod 'ReactiveCocoa'
 pod 'SDWebImage'
-pod "Qiniu", "~> 7.0"
+pod 'Qiniu', '~> 7.0.11.1'

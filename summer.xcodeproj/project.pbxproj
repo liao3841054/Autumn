@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		991742CE5F7AF16E62B615E3 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D913051FEBB5C6F5FE1F40E /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FA6377421B8F04E00090BCD8 /* JavaScriptManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6377411B8F04E00090BCD8 /* JavaScriptManager.swift */; };
+		FA6377441B8F07A00090BCD8 /* UIWebView+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6377431B8F07A00090BCD8 /* UIWebView+Tools.swift */; };
 		FA6E80B61B7B04EA00428951 /* Int+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80911B7B04EA00428951 /* Int+Tools.swift */; };
 		FA6E80B71B7B04EA00428951 /* NSData+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80921B7B04EA00428951 /* NSData+Tools.swift */; };
 		FA6E80B81B7B04EA00428951 /* NSMutableData+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80931B7B04EA00428951 /* NSMutableData+Tools.swift */; };
@@ -42,9 +44,8 @@
 		FA6E80E41B82EA8200428951 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80E21B82EA8200428951 /* LoginView.swift */; };
 		FA6E80E51B82EA8200428951 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6E80E31B82EA8200428951 /* LoginView.xib */; };
 		FA6E80E71B8308B100428951 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80E61B8308B100428951 /* LoginViewController.swift */; };
-		FA92E6741B8704AC00A5CFAC /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92E6731B8704AC00A5CFAC /* WebView.swift */; };
 		FA92E6761B87070600A5CFAC /* test.js in Resources */ = {isa = PBXBuildFile; fileRef = FA92E6751B87070600A5CFAC /* test.js */; };
-		FA92E6781B871C8B00A5CFAC /* text.html in Resources */ = {isa = PBXBuildFile; fileRef = FA92E6771B871C8B00A5CFAC /* text.html */; };
+		FA92E6781B871C8B00A5CFAC /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = FA92E6771B871C8B00A5CFAC /* test.html */; };
 		FABCAF871B736F5A0091B3C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAF861B736F5A0091B3C1 /* AppDelegate.swift */; };
 		FABCAF8A1B736F5A0091B3C1 /* summer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FABCAF881B736F5A0091B3C1 /* summer.xcdatamodeld */; };
 		FABCAF8C1B736F5A0091B3C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAF8B1B736F5A0091B3C1 /* ViewController.swift */; };
@@ -68,6 +69,8 @@
 		20883E02CEADDAC602018D2E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8D913051FEBB5C6F5FE1F40E /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFEBAE990CCB934033BF1BED /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FA6377411B8F04E00090BCD8 /* JavaScriptManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JavaScriptManager.swift; sourceTree = "<group>"; };
+		FA6377431B8F07A00090BCD8 /* UIWebView+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWebView+Tools.swift"; sourceTree = "<group>"; };
 		FA6E80911B7B04EA00428951 /* Int+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Tools.swift"; sourceTree = "<group>"; };
 		FA6E80921B7B04EA00428951 /* NSData+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Tools.swift"; sourceTree = "<group>"; };
 		FA6E80931B7B04EA00428951 /* NSMutableData+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableData+Tools.swift"; sourceTree = "<group>"; };
@@ -105,9 +108,8 @@
 		FA6E80E21B82EA8200428951 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FA6E80E31B82EA8200428951 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		FA6E80E61B8308B100428951 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		FA92E6731B8704AC00A5CFAC /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		FA92E6751B87070600A5CFAC /* test.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = test.js; sourceTree = "<group>"; };
-		FA92E6771B871C8B00A5CFAC /* text.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = text.html; sourceTree = "<group>"; };
+		FA92E6771B871C8B00A5CFAC /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		FABCAF811B736F5A0091B3C1 /* summer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = summer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABCAF851B736F5A0091B3C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FABCAF861B736F5A0091B3C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				FA6E80951B7B04EA00428951 /* UIColor+Tools.swift */,
 				FA6E80961B7B04EA00428951 /* UIImageView+Tools.swift */,
 				FA6E80971B7B04EA00428951 /* UIVIew+Tools.swift */,
+				FA6377431B8F07A00090BCD8 /* UIWebView+Tools.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				FA6E80D41B7B600E00428951 /* QiniuManager.swift */,
 				FA6E809A1B7B04EA00428951 /* GCDManager.swift */,
 				FA6E809C1B7B04EA00428951 /* NotificationManager.swift */,
+				FA6377411B8F04E00090BCD8 /* JavaScriptManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -247,9 +251,8 @@
 				FA6E80AD1B7B04EA00428951 /* AlbumImageCell.swift */,
 				FA6E80AE1B7B04EA00428951 /* AlbumImageCell.xib */,
 				FA6E80AF1B7B04EA00428951 /* AlbumView.swift */,
-				FA92E6731B8704AC00A5CFAC /* WebView.swift */,
 				FA92E6751B87070600A5CFAC /* test.js */,
-				FA92E6771B871C8B00A5CFAC /* text.html */,
+				FA92E6771B871C8B00A5CFAC /* test.html */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -425,7 +428,7 @@
 				FA92E6761B87070600A5CFAC /* test.js in Resources */,
 				FA6E80CC1B7B04EA00428951 /* AlbumImageCell.xib in Resources */,
 				FABCAF8F1B736F5A0091B3C1 /* Main.storyboard in Resources */,
-				FA92E6781B871C8B00A5CFAC /* text.html in Resources */,
+				FA92E6781B871C8B00A5CFAC /* test.html in Resources */,
 				FA6E80E51B82EA8200428951 /* LoginView.xib in Resources */,
 				FA6E80DF1B81D31700428951 /* Summer.storyboard in Resources */,
 				FABCAF941B736F5A0091B3C1 /* LaunchScreen.xib in Resources */,
@@ -498,7 +501,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA6E80BE1B7B04EA00428951 /* GCDManager.swift in Sources */,
-				FA92E6741B8704AC00A5CFAC /* WebView.swift in Sources */,
 				FABCAF8C1B736F5A0091B3C1 /* ViewController.swift in Sources */,
 				FA6E80CD1B7B04EA00428951 /* AlbumView.swift in Sources */,
 				FA6E80CA1B7B04EA00428951 /* MyViewController.swift in Sources */,
@@ -510,6 +512,7 @@
 				FA6E80C71B7B04EA00428951 /* BaseViewController.swift in Sources */,
 				FA6E80C01B7B04EA00428951 /* NotificationManager.swift in Sources */,
 				FA6E80D11B7B2B4800428951 /* NSObject+Tools.swift in Sources */,
+				FA6377441B8F07A00090BCD8 /* UIWebView+Tools.swift in Sources */,
 				FA6E80C41B7B04EA00428951 /* ShareData.swift in Sources */,
 				FA6E80E71B8308B100428951 /* LoginViewController.swift in Sources */,
 				FA6E80D71B7C9D9B00428951 /* ShareModel.swift in Sources */,
@@ -520,6 +523,7 @@
 				FA6E80E41B82EA8200428951 /* LoginView.swift in Sources */,
 				FA6E80B81B7B04EA00428951 /* NSMutableData+Tools.swift in Sources */,
 				FA6E80C11B7B04EA00428951 /* BaseModel.swift in Sources */,
+				FA6377421B8F04E00090BCD8 /* JavaScriptManager.swift in Sources */,
 				FABCAF8A1B736F5A0091B3C1 /* summer.xcdatamodeld in Sources */,
 				FA6E80BC1B7B04EA00428951 /* UIVIew+Tools.swift in Sources */,
 				FABCAF871B736F5A0091B3C1 /* AppDelegate.swift in Sources */,
@@ -660,7 +664,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = summer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -679,7 +683,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = summer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
