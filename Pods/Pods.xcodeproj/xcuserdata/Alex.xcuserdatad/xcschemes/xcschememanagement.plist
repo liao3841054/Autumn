@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CocoaAsyncSocket.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>CocoaLumberjack.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FMDB.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,12 +47,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>019A228038EF33A5DEE55BC68876B8D5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>48440D11C85D20CB781A96B4D2FE665B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5C75FA0AC8466ECA87C77AEE046FD702</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>608EDFFDDBCC3C1F700766477EBF87CE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8C2D04939DBFDE6A2882EFDD1AAA1B8B</key>
+		<key>654B9E8A3161DCC8C5FBDD87629E457E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,17 +77,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AFCA0D50D112FE2493A3172931020647</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>BC8923913D4CEE9471212638D2FDA38C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EE7ED90F071FA199A3D87BD15B36DF54</key>
+		<key>DD58E9537E8CCE2709D5EB6BA6A28F49</key>
 		<dict>
 			<key>primary</key>
 			<true/>

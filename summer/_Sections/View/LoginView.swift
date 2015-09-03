@@ -9,6 +9,8 @@
 import UIKit
 import ReactiveCocoa
 
+import CocoaAsyncSocket
+
 class LoginView: UIView {
     
     @IBOutlet weak var mobile: UITextField!
