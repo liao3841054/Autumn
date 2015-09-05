@@ -44,6 +44,12 @@
 		FA6E80E41B82EA8200428951 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80E21B82EA8200428951 /* LoginView.swift */; };
 		FA6E80E51B82EA8200428951 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6E80E31B82EA8200428951 /* LoginView.xib */; };
 		FA6E80E71B8308B100428951 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E80E61B8308B100428951 /* LoginViewController.swift */; };
+		FA7724511B9AD709002C4DCF /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7724441B9AD709002C4DCF /* DDXMLElementAdditions.m */; };
+		FA7724521B9AD709002C4DCF /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7724471B9AD709002C4DCF /* NSString+DDXML.m */; };
+		FA7724531B9AD709002C4DCF /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = FA77244A1B9AD709002C4DCF /* DDXMLDocument.m */; };
+		FA7724541B9AD709002C4DCF /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = FA77244C1B9AD709002C4DCF /* DDXMLElement.m */; };
+		FA7724551B9AD709002C4DCF /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FA77244E1B9AD709002C4DCF /* DDXMLNode.m */; };
+		FA7724571B9AD761002C4DCF /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7724561B9AD761002C4DCF /* libxml2.2.dylib */; };
 		FA92E6761B87070600A5CFAC /* test.js in Resources */ = {isa = PBXBuildFile; fileRef = FA92E6751B87070600A5CFAC /* test.js */; };
 		FA92E6781B871C8B00A5CFAC /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = FA92E6771B871C8B00A5CFAC /* test.html */; };
 		FABCAF871B736F5A0091B3C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAF861B736F5A0091B3C1 /* AppDelegate.swift */; };
@@ -108,6 +114,19 @@
 		FA6E80E21B82EA8200428951 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FA6E80E31B82EA8200428951 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		FA6E80E61B8308B100428951 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FA7724431B9AD709002C4DCF /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
+		FA7724441B9AD709002C4DCF /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
+		FA7724461B9AD709002C4DCF /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
+		FA7724471B9AD709002C4DCF /* NSString+DDXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DDXML.m"; sourceTree = "<group>"; };
+		FA7724481B9AD709002C4DCF /* DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXML.h; sourceTree = "<group>"; };
+		FA7724491B9AD709002C4DCF /* DDXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLDocument.h; sourceTree = "<group>"; };
+		FA77244A1B9AD709002C4DCF /* DDXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLDocument.m; sourceTree = "<group>"; };
+		FA77244B1B9AD709002C4DCF /* DDXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElement.h; sourceTree = "<group>"; };
+		FA77244C1B9AD709002C4DCF /* DDXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElement.m; sourceTree = "<group>"; };
+		FA77244D1B9AD709002C4DCF /* DDXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLNode.h; sourceTree = "<group>"; };
+		FA77244E1B9AD709002C4DCF /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
+		FA7724501B9AD709002C4DCF /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
+		FA7724561B9AD761002C4DCF /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		FA92E6751B87070600A5CFAC /* test.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = test.js; sourceTree = "<group>"; };
 		FA92E6771B871C8B00A5CFAC /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		FABCAF811B736F5A0091B3C1 /* summer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = summer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7724571B9AD761002C4DCF /* libxml2.2.dylib in Frameworks */,
 				FA6E80CE1B7B04EA00428951 /* libWeChatSDK.a in Frameworks */,
 				991742CE5F7AF16E62B615E3 /* Pods.framework in Frameworks */,
 			);
@@ -147,6 +167,7 @@
 		252A4BE7B32A8EBB52982528 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA7724561B9AD761002C4DCF /* libxml2.2.dylib */,
 				8D913051FEBB5C6F5FE1F40E /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -260,6 +281,7 @@
 		FA6E80B01B7B04EA00428951 /* _Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				FA7724411B9AD709002C4DCF /* KissXML */,
 				FA6E80B11B7B04EA00428951 /* WeChatSDK_1.5 */,
 			);
 			path = _Vendors;
@@ -274,6 +296,49 @@
 				FA6E80B51B7B04EA00428951 /* WXApiObject.h */,
 			);
 			path = WeChatSDK_1.5;
+			sourceTree = "<group>";
+		};
+		FA7724411B9AD709002C4DCF /* KissXML */ = {
+			isa = PBXGroup;
+			children = (
+				FA7724421B9AD709002C4DCF /* Additions */,
+				FA7724451B9AD709002C4DCF /* Categories */,
+				FA7724481B9AD709002C4DCF /* DDXML.h */,
+				FA7724491B9AD709002C4DCF /* DDXMLDocument.h */,
+				FA77244A1B9AD709002C4DCF /* DDXMLDocument.m */,
+				FA77244B1B9AD709002C4DCF /* DDXMLElement.h */,
+				FA77244C1B9AD709002C4DCF /* DDXMLElement.m */,
+				FA77244D1B9AD709002C4DCF /* DDXMLNode.h */,
+				FA77244E1B9AD709002C4DCF /* DDXMLNode.m */,
+				FA77244F1B9AD709002C4DCF /* Private */,
+			);
+			path = KissXML;
+			sourceTree = "<group>";
+		};
+		FA7724421B9AD709002C4DCF /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				FA7724431B9AD709002C4DCF /* DDXMLElementAdditions.h */,
+				FA7724441B9AD709002C4DCF /* DDXMLElementAdditions.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		FA7724451B9AD709002C4DCF /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				FA7724461B9AD709002C4DCF /* NSString+DDXML.h */,
+				FA7724471B9AD709002C4DCF /* NSString+DDXML.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		FA77244F1B9AD709002C4DCF /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				FA7724501B9AD709002C4DCF /* DDXMLPrivate.h */,
+			);
+			path = Private;
 			sourceTree = "<group>";
 		};
 		FABCAF781B736F5A0091B3C1 = {
@@ -525,14 +590,19 @@
 				FA6E80C11B7B04EA00428951 /* BaseModel.swift in Sources */,
 				FA6377421B8F04E00090BCD8 /* JavaScriptManager.swift in Sources */,
 				FABCAF8A1B736F5A0091B3C1 /* summer.xcdatamodeld in Sources */,
+				FA7724551B9AD709002C4DCF /* DDXMLNode.m in Sources */,
 				FA6E80BC1B7B04EA00428951 /* UIVIew+Tools.swift in Sources */,
 				FABCAF871B736F5A0091B3C1 /* AppDelegate.swift in Sources */,
 				FA6E80CB1B7B04EA00428951 /* AlbumImageCell.swift in Sources */,
 				FA6E80C31B7B04EA00428951 /* FontModel.swift in Sources */,
 				FA6E80BA1B7B04EA00428951 /* UIColor+Tools.swift in Sources */,
+				FA7724511B9AD709002C4DCF /* DDXMLElementAdditions.m in Sources */,
 				FA6E80C51B7B04EA00428951 /* AlbumViewController.swift in Sources */,
 				FA6E80D51B7B600E00428951 /* QiniuManager.swift in Sources */,
+				FA7724541B9AD709002C4DCF /* DDXMLElement.m in Sources */,
 				FA6E80BB1B7B04EA00428951 /* UIImageView+Tools.swift in Sources */,
+				FA7724531B9AD709002C4DCF /* DDXMLDocument.m in Sources */,
+				FA7724521B9AD709002C4DCF /* NSString+DDXML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,6 +733,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SDK_DIR}/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = summer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -682,6 +757,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SDK_DIR}/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = summer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

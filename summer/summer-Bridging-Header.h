@@ -27,6 +27,6 @@
 //MARK: Qiniu
 #import <Qiniu/QiniuSDK.h>
 
-//XMPP dependence
-#import <CocoaLumberjack/CocoaLumberjack.h>
-//#import "CocoaAsyncSocket.h"
+//DDXML
+#import "DDXML.h"
+#import "DDXMLElementAdditions.h"

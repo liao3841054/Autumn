@@ -9,6 +9,8 @@
 import UIKit
 
 import MobileCoreServices
+import CocoaLumberjack
+
 import AssetsLibrary
 
 class MyViewController: BaseViewController, UINavigationControllerDelegate,  UIImagePickerControllerDelegate {

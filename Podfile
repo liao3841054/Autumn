@@ -7,5 +7,4 @@ pod 'ReactiveCocoa'
 pod 'SDWebImage'
 pod 'Qiniu', '~> 7.0.11.1'
 
-pod 'CocoaLumberjack'
 pod 'CocoaAsyncSocket'
