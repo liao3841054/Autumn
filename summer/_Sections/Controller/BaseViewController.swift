@@ -21,7 +21,24 @@ class BaseViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
-
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let pageName = self.title {
+            MobClick.beginLogPageView(pageName)
+        } else {
+            MobClick.beginLogPageView(NSStringFromClass(object_getClass(self)))
+        }
+    }
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        if let pageName = self.title {
+            MobClick.endLogPageView(pageName)
+        } else {
+            MobClick.endLogPageView(NSStringFromClass(object_getClass(self)))
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

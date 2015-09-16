@@ -55,7 +55,6 @@ class MyViewController: BaseViewController, UINavigationControllerDelegate,  UII
         //MARK: 本地推送消息
         NotificationManager.instance.scheduleNotification(itemID: 123, delaySeconds: 3, timeZone: NSTimeZone.defaultTimeZone(), message: "本地消息")
         //cancelNotification(123);
-        
     }
     
     @IBAction func loginBtnAction(sender: AnyObject) {

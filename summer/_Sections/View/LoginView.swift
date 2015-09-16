@@ -116,6 +116,8 @@ class LoginView: UIView {
         self.register.rac_signalForControlEvents(UIControlEvents.TouchUpInside).subscribeNext { (dat) -> Void in
             self.superViewController?.navigationController?.pushViewController(UIViewController(), animated: true)
         }
+        
+        //UMSocialConfig.hiddenNotInstallPlatforms([UMShareToWechatSession,UMShareToWechatTimeline])
     }
     
     /*

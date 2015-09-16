@@ -19,6 +19,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: UIUserNotificationType.Badge | UIUserNotificationType.Alert | UIUserNotificationType.Sound, categories: nil))
+        
+        MobClick.startWithAppkey("55f93b13e0f55a3ced002115", reportPolicy: BATCH, channelId: "")
+        if let version = (NSBundle.mainBundle().infoDictionary as NSDictionary).valueForKey("CFBundleShortVersionString") as? String {
+            MobClick.setAppVersion(version)
+        }
+        
         return true
     }
     
