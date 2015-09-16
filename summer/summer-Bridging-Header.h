@@ -2,9 +2,6 @@
 //  Use this file to import your target's public headers that you would like to expose to Swift.
 //
 
-
-
-
 //MARK: AFNetworking
 #import <AFNetworking/AFNetworking.h>
 
@@ -30,3 +27,7 @@
 //DDXML
 #import "DDXML.h"
 #import "DDXMLElementAdditions.h"
+
+//UMSocial & UMAnalytics
+#import "UMSocial.h"
+#import "MobClick.h"

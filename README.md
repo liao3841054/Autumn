@@ -1,3 +1,4 @@
+
 * JavaScriptManager
 * UIWebView+Tools JS扩展
 * ShareData 单例模式共享数据
@@ -9,6 +10,7 @@
 * QiniuManager 七牛上传管理，单例
 * ShareModel 最简Swift单例写法
 
+* UMeng 友盟
 * ReactiveCocoa 信号，分离，过滤，聚合，MVVM模式
 * NotificationManager 本地消息推送 单例方法
 

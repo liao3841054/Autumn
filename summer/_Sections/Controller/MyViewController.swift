@@ -155,9 +155,6 @@ class MyViewController: BaseViewController, UINavigationControllerDelegate,  UII
         self.presentViewController(reader, animated: true, completion: nil)
     }
     
-    
-    
-    
     // MARK: - QRCodeReader Delegate Methods
     func reader(reader: QRCodeReaderViewController, didScanResult result: String) {
         self.dismissViewControllerAnimated(true, completion: nil)
