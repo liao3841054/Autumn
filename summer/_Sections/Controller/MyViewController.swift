@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import AVFoundation
 
 import MobileCoreServices
-import CocoaLumberjack
+//import CocoaLumberjack
 
 import AssetsLibrary
 
-class MyViewController: BaseViewController, UINavigationControllerDelegate,  UIImagePickerControllerDelegate {
+class MyViewController: BaseViewController, UINavigationControllerDelegate,  UIImagePickerControllerDelegate, QRCodeReaderViewControllerDelegate {
     
     private var showSectionBlock: ((view:UIView)->Void)?
     
@@ -55,83 +56,114 @@ class MyViewController: BaseViewController, UINavigationControllerDelegate,  UII
         NotificationManager.instance.scheduleNotification(itemID: 123, delaySeconds: 3, timeZone: NSTimeZone.defaultTimeZone(), message: "本地消息")
         //cancelNotification(123);
         
-        closure(mark: "摄像头录制视频", run: false, block: { () -> Void in
-            if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera) {
-                var picker = UIImagePickerController()
-                picker.delegate = self
-                
-                picker.sourceType = UIImagePickerControllerSourceType.Camera
-                picker.cameraDevice = UIImagePickerControllerCameraDevice.Front
-                picker.allowsEditing = true
-                picker.showsCameraControls = true
-                
-                picker.mediaTypes = [kUTTypeMovie as String]
-                picker.videoQuality = UIImagePickerControllerQualityType.Type640x480
-                picker.videoMaximumDuration = 10.0
-                
-                self.presentViewController(picker, animated: true, completion: nil)
+    }
+    
+    @IBAction func loginBtnAction(sender: AnyObject) {
+        var vc = LoginViewController()
+        var navi = UINavigationController(rootViewController: LoginViewController())
+        self.presentViewController(navi, animated: true, completion: nil)
+    }
+    @IBAction func httpDebugBtnAction(sender: AnyObject) {
+        var vc = UINavigationController(rootViewController: HTTPDebugViewController())
+        self.presentViewController(vc, animated: true, completion: nil)
+    }
+    
+    @IBAction func 摄像头录制视频(sender: UIButton) {
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera) {
+            var picker = UIImagePickerController()
+            picker.delegate = self
+            
+            picker.sourceType = UIImagePickerControllerSourceType.Camera
+            picker.cameraDevice = UIImagePickerControllerCameraDevice.Front
+            picker.allowsEditing = true
+            picker.showsCameraControls = true
+            
+            picker.mediaTypes = [kUTTypeMovie as String]
+            picker.videoQuality = UIImagePickerControllerQualityType.Type640x480
+            picker.videoMaximumDuration = 10.0
+            
+            self.presentViewController(picker, animated: true, completion: nil)
+        }
+        else {
+            println("Camera is not available")
+        }
+    }
+    @IBAction func 摄像头拍照(sender: UIButton) {
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera){
+            let picker = UIImagePickerController()
+            picker.delegate = self
+            
+            picker.sourceType = UIImagePickerControllerSourceType.Camera
+            picker.cameraDevice = UIImagePickerControllerCameraDevice.Front
+            picker.allowsEditing = true
+            
+            
+            self.presentViewController(picker, animated: true, completion: nil)
+        } else {
+            let alert = UIAlertView(title: "", message: "相机已被禁用，请在设置中设置允许", delegate: self, cancelButtonTitle: "OK")
+            alert.show()
+        }
+    }
+    @IBAction func Library读取视频(sender: UIButton) {
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary) {
+            var picker = UIImagePickerController()
+            picker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+            picker.mediaTypes = [kUTTypeMovie as String]
+            picker.delegate = self
+            self.presentViewController(picker, animated: true, completion: nil)
+        }
+        else {
+            println("Library is not available")
+        }
+    }
+    @IBAction func 测试七牛上传(sender: UIButton) {
+        QiniuManager.instance.upload("tolken form server", data: NSData(), key: "test key")
+    }
+    
+    @IBAction func 测试JavaScriptManager(sender: UIButton) {
+        if let  path = NSBundle.mainBundle().pathForResource("test", ofType: "js") {
+            var js = NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding, error: nil) as! String
+            println(JavaScriptManager.instance.runJS(js, function: "factorial", parameter: [10]))
+        }
+    }
+    
+    @IBAction func 测试WebViewToolsJS扩展(sender: UIButton) {
+        if let path = NSBundle.mainBundle().pathForResource("test", ofType: "html") {
+            if let html = NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding, error: nil) as? String {
+                var web = UIWebView(frame: self.view.frame)
+                self.view.addSubview(web)
+                web.loadHTMLString(html, baseURL: NSURL(fileURLWithPath: path))
+                web.setJS("btnClicked", block: { (str) -> Void in
+                    let alert = UIAlertView(title: "", message: "js call native block", delegate: self, cancelButtonTitle: "OK")
+                    alert.show()
+                    web.removeFromSuperview()
+                })
             }
-            else {
-                println("Camera is not available")
-            }
-            }, complete: nil)
+        }
+    }
+    @IBAction func 测试二维码(sender: UIButton) {
+        var reader = QRCodeReaderViewController(metadataObjectTypes: [AVMetadataObjectTypeQRCode])
+        reader.delegate = self
         
-        closure(mark: "Library 读取视频", run: false, block: { () -> Void in
-            if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary) {
-                var picker = UIImagePickerController()
-                picker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
-                picker.mediaTypes = [kUTTypeMovie as String]
-                picker.delegate = self
-                self.presentViewController(picker, animated: true, completion: nil)
-            }
-            else {
-                println("Library is not available")
-            }
-        })
+        // Or by using the closure pattern
+        reader.completionBlock = { (result: String?) in
+            println(result)
+        }
         
-        closure(mark: "摄像头拍照", run: false, block: { () -> Void in
-            if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera){
-                let picker = UIImagePickerController()
-                picker.delegate = self
-                
-                picker.sourceType = UIImagePickerControllerSourceType.Camera
-                picker.cameraDevice = UIImagePickerControllerCameraDevice.Front
-                picker.allowsEditing = true
-                
-                
-                self.presentViewController(picker, animated: true, completion: nil)
-            } else {
-                let alert = UIAlertView(title: "", message: "相机已被禁用，请在设置中设置允许", delegate: self, cancelButtonTitle: "OK")
-                alert.show()
-            }
-        })
-        
-        
-        closure(mark: "测试七牛上传", run: true, block: { () -> Void in
-            QiniuManager.instance.upload("tolken form server", data: NSData(), key: "test key")
-        })
-        
-        closure(mark: "测试JavaScriptManager", run: true, block: { () -> Void in
-            if let  path = NSBundle.mainBundle().pathForResource("test", ofType: "js") {
-                var js = NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding, error: nil) as! String
-                println(JavaScriptManager.instance.runJS(js, function: "factorial", parameter: [10]))
-            }
-            }, complete: nil)
-        
-        closure(mark: "测试WebView+Tools JS扩展", run: true, block: { () -> Void in
-            if let path = NSBundle.mainBundle().pathForResource("test", ofType: "html") {
-                if let html = NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding, error: nil) as? String {
-                    var web = UIWebView(frame: self.view.frame)
-                    self.view.addSubview(web)
-                    web.loadHTMLString(html, baseURL: NSURL(fileURLWithPath: path))
-                    web.setJS("btnClicked", block: { (str) -> Void in
-                        let alert = UIAlertView(title: "", message: "js call native block", delegate: self, cancelButtonTitle: "OK")
-                        alert.show()
-                        web.removeFromSuperview()
-                    })
-                }
-            }
-            }, complete: nil)
+        // Presents the reader as modal form sheet
+        reader.modalPresentationStyle = .FormSheet
+        self.presentViewController(reader, animated: true, completion: nil)
+    }
+    
+    
+    
+    
+    // MARK: - QRCodeReader Delegate Methods
+    func reader(reader: QRCodeReaderViewController, didScanResult result: String) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    func readerDidCancel(reader: QRCodeReaderViewController) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     //MARK: ImagePicker delegate
@@ -164,16 +196,7 @@ class MyViewController: BaseViewController, UINavigationControllerDelegate,  UII
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
-    
-    @IBAction func loginBtnAction(sender: AnyObject) {
-        var vc = LoginViewController()
-        var navi = UINavigationController(rootViewController: LoginViewController())
-        self.presentViewController(navi, animated: true, completion: nil)
-    }
-    @IBAction func httpDebugBtnAction(sender: AnyObject) {
-        var vc = UINavigationController(rootViewController: HTTPDebugViewController())
-        self.presentViewController(vc, animated: true, completion: nil)
-    }
+
     
 }
 

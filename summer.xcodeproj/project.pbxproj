@@ -52,6 +52,10 @@
 		FA7724571B9AD761002C4DCF /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7724561B9AD761002C4DCF /* libxml2.2.dylib */; };
 		FA92E6761B87070600A5CFAC /* test.js in Resources */ = {isa = PBXBuildFile; fileRef = FA92E6751B87070600A5CFAC /* test.js */; };
 		FA92E6781B871C8B00A5CFAC /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = FA92E6771B871C8B00A5CFAC /* test.html */; };
+		FABA977A1BA93EFE009D54BA /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA97761BA93EFE009D54BA /* QRCodeReader.swift */; };
+		FABA977B1BA93EFE009D54BA /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA97771BA93EFE009D54BA /* QRCodeViewController.swift */; };
+		FABA977C1BA93EFE009D54BA /* ReaderOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA97781BA93EFE009D54BA /* ReaderOverlayView.swift */; };
+		FABA977D1BA93EFE009D54BA /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABA97791BA93EFE009D54BA /* SwitchCameraButton.swift */; };
 		FABCAF871B736F5A0091B3C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAF861B736F5A0091B3C1 /* AppDelegate.swift */; };
 		FABCAF8A1B736F5A0091B3C1 /* summer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FABCAF881B736F5A0091B3C1 /* summer.xcdatamodeld */; };
 		FABCAF8C1B736F5A0091B3C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABCAF8B1B736F5A0091B3C1 /* ViewController.swift */; };
@@ -129,6 +133,10 @@
 		FA7724561B9AD761002C4DCF /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		FA92E6751B87070600A5CFAC /* test.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = test.js; sourceTree = "<group>"; };
 		FA92E6771B871C8B00A5CFAC /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		FABA97761BA93EFE009D54BA /* QRCodeReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
+		FABA97771BA93EFE009D54BA /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		FABA97781BA93EFE009D54BA /* ReaderOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderOverlayView.swift; sourceTree = "<group>"; };
+		FABA97791BA93EFE009D54BA /* SwitchCameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCameraButton.swift; sourceTree = "<group>"; };
 		FABCAF811B736F5A0091B3C1 /* summer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = summer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABCAF851B736F5A0091B3C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FABCAF861B736F5A0091B3C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -253,6 +261,7 @@
 		FA6E80A51B7B04EA00428951 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FABA97751BA93EFE009D54BA /* QRCodeReader */,
 				FA6E80A61B7B04EA00428951 /* AlbumViewController.swift */,
 				FA6E80A71B7B04EA00428951 /* BaseNaviViewController.swift */,
 				FA6E80A81B7B04EA00428951 /* BaseViewController.swift */,
@@ -339,6 +348,17 @@
 				FA7724501B9AD709002C4DCF /* DDXMLPrivate.h */,
 			);
 			path = Private;
+			sourceTree = "<group>";
+		};
+		FABA97751BA93EFE009D54BA /* QRCodeReader */ = {
+			isa = PBXGroup;
+			children = (
+				FABA97761BA93EFE009D54BA /* QRCodeReader.swift */,
+				FABA97771BA93EFE009D54BA /* QRCodeViewController.swift */,
+				FABA97781BA93EFE009D54BA /* ReaderOverlayView.swift */,
+				FABA97791BA93EFE009D54BA /* SwitchCameraButton.swift */,
+			);
+			path = QRCodeReader;
 			sourceTree = "<group>";
 		};
 		FABCAF781B736F5A0091B3C1 = {
@@ -568,6 +588,7 @@
 				FA6E80BE1B7B04EA00428951 /* GCDManager.swift in Sources */,
 				FABCAF8C1B736F5A0091B3C1 /* ViewController.swift in Sources */,
 				FA6E80CD1B7B04EA00428951 /* AlbumView.swift in Sources */,
+				FABA977C1BA93EFE009D54BA /* ReaderOverlayView.swift in Sources */,
 				FA6E80CA1B7B04EA00428951 /* MyViewController.swift in Sources */,
 				FA6E80E11B82E9E200428951 /* HTTPDebugViewController.swift in Sources */,
 				FA6E80D31B7B2F0C00428951 /* README.md in Sources */,
@@ -586,6 +607,7 @@
 				FA6E80B91B7B04EA00428951 /* String+Tools.swift in Sources */,
 				FA6E80B61B7B04EA00428951 /* Int+Tools.swift in Sources */,
 				FA6E80E41B82EA8200428951 /* LoginView.swift in Sources */,
+				FABA977D1BA93EFE009D54BA /* SwitchCameraButton.swift in Sources */,
 				FA6E80B81B7B04EA00428951 /* NSMutableData+Tools.swift in Sources */,
 				FA6E80C11B7B04EA00428951 /* BaseModel.swift in Sources */,
 				FA6377421B8F04E00090BCD8 /* JavaScriptManager.swift in Sources */,
@@ -596,8 +618,10 @@
 				FA6E80CB1B7B04EA00428951 /* AlbumImageCell.swift in Sources */,
 				FA6E80C31B7B04EA00428951 /* FontModel.swift in Sources */,
 				FA6E80BA1B7B04EA00428951 /* UIColor+Tools.swift in Sources */,
+				FABA977A1BA93EFE009D54BA /* QRCodeReader.swift in Sources */,
 				FA7724511B9AD709002C4DCF /* DDXMLElementAdditions.m in Sources */,
 				FA6E80C51B7B04EA00428951 /* AlbumViewController.swift in Sources */,
+				FABA977B1BA93EFE009D54BA /* QRCodeViewController.swift in Sources */,
 				FA6E80D51B7B600E00428951 /* QiniuManager.swift in Sources */,
 				FA7724541B9AD709002C4DCF /* DDXMLElement.m in Sources */,
 				FA6E80BB1B7B04EA00428951 /* UIImageView+Tools.swift in Sources */,
