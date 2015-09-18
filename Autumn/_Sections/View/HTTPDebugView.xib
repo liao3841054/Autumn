@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="StI-jJ-uKG" customClass="HTTPDebugView" customModule="summer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="319" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="http://DingSoung.tk/Study/SimpleAPI.php" borderStyle="roundedRect" placeholder="http://url" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BO2-Sy-YQB">
+                    <rect key="frame" x="8" y="8" width="303" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="URL" returnKeyType="next"/>
+                </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="{     &quot;status&quot;: &quot;success&quot;,     &quot;message&quot;: &quot;成功&quot;,     &quot;data&quot;:         {         &quot;key&quot;:&quot;value&quot;,         }, }" translatesAutoresizingMaskIntoConstraints="NO" id="JM6-st-gxW">
+                    <rect key="frame" x="8" y="46" width="303" height="80"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="alphabet"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhB-N1-Le2">
+                    <rect key="frame" x="8" y="262" width="57" height="30"/>
+                    <state key="normal" title="Request">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="post:" destination="StI-jJ-uKG" eventType="touchUpInside" id="Ln6-ag-hn9"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="{     &quot;status&quot;: &quot;success&quot;,     &quot;message&quot;: &quot;成功&quot;,     &quot;data&quot;:         {         &quot;key&quot;:&quot;value&quot;,         }, }" translatesAutoresizingMaskIntoConstraints="NO" id="WMe-4q-qhn">
+                    <rect key="frame" x="8" y="134" width="303" height="120"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="Oyf-rq-mT5"/>
+                    </constraints>
+                    <color key="textColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="alphabet"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="BO2-Sy-YQB" firstAttribute="leading" secondItem="JM6-st-gxW" secondAttribute="leading" id="5sp-hk-Pdb"/>
+                <constraint firstItem="BO2-Sy-YQB" firstAttribute="trailing" secondItem="JM6-st-gxW" secondAttribute="trailing" id="F6h-CR-rmb"/>
+                <constraint firstItem="JM6-st-gxW" firstAttribute="top" secondItem="BO2-Sy-YQB" secondAttribute="bottom" constant="10" id="KG3-3y-4Li"/>
+                <constraint firstItem="WMe-4q-qhn" firstAttribute="leading" secondItem="JM6-st-gxW" secondAttribute="leading" id="OCE-ox-D4P"/>
+                <constraint firstItem="fhB-N1-Le2" firstAttribute="leading" secondItem="StI-jJ-uKG" secondAttribute="leading" constant="8" id="OXi-u7-YVu"/>
+                <constraint firstItem="BO2-Sy-YQB" firstAttribute="top" secondItem="StI-jJ-uKG" secondAttribute="top" constant="8" id="RHn-sf-CJt"/>
+                <constraint firstItem="fhB-N1-Le2" firstAttribute="top" secondItem="JM6-st-gxW" secondAttribute="bottom" constant="20" id="X2l-RB-gDI"/>
+                <constraint firstItem="WMe-4q-qhn" firstAttribute="top" secondItem="JM6-st-gxW" secondAttribute="bottom" constant="8" id="X5s-CI-ed8"/>
+                <constraint firstItem="BO2-Sy-YQB" firstAttribute="leading" secondItem="StI-jJ-uKG" secondAttribute="leading" constant="8" id="Ykv-fK-fAi"/>
+                <constraint firstItem="JM6-st-gxW" firstAttribute="top" secondItem="BO2-Sy-YQB" secondAttribute="bottom" constant="8" id="cDw-0q-2LG"/>
+                <constraint firstAttribute="bottom" secondItem="fhB-N1-Le2" secondAttribute="bottom" constant="8" id="cOZ-d4-zR6"/>
+                <constraint firstItem="fhB-N1-Le2" firstAttribute="top" secondItem="WMe-4q-qhn" secondAttribute="bottom" constant="8" id="fc6-XH-fbx"/>
+                <constraint firstItem="WMe-4q-qhn" firstAttribute="leading" secondItem="JM6-st-gxW" secondAttribute="trailing" constant="-303" id="hiX-mo-R3P"/>
+                <constraint firstItem="WMe-4q-qhn" firstAttribute="trailing" secondItem="JM6-st-gxW" secondAttribute="trailing" id="k10-qN-q3V"/>
+                <constraint firstAttribute="trailing" secondItem="BO2-Sy-YQB" secondAttribute="trailing" constant="8" id="lMW-mN-dnd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="KG3-3y-4Li"/>
+                    <exclude reference="hiX-mo-R3P"/>
+                    <exclude reference="X2l-RB-gDI"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="json" destination="JM6-st-gxW" id="qI0-HK-a30"/>
+                <outlet property="log" destination="WMe-4q-qhn" id="gvF-rM-nR9"/>
+                <outlet property="post" destination="fhB-N1-Le2" id="yHr-Zn-s2M"/>
+                <outlet property="url" destination="BO2-Sy-YQB" id="G1M-Br-wBn"/>
+            </connections>
+            <point key="canvasLocation" x="188.5" y="164"/>
+        </view>
+    </objects>
+</document>

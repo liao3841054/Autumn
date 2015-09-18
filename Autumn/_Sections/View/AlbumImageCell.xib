@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" selectionStyle="default" indentationWidth="10" rowHeight="-67" id="Qb8-ZG-KdE" customClass="AlbumImageCell" customModule="summer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="234" height="232"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qb8-ZG-KdE" id="tLL-48-h9D">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="499.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="llA-tO-Nar">
+                        <rect key="frame" x="0.0" y="0.0" width="234" height="231.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cck-Mn-cCS">
+                                <rect key="frame" x="58" y="58" width="117" height="116"/>
+                            </imageView>
+                        </subviews>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="llA-tO-Nar" firstAttribute="height" secondItem="tLL-48-h9D" secondAttribute="height" id="OlL-j7-cP7"/>
+                    <constraint firstItem="llA-tO-Nar" firstAttribute="centerY" secondItem="tLL-48-h9D" secondAttribute="centerY" id="XwH-uL-yLt"/>
+                    <constraint firstItem="llA-tO-Nar" firstAttribute="width" secondItem="tLL-48-h9D" secondAttribute="width" id="fN5-PH-NZi"/>
+                    <constraint firstItem="llA-tO-Nar" firstAttribute="centerX" secondItem="tLL-48-h9D" secondAttribute="centerX" id="miA-dp-lVk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="img" destination="Cck-Mn-cCS" id="uDm-B8-JOz"/>
+                <outlet property="scrollView" destination="llA-tO-Nar" id="xBU-tS-Q8U"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="194"/>
+        </tableViewCell>
+    </objects>
+</document>
