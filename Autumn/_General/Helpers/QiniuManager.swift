@@ -39,11 +39,15 @@ class QiniuManager {
     //MARK: 断点续传
     func upload(folder:String, token:String, data:NSData, key:String, process:((percent:Float)->Void)?,complete:((key:String)->Void)?) {
         //写标记
-        upManager = QNUploadManager(recorder: QNFileRecorder(folder: folder))
-        self.upload(token, data: data, key: key, process: process) { (key) -> Void in
-            //还原
-            self.upManager = QNUploadManager() //还原
-            complete
+        do {
+            upManager = try QNUploadManager(recorder: QNFileRecorder(folder: folder))
+            self.upload(token, data: data, key: key, process: process) { (key) -> Void in
+                //还原
+                self.upManager = QNUploadManager() //还原
+                complete
+            }
+        } catch {
+            print(error)
         }
     }
     

@@ -121,15 +121,20 @@ class MyViewController: BaseViewController, UINavigationControllerDelegate,  UII
     
     @IBAction func 测试JavaScriptManager(sender: UIButton) {
         if let  path = NSBundle.mainBundle().pathForResource("test", ofType: "js") {
-            var js = NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding, error: nil) as! String
-            println(JavaScriptManager.instance.runJS(js, function: "factorial", parameter: [10]))
+            do {
+                let js = try NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding) as String
+                print(JavaScriptManager.instance.runJS(js, function: "factorial", parameter: [10]))
+            } catch {
+                print(error)
+            }
         }
     }
     
     @IBAction func 测试WebViewToolsJS扩展(sender: UIButton) {
         if let path = NSBundle.mainBundle().pathForResource("test", ofType: "html") {
-            if let html = NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding, error: nil) as? String {
-                var web = UIWebView(frame: self.view.frame)
+            do {
+                let html = try NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding) as String
+                let web = UIWebView(frame: self.view.frame)
                 self.view.addSubview(web)
                 web.loadHTMLString(html, baseURL: NSURL(fileURLWithPath: path))
                 web.setJS("btnClicked", block: { (str) -> Void in
@@ -137,6 +142,8 @@ class MyViewController: BaseViewController, UINavigationControllerDelegate,  UII
                     alert.show()
                     web.removeFromSuperview()
                 })
+            } catch {
+                print(error)
             }
         }
     }
@@ -195,7 +202,7 @@ class MyViewController: BaseViewController, UINavigationControllerDelegate,  UII
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
-
+    
     
 }
 

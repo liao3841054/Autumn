@@ -196,14 +196,14 @@ public final class QRCodeReaderViewController: UIViewController {
   }
 
   private func setupAutoLayoutConstraints() {
-    let views: [NSObject: AnyObject] = ["cameraView": cameraView, "cancelButton": cancelButton]
+    let views: [String: AnyObject] = ["cameraView": cameraView, "cancelButton": cancelButton]
 
     view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[cameraView][cancelButton(40)]|", options: [], metrics: nil, views: views))
     view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[cameraView]|", options: [], metrics: nil, views: views))
     view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-[cancelButton]-|", options: [], metrics: nil, views: views))
 
     if let _switchCameraButton = switchCameraButton {
-      let switchViews: [NSObject: AnyObject] = ["switchCameraButton": _switchCameraButton]
+      let switchViews: [String: AnyObject] = ["switchCameraButton": _switchCameraButton]
 
       view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[switchCameraButton(50)]", options: [], metrics: nil, views: switchViews))
       view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:[switchCameraButton(70)]|", options: [], metrics: nil, views: switchViews))
