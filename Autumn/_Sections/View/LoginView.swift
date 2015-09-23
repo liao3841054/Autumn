@@ -75,7 +75,6 @@ class LoginView: UIView {
             }
         }
         
-        
         /*
         #if false //RAC 宏定义在swift中不可用
             RAC(self.name.backgroundColor) = vaidNameSignal.map({ (dat) -> AnyObject! in
@@ -119,12 +118,4 @@ class LoginView: UIView {
         
         //UMSocialConfig.hiddenNotInstallPlatforms([UMShareToWechatSession,UMShareToWechatTimeline])
     }
-    
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-    // Drawing code
-    }
-    */
 }

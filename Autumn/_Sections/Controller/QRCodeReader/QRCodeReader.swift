@@ -204,7 +204,7 @@ public final class QRCodeReader: NSObject, AVCaptureMetadataOutputObjectsDelegat
 
     var error: NSError?
     do {
-      try AVCaptureDeviceInput.deviceInputWithDevice(captureDevice)
+      try AVCaptureDeviceInput(device: captureDevice)
     } catch let error1 as NSError {
       error = error1
     }
@@ -226,7 +226,7 @@ public final class QRCodeReader: NSObject, AVCaptureMetadataOutputObjectsDelegat
 
     // Setup components
     let captureDevice = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
-    let deviceInput   = (try! AVCaptureDeviceInput.deviceInputWithDevice(captureDevice)) 
+    let deviceInput   = (try! AVCaptureDeviceInput(device: captureDevice))
     let output        = AVCaptureMetadataOutput()
     let session       = AVCaptureSession()
 

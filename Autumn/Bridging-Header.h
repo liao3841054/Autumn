@@ -29,9 +29,13 @@
 #import <Qiniu/QiniuSDK.h>
 
 //DDXML
-#import "DDXML.h"
+#import "DDXML.h"                   //header search path add ${SDK_DIR}/usr/include/libxml2
 #import "DDXMLElementAdditions.h"
 
-//UMSocial & UMAnalytics
+
+//UMSocial
 #import "UMSocial.h"
+#import "UMSocialWechatHandler.h"  //libsqlite3.dylib ，libz.dylib, libc++.dylib
+
+//UMAnalytics
 #import "MobClick.h"

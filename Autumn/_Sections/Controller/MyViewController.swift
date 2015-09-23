@@ -170,10 +170,7 @@ class MyViewController: BaseViewController, UINavigationControllerDelegate,  UII
     }
     
     //MARK: ImagePicker delegate
-    
-    
-    
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         closure("保存视频", run: true, block: { () -> Void in
             if info[UIImagePickerControllerMediaType] as? String == kUTTypeMovie as String {
                 self.closure("方法1", run: true, block: { () -> Void in
@@ -193,6 +190,7 @@ class MyViewController: BaseViewController, UINavigationControllerDelegate,  UII
             picker.dismissViewControllerAnimated(true, completion: nil)
         })
     }
+    
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
         print("image load success")
         self.dismissViewControllerAnimated(true, completion: nil)
