@@ -58,13 +58,22 @@ class MyViewController: BaseViewController, UINavigationControllerDelegate,  UII
     }
     
     @IBAction func loginBtnAction(sender: AnyObject) {
-        _ = LoginViewController()
-        let navi = UINavigationController(rootViewController: LoginViewController())
+        let vc = BaseNaviViewController()
+        if let v = (NSBundle.mainBundle().loadNibNamed("LoginView", owner: self, options: nil) as NSArray).lastObject as? LoginView {
+            v.frame = vc.view.frame
+            vc.view.addSubview(v)
+        }
+        let navi = UINavigationController(rootViewController: vc)
         self.presentViewController(navi, animated: true, completion: nil)
     }
     @IBAction func httpDebugBtnAction(sender: AnyObject) {
-        let vc = UINavigationController(rootViewController: HTTPDebugViewController())
-        self.presentViewController(vc, animated: true, completion: nil)
+        let vc = BaseNaviViewController()
+        if let v = (NSBundle.mainBundle().loadNibNamed("HTTPDebugView", owner: self, options: nil) as NSArray).lastObject as? HTTPDebugView {
+            v.frame = vc.view.frame
+            vc.view.addSubview(v)
+        }
+        let navi = UINavigationController(rootViewController: vc)
+        self.presentViewController(navi, animated: true, completion: nil)
     }
     
     @IBAction func 摄像头录制视频(sender: UIButton) {

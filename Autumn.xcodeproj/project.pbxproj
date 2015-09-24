@@ -38,8 +38,6 @@
 		FA5A47641BAC23B900B9E2A2 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A46FB1BAC23B900B9E2A2 /* AlbumViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		FA5A47651BAC23B900B9E2A2 /* BaseNaviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A46FC1BAC23B900B9E2A2 /* BaseNaviViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		FA5A47661BAC23B900B9E2A2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A46FD1BAC23B900B9E2A2 /* BaseViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		FA5A47671BAC23B900B9E2A2 /* HTTPDebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A46FE1BAC23B900B9E2A2 /* HTTPDebugViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		FA5A47681BAC23B900B9E2A2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A46FF1BAC23B900B9E2A2 /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		FA5A47691BAC23B900B9E2A2 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A47001BAC23B900B9E2A2 /* MyViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		FA5A476A1BAC23B900B9E2A2 /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A47021BAC23B900B9E2A2 /* QRCodeReader.swift */; settings = {ASSET_TAGS = (); }; };
 		FA5A476B1BAC23B900B9E2A2 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A47031BAC23B900B9E2A2 /* QRCodeViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -144,8 +142,6 @@
 		FA5A46FB1BAC23B900B9E2A2 /* AlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		FA5A46FC1BAC23B900B9E2A2 /* BaseNaviViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNaviViewController.swift; sourceTree = "<group>"; };
 		FA5A46FD1BAC23B900B9E2A2 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		FA5A46FE1BAC23B900B9E2A2 /* HTTPDebugViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPDebugViewController.swift; sourceTree = "<group>"; };
-		FA5A46FF1BAC23B900B9E2A2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FA5A47001BAC23B900B9E2A2 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		FA5A47021BAC23B900B9E2A2 /* QRCodeReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
 		FA5A47031BAC23B900B9E2A2 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
@@ -405,8 +401,6 @@
 				FA5A46FB1BAC23B900B9E2A2 /* AlbumViewController.swift */,
 				FA5A46FC1BAC23B900B9E2A2 /* BaseNaviViewController.swift */,
 				FA5A46FD1BAC23B900B9E2A2 /* BaseViewController.swift */,
-				FA5A46FE1BAC23B900B9E2A2 /* HTTPDebugViewController.swift */,
-				FA5A46FF1BAC23B900B9E2A2 /* LoginViewController.swift */,
 				FA5A47001BAC23B900B9E2A2 /* MyViewController.swift */,
 				FA5A47011BAC23B900B9E2A2 /* QRCodeReader */,
 			);
@@ -792,7 +786,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA5A47681BAC23B900B9E2A2 /* LoginViewController.swift in Sources */,
 				FA5A477A1BAC23B900B9E2A2 /* DDXMLDocument.m in Sources */,
 				FA5A476F1BAC23B900B9E2A2 /* AlbumImageCell.swift in Sources */,
 				FA5A475F1BAC23B900B9E2A2 /* BaseModel.swift in Sources */,
@@ -805,7 +798,6 @@
 				FA5A475A1BAC23B900B9E2A2 /* GCDManager.swift in Sources */,
 				FA94725A1BB2AE63004EAEDF /* UMSocialManager.swift in Sources */,
 				FA5A47521BAC23B900B9E2A2 /* NSData+Tools.swift in Sources */,
-				FA5A47671BAC23B900B9E2A2 /* HTTPDebugViewController.swift in Sources */,
 				FA5A476D1BAC23B900B9E2A2 /* SwitchCameraButton.swift in Sources */,
 				FA5A47691BAC23B900B9E2A2 /* MyViewController.swift in Sources */,
 				FA5A475D1BAC23B900B9E2A2 /* NotificationManager.swift in Sources */,
