@@ -25,7 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // Fallback on earlier versions
         }
         
-        
         return true
     }
 

@@ -18,6 +18,10 @@ class LoginView: UIView {
     @IBOutlet weak var signIn: UIButton!
     @IBOutlet weak var register: UIButton!
     
+    @IBOutlet weak var wechat: UIButton!
+    @IBOutlet weak var sina: UIButton!
+    @IBOutlet weak var qq: UIButton!
+    
     override func awakeFromNib() {
         
         //MARK: 过滤 text长度大于3时的信号 打印dat
@@ -116,6 +120,24 @@ class LoginView: UIView {
             self.superViewController?.navigationController?.pushViewController(UIViewController(), animated: true)
         }
         
-        //UMSocialConfig.hiddenNotInstallPlatforms([UMShareToWechatSession,UMShareToWechatTimeline])
+        
+        let authorize = {(socialPlatform:String)->Void in
+            if let vc = self.wechat.superViewController {
+                UMSocialManager.instance.authorize(vc, socialPlatform: socialPlatform, success: { (account) -> Void in
+                    UMSocialManager.instance.requestWechatInfo(socialPlatform)
+                    }, fail: { (error) -> Void in
+                })
+            }
+        }
+        self.wechat.rac_signalForControlEvents(UIControlEvents.TouchUpInside).subscribeNext { (obj) -> Void in
+            authorize(UMShareToWechatSession)
+        }
+        self.sina.rac_signalForControlEvents(UIControlEvents.TouchUpInside).subscribeNext { (obj) -> Void in
+            authorize(UMShareToSina)
+        }
+        self.qq.rac_signalForControlEvents(UIControlEvents.TouchUpInside).subscribeNext { (obj) -> Void in
+            authorize(UMShareToQzone)
+        }
+        
     }
 }

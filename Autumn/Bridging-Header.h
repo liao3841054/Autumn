@@ -36,6 +36,7 @@
 //UMSocial
 #import "UMSocial.h"
 #import "UMSocialWechatHandler.h"  //libsqlite3.dylib ，libz.dylib, libc++.dylib
+#import "UMSocialQQHandler.h"
 
 //UMAnalytics
 #import "MobClick.h"
